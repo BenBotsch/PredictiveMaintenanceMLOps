@@ -1,0 +1,48 @@
+{
+  "validation": {
+    "logistic": {
+      "pr_auc": 0.4212,
+      "roc_auc": 0.8823,
+      "precision": 0.5238,
+      "recall": 0.4314,
+      "f1": 0.4731,
+      "threshold": 0.9003
+    },
+    "logistic + features": {
+      "pr_auc": 0.394,
+      "roc_auc": 0.912,
+      "precision": 0.3158,
+      "recall": 0.7059,
+      "f1": 0.4364,
+      "threshold": 0.7603
+    },
+    "boosting": {
+      "pr_auc": 0.7754,
+      "roc_auc": 0.9659,
+      "precision": 0.8182,
+      "recall": 0.7059,
+      "f1": 0.7579,
+      "threshold": 0.3409
+    },
+    "boosting + features": {
+      "pr_auc": 0.8589,
+      "roc_auc": 0.9575,
+      "precision": 0.9737,
+      "recall": 0.7255,
+      "f1": 0.8315,
+      "threshold": 0.7809
+    }
+  },
+  "registered": {
+    "candidate": "boosting + features",
+    "version": "1"
+  },
+  "test": {
+    "pr_auc": 0.8821,
+    "roc_auc": 0.973,
+    "precision": 0.9487,
+    "recall": 0.7255,
+    "f1": 0.8222,
+    "threshold": 0.7809
+  }
+}

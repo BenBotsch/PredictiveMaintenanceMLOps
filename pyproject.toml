@@ -1,0 +1,62 @@
+[project]
+name = "predictive-maintenance-mlops"
+version = "0.1.0"
+description = "Machine failure prediction on AI4I 2020 with experiment tracking, a model registry and a served API"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi>=0.115",
+    "httpx>=0.28",
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "pydantic>=2.10",
+    "scikit-learn>=1.6",
+    "skops>=0.11",
+    "uvicorn>=0.34",
+]
+
+[project.scripts]
+pmm = "pmm.cli:main"
+
+[dependency-groups]
+# Only training needs MLflow; the serving image installs without this group.
+train = ["mlflow>=3.1"]
+dev = ["mypy>=1.15", "pandas-stubs>=2.2", "pytest>=8.3", "ruff>=0.11"]
+
+[tool.uv]
+default-groups = ["dev", "train"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pmm"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "D", "PL", "RUF"]
+ignore = ["D100", "D104", "D105", "D107", "PLR0913", "PLR2004"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D"]
+# Commands import what they need, so the serving image runs without MLflow.
+"src/pmm/cli.py" = ["PLC0415"]
+
+[tool.mypy]
+strict = true
+files = ["src", "tests"]
+
+[[tool.mypy.overrides]]
+module = ["sklearn.*", "skops.*", "mlflow.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
