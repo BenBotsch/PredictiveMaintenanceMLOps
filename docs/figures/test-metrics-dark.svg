@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="430.766818pt" height="230.556pt" viewBox="0 0 430.766818 230.556" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="460.8pt" height="230.556pt" viewBox="0 0 460.8 230.556" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -16,8 +16,8 @@
  <g id="figure_1">
   <g id="patch_1">
    <path d="M 0 230.556 
-L 430.766818 230.556 
-L 430.766818 0 
+L 460.8 230.556 
+L 460.8 0 
 L 0 0 
 L 0 230.556 
 z
@@ -25,20 +25,20 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 53.945 203.056 
-L 411.065 203.056 
-L 411.065 42.28 
-L 53.945 42.28 
-L 53.945 203.056 
+    <path d="M 54.8925 203.056 
+L 412.0125 203.056 
+L 412.0125 42.28 
+L 54.8925 42.28 
+L 54.8925 203.056 
 z
 " style="fill: none"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
-      <path d="M 53.945 203.056 
-L 53.945 42.28 
-" clip-path="url(#pd8c4541fda)" style="fill: none; stroke: #2a2e38; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 54.8925 203.056 
+L 54.8925 42.28 
+" clip-path="url(#p74b01035a2)" style="fill: none; stroke: #2a2e38; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_2">
       <defs>
@@ -47,12 +47,12 @@ L 0 3
 " style="stroke: #3d4250; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#me20e3cacb1" x="53.945" y="203.056" style="fill: #3d4250; stroke: #3d4250; stroke-width: 0.8"/>
+       <use xlink:href="#me20e3cacb1" x="54.8925" y="203.056" style="fill: #3d4250; stroke: #3d4250; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
       <!-- 0.5 -->
-      <g style="fill: #a6abba" transform="translate(47.953164 217.461) scale(0.085 -0.085)">
+      <g style="fill: #a6abba" transform="translate(48.900664 217.461) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-14a" d="M 2093 -90 
 Q 1709 -90 1395 64 
@@ -140,18 +140,18 @@ z
     </g>
     <g id="xtick_2">
      <g id="line2d_3">
-      <path d="M 108.054091 203.056 
-L 108.054091 42.28 
-" clip-path="url(#pd8c4541fda)" style="fill: none; stroke: #2a2e38; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 109.001591 203.056 
+L 109.001591 42.28 
+" clip-path="url(#p74b01035a2)" style="fill: none; stroke: #2a2e38; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_4">
       <g>
-       <use xlink:href="#me20e3cacb1" x="108.054091" y="203.056" style="fill: #3d4250; stroke: #3d4250; stroke-width: 0.8"/>
+       <use xlink:href="#me20e3cacb1" x="109.001591" y="203.056" style="fill: #3d4250; stroke: #3d4250; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
       <!-- 0.6 -->
-      <g style="fill: #a6abba" transform="translate(101.934091 217.461) scale(0.085 -0.085)">
+      <g style="fill: #a6abba" transform="translate(102.881591 217.461) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-150" d="M 2195 -96 
 Q 1350 -96 876 448 
@@ -212,18 +212,18 @@ z
     </g>
     <g id="xtick_3">
      <g id="line2d_5">
-      <path d="M 162.163182 203.056 
-L 162.163182 42.28 
-" clip-path="url(#pd8c4541fda)" style="fill: none; stroke: #2a2e38; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 163.110682 203.056 
+L 163.110682 42.28 
+" clip-path="url(#p74b01035a2)" style="fill: none; stroke: #2a2e38; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_6">
       <g>
-       <use xlink:href="#me20e3cacb1" x="162.163182" y="203.056" style="fill: #3d4250; stroke: #3d4250; stroke-width: 0.8"/>
+       <use xlink:href="#me20e3cacb1" x="163.110682" y="203.056" style="fill: #3d4250; stroke: #3d4250; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
       <!-- 0.7 -->
-      <g style="fill: #a6abba" transform="translate(156.736463 217.461) scale(0.085 -0.085)">
+      <g style="fill: #a6abba" transform="translate(157.683963 217.461) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-151" d="M 896 0 
 Q 896 461 979 957 
@@ -251,18 +251,18 @@ z
     </g>
     <g id="xtick_4">
      <g id="line2d_7">
-      <path d="M 216.272273 203.056 
-L 216.272273 42.28 
-" clip-path="url(#pd8c4541fda)" style="fill: none; stroke: #2a2e38; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 217.219773 203.056 
+L 217.219773 42.28 
+" clip-path="url(#p74b01035a2)" style="fill: none; stroke: #2a2e38; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_8">
       <g>
-       <use xlink:href="#me20e3cacb1" x="216.272273" y="203.056" style="fill: #3d4250; stroke: #3d4250; stroke-width: 0.8"/>
+       <use xlink:href="#me20e3cacb1" x="217.219773" y="203.056" style="fill: #3d4250; stroke: #3d4250; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
       <!-- 0.8 -->
-      <g style="fill: #a6abba" transform="translate(210.093171 217.461) scale(0.085 -0.085)">
+      <g style="fill: #a6abba" transform="translate(211.040671 217.461) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-152" d="M 2048 -96 
 Q 1555 -96 1174 32 
@@ -340,18 +340,18 @@ z
     </g>
     <g id="xtick_5">
      <g id="line2d_9">
-      <path d="M 270.381364 203.056 
-L 270.381364 42.28 
-" clip-path="url(#pd8c4541fda)" style="fill: none; stroke: #2a2e38; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 271.328864 203.056 
+L 271.328864 42.28 
+" clip-path="url(#p74b01035a2)" style="fill: none; stroke: #2a2e38; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_10">
       <g>
-       <use xlink:href="#me20e3cacb1" x="270.381364" y="203.056" style="fill: #3d4250; stroke: #3d4250; stroke-width: 0.8"/>
+       <use xlink:href="#me20e3cacb1" x="271.328864" y="203.056" style="fill: #3d4250; stroke: #3d4250; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
       <!-- 0.9 -->
-      <g style="fill: #a6abba" transform="translate(264.240778 217.461) scale(0.085 -0.085)">
+      <g style="fill: #a6abba" transform="translate(265.188278 217.461) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-153" d="M 1926 -96 
 Q 1613 -96 1360 -25 
@@ -414,18 +414,18 @@ z
     </g>
     <g id="xtick_6">
      <g id="line2d_11">
-      <path d="M 324.490455 203.056 
-L 324.490455 42.28 
-" clip-path="url(#pd8c4541fda)" style="fill: none; stroke: #2a2e38; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 325.437955 203.056 
+L 325.437955 42.28 
+" clip-path="url(#p74b01035a2)" style="fill: none; stroke: #2a2e38; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_12">
       <g>
-       <use xlink:href="#me20e3cacb1" x="324.490455" y="203.056" style="fill: #3d4250; stroke: #3d4250; stroke-width: 0.8"/>
+       <use xlink:href="#me20e3cacb1" x="325.437955" y="203.056" style="fill: #3d4250; stroke: #3d4250; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
       <!-- 1.0 -->
-      <g style="fill: #a6abba" transform="translate(319.722486 217.461) scale(0.085 -0.085)">
+      <g style="fill: #a6abba" transform="translate(320.669986 217.461) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-14b" d="M 826 0 
 L 826 3232 
@@ -451,7 +451,7 @@ z
      <g id="line2d_13"/>
      <g id="text_7">
       <!-- F1 -->
-      <g style="fill: #a6abba" transform="translate(40.345469 188.457423) scale(0.085 -0.085)">
+      <g style="fill: #a6abba" transform="translate(41.292969 188.457423) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-34" d="M 557 0 
 L 557 4224 
@@ -482,7 +482,7 @@ z
      <g id="line2d_14"/>
      <g id="text_8">
       <!-- Recall -->
-      <g style="fill: #a6abba" transform="translate(23.820938 157.538962) scale(0.085 -0.085)">
+      <g style="fill: #a6abba" transform="translate(24.768437 157.538962) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-70" d="M 557 0 
 L 557 4224 
@@ -663,7 +663,7 @@ z
      <g id="line2d_15"/>
      <g id="text_9">
       <!-- Precision -->
-      <g style="fill: #a6abba" transform="translate(10.843828 126.6205) scale(0.085 -0.085)">
+      <g style="fill: #a6abba" transform="translate(11.791328 126.6205) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-6d" d="M 864 1293 
 L 864 1792 
@@ -839,7 +839,7 @@ z
      <g id="line2d_16"/>
      <g id="text_10">
       <!-- ROC-AUC -->
-      <g style="fill: #a6abba" transform="translate(10.8 95.702038) scale(0.085 -0.085)">
+      <g style="fill: #a6abba" transform="translate(11.7475 95.702038) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-56" d="M 2285 -83 
 Q 1824 -83 1475 70 
@@ -969,7 +969,7 @@ z
      <g id="line2d_17"/>
      <g id="text_11">
       <!-- PR-AUC -->
-      <g style="fill: #a6abba" transform="translate(17.447266 64.783577) scale(0.085 -0.085)">
+      <g style="fill: #a6abba" transform="translate(18.394766 64.783577) scale(0.085 -0.085)">
        <use xlink:href="#BricolageGrotesque-Regular-6d"/>
        <use xlink:href="#BricolageGrotesque-Regular-70" transform="translate(62.203125 0)"/>
        <use xlink:href="#BricolageGrotesque-Regular-1c7" transform="translate(125.5 0)"/>
@@ -981,9 +981,9 @@ z
     </g>
    </g>
    <g id="line2d_18">
-    <path d="M 181.390306 184.504923 
-L 268.126638 184.504923 
-" clip-path="url(#pd8c4541fda)" style="fill: none; stroke: #5b84ea; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 182.337806 184.504923 
+L 269.074138 184.504923 
+" clip-path="url(#p74b01035a2)" style="fill: none; stroke: #5b84ea; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="line2d_19">
     <defs>
@@ -999,58 +999,58 @@ C -1.81853 3.131218 -0.928211 3.5 0 3.5
 z
 " style="stroke: #5b84ea"/>
     </defs>
-    <g clip-path="url(#pd8c4541fda)">
-     <use xlink:href="#m54c2f08976" x="228.296395" y="184.504923" style="fill: #5b84ea; stroke: #5b84ea"/>
+    <g clip-path="url(#p74b01035a2)">
+     <use xlink:href="#m54c2f08976" x="229.243895" y="184.504923" style="fill: #5b84ea; stroke: #5b84ea"/>
     </g>
    </g>
    <g id="line2d_20">
-    <path d="M 112.297867 153.586462 
-L 239.613311 153.586462 
-" clip-path="url(#pd8c4541fda)" style="fill: none; stroke: #5b84ea; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 113.245367 153.586462 
+L 240.560811 153.586462 
+" clip-path="url(#p74b01035a2)" style="fill: none; stroke: #5b84ea; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="line2d_21">
-    <g clip-path="url(#pd8c4541fda)">
-     <use xlink:href="#m54c2f08976" x="175.955589" y="153.586462" style="fill: #5b84ea; stroke: #5b84ea"/>
+    <g clip-path="url(#p74b01035a2)">
+     <use xlink:href="#m54c2f08976" x="176.903089" y="153.586462" style="fill: #5b84ea; stroke: #5b84ea"/>
     </g>
    </g>
    <g id="line2d_22">
-    <path d="M 253.270446 122.668 
-L 324.490455 122.668 
-" clip-path="url(#pd8c4541fda)" style="fill: none; stroke: #5b84ea; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 254.217946 122.668 
+L 325.437955 122.668 
+" clip-path="url(#p74b01035a2)" style="fill: none; stroke: #5b84ea; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="line2d_23">
-    <g clip-path="url(#pd8c4541fda)">
-     <use xlink:href="#m54c2f08976" x="296.742231" y="122.668" style="fill: #5b84ea; stroke: #5b84ea"/>
+    <g clip-path="url(#p74b01035a2)">
+     <use xlink:href="#m54c2f08976" x="297.689731" y="122.668" style="fill: #5b84ea; stroke: #5b84ea"/>
     </g>
    </g>
    <g id="line2d_24">
-    <path d="M 293.437247 91.749538 
-L 321.397038 91.749538 
-" clip-path="url(#pd8c4541fda)" style="fill: none; stroke: #5b84ea; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 294.384747 91.749538 
+L 322.344538 91.749538 
+" clip-path="url(#p74b01035a2)" style="fill: none; stroke: #5b84ea; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="line2d_25">
-    <g clip-path="url(#pd8c4541fda)">
-     <use xlink:href="#m54c2f08976" x="309.86098" y="91.749538" style="fill: #5b84ea; stroke: #5b84ea"/>
+    <g clip-path="url(#p74b01035a2)">
+     <use xlink:href="#m54c2f08976" x="310.80848" y="91.749538" style="fill: #5b84ea; stroke: #5b84ea"/>
     </g>
    </g>
    <g id="line2d_26">
-    <path d="M 217.745663 60.831077 
-L 298.336825 60.831077 
-" clip-path="url(#pd8c4541fda)" style="fill: none; stroke: #5b84ea; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 218.693163 60.831077 
+L 299.284325 60.831077 
+" clip-path="url(#p74b01035a2)" style="fill: none; stroke: #5b84ea; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="line2d_27">
-    <g clip-path="url(#pd8c4541fda)">
-     <use xlink:href="#m54c2f08976" x="260.693672" y="60.831077" style="fill: #5b84ea; stroke: #5b84ea"/>
+    <g clip-path="url(#p74b01035a2)">
+     <use xlink:href="#m54c2f08976" x="261.641172" y="60.831077" style="fill: #5b84ea; stroke: #5b84ea"/>
     </g>
    </g>
    <g id="patch_3">
-    <path d="M 53.945 203.056 
-L 324.490455 203.056 
+    <path d="M 54.8925 203.056 
+L 325.437955 203.056 
 " style="fill: none; stroke: #3d4250; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_12">
     <!-- 1,500 unseen rows with only 51 failures, so the intervals are wide. -->
-    <g style="fill: #a6abba" transform="translate(53.945 33.85) scale(0.09 -0.09)">
+    <g style="fill: #a6abba" transform="translate(54.8925 33.85) scale(0.09 -0.09)">
      <defs>
       <path id="BricolageGrotesque-Regular-1b6" d="M 13 -877 
 Q 128 -582 176 -342 
@@ -1352,7 +1352,7 @@ z
    </g>
    <g id="text_13">
     <!-- 0.822 -->
-    <g style="fill: #eceef3" transform="translate(274.619729 187.384923) scale(0.08 -0.08)">
+    <g style="fill: #eceef3" transform="translate(275.567229 187.384923) scale(0.08 -0.08)">
      <defs>
       <path id="JetBrainsMono-Regular-218" d="M 1920 -64 
 Q 1491 -64 1174 105 
@@ -1482,7 +1482,7 @@ z
    </g>
    <g id="text_14">
     <!-- [0.74, 0.90] -->
-    <g style="fill: #a6abba" transform="translate(306.003001 187.384923) scale(0.08 -0.08)">
+    <g style="fill: #a6abba" transform="translate(306.950501 187.384923) scale(0.08 -0.08)">
      <defs>
       <path id="JetBrainsMono-Regular-251" d="M 1312 -704 
 L 1312 5312 
@@ -1588,7 +1588,7 @@ z
    </g>
    <g id="text_15">
     <!-- 0.725 -->
-    <g style="fill: #eceef3" transform="translate(246.106402 156.466462) scale(0.08 -0.08)">
+    <g style="fill: #eceef3" transform="translate(247.053902 156.466462) scale(0.08 -0.08)">
      <defs>
       <path id="JetBrainsMono-Regular-21d" d="M 1907 -64 
 Q 1338 -64 973 230 
@@ -1630,7 +1630,7 @@ z
    </g>
    <g id="text_16">
     <!-- [0.61, 0.84] -->
-    <g style="fill: #a6abba" transform="translate(277.489675 156.466462) scale(0.08 -0.08)">
+    <g style="fill: #a6abba" transform="translate(278.437175 156.466462) scale(0.08 -0.08)">
      <defs>
       <path id="JetBrainsMono-Regular-21e" d="M 1926 -64 
 Q 1478 -64 1142 125 
@@ -1693,7 +1693,7 @@ z
    </g>
    <g id="text_17">
     <!-- 0.949 -->
-    <g style="fill: #eceef3" transform="translate(330.983545 125.548) scale(0.08 -0.08)">
+    <g style="fill: #eceef3" transform="translate(331.931045 125.548) scale(0.08 -0.08)">
      <use xlink:href="#JetBrainsMono-Regular-218"/>
      <use xlink:href="#JetBrainsMono-Regular-23b" transform="translate(60 0)"/>
      <use xlink:href="#JetBrainsMono-Regular-221" transform="translate(120 0)"/>
@@ -1703,7 +1703,7 @@ z
    </g>
    <g id="text_18">
     <!-- [0.87, 1.00] -->
-    <g style="fill: #a6abba" transform="translate(362.366818 125.548) scale(0.08 -0.08)">
+    <g style="fill: #a6abba" transform="translate(363.314318 125.548) scale(0.08 -0.08)">
      <use xlink:href="#JetBrainsMono-Regular-251"/>
      <use xlink:href="#JetBrainsMono-Regular-218" transform="translate(60 0)"/>
      <use xlink:href="#JetBrainsMono-Regular-23b" transform="translate(120 0)"/>
@@ -1720,7 +1720,7 @@ z
    </g>
    <g id="text_19">
     <!-- 0.973 -->
-    <g style="fill: #eceef3" transform="translate(327.890129 94.629538) scale(0.08 -0.08)">
+    <g style="fill: #eceef3" transform="translate(328.837629 94.629538) scale(0.08 -0.08)">
      <defs>
       <path id="JetBrainsMono-Regular-21b" d="M 1850 -64 
 Q 1427 -64 1110 105 
@@ -1761,7 +1761,7 @@ z
    </g>
    <g id="text_20">
     <!-- [0.94, 0.99] -->
-    <g style="fill: #a6abba" transform="translate(359.273401 94.629538) scale(0.08 -0.08)">
+    <g style="fill: #a6abba" transform="translate(360.220901 94.629538) scale(0.08 -0.08)">
      <use xlink:href="#JetBrainsMono-Regular-251"/>
      <use xlink:href="#JetBrainsMono-Regular-218" transform="translate(60 0)"/>
      <use xlink:href="#JetBrainsMono-Regular-23b" transform="translate(120 0)"/>
@@ -1778,7 +1778,7 @@ z
    </g>
    <g id="text_21">
     <!-- 0.882 -->
-    <g style="fill: #eceef3" transform="translate(304.829916 63.711077) scale(0.08 -0.08)">
+    <g style="fill: #eceef3" transform="translate(305.777416 63.711077) scale(0.08 -0.08)">
      <use xlink:href="#JetBrainsMono-Regular-218"/>
      <use xlink:href="#JetBrainsMono-Regular-23b" transform="translate(60 0)"/>
      <use xlink:href="#JetBrainsMono-Regular-220" transform="translate(120 0)"/>
@@ -1788,7 +1788,7 @@ z
    </g>
    <g id="text_22">
     <!-- [0.80, 0.95] -->
-    <g style="fill: #a6abba" transform="translate(336.213189 63.711077) scale(0.08 -0.08)">
+    <g style="fill: #a6abba" transform="translate(337.160689 63.711077) scale(0.08 -0.08)">
      <use xlink:href="#JetBrainsMono-Regular-251"/>
      <use xlink:href="#JetBrainsMono-Regular-218" transform="translate(60 0)"/>
      <use xlink:href="#JetBrainsMono-Regular-23b" transform="translate(120 0)"/>
@@ -1804,8 +1804,8 @@ z
     </g>
    </g>
    <g id="text_23">
-    <!-- Test metrics with 95 % bootstrap intervals -->
-    <g style="fill: #eceef3" transform="translate(53.945 21.03) scale(0.11 -0.11)">
+    <!-- Test metrics with 95% bootstrap intervals -->
+    <g style="fill: #eceef3" transform="translate(54.8925 21.03) scale(0.11 -0.11)">
      <defs>
       <path id="BricolageGrotesque-SemiBold-7a" d="M 1395 0 
 L 1395 4224 
@@ -2465,35 +2465,34 @@ z
      <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(831.203125 0)"/>
      <use xlink:href="#BricolageGrotesque-SemiBold-153" transform="translate(855.109375 0)"/>
      <use xlink:href="#BricolageGrotesque-SemiBold-14f" transform="translate(919.90625 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(980.5 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-223" transform="translate(1004.40625 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(1100.703125 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-bb" transform="translate(1124.609375 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-fa" transform="translate(1187.609375 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-fa" transform="translate(1248.40625 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-11e" transform="translate(1309.203125 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-118" transform="translate(1348.203125 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-11e" transform="translate(1402.203125 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-114" transform="translate(1441.203125 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-a3" transform="translate(1482.8125 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-111" transform="translate(1540.515625 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(1603.515625 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-dd" transform="translate(1627.421875 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-f4" transform="translate(1654.328125 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-11e" transform="translate(1716.328125 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-c5" transform="translate(1754.921875 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-114" transform="translate(1812.625 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-134" transform="translate(1857.625 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-a3" transform="translate(1912.328125 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-ee" transform="translate(1970.03125 0)"/>
-     <use xlink:href="#BricolageGrotesque-SemiBold-118" transform="translate(1996.734375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-223" transform="translate(979.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(1076.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-bb" transform="translate(1100.109375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-fa" transform="translate(1163.109375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-fa" transform="translate(1223.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-11e" transform="translate(1284.703125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-118" transform="translate(1323.703125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-11e" transform="translate(1377.703125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-114" transform="translate(1416.703125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-a3" transform="translate(1458.3125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-111" transform="translate(1516.015625 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(1579.015625 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-dd" transform="translate(1602.921875 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-f4" transform="translate(1629.828125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-11e" transform="translate(1691.828125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-c5" transform="translate(1730.421875 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-114" transform="translate(1788.125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-134" transform="translate(1833.125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-a3" transform="translate(1887.828125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-ee" transform="translate(1945.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-118" transform="translate(1972.234375 0)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="pd8c4541fda">
-   <rect x="53.945" y="42.28" width="357.12" height="160.776"/>
+  <clipPath id="p74b01035a2">
+   <rect x="54.8925" y="42.28" width="357.12" height="160.776"/>
   </clipPath>
  </defs>
 </svg>

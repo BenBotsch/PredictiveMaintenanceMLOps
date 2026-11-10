@@ -2,11 +2,13 @@
 
 The style, the fonts and the files come from ``figkit``, the figure style shared by all my
 projects: every figure is written as ``<name>.svg``, ``<name>-dark.svg``, ``<name>.png`` and
-``<name>-dark.png`` with a transparent background, and the social card as an opaque 1200 x 630
-``card.png`` and ``card-dark.png``. Text uses the ink colours, never a series colour, and every
-chart with two or more series has a legend.
+``<name>-dark.png`` with a transparent background on a fixed 6.4 in canvas, and the social card as
+an opaque 1200 x 630 ``card.png`` and ``card-dark.png``. Text uses the ink colours, never a series
+colour, and every chart with two or more series has a legend. Tiles and boxes are a light tint
+without an edge or a coloured stripe.
 """
 
+import math
 from collections.abc import Callable, Sequence
 from functools import partial
 from pathlib import Path
@@ -17,7 +19,8 @@ import numpy as np
 from figkit import Theme
 from matplotlib.axes import Axes
 from matplotlib.figure import Figure
-from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Rectangle
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
+from matplotlib.ticker import FixedLocator, FuncFormatter, NullLocator
 
 from pmm.drift import ALERT, WARN
 from pmm.report import LABELS, Evaluation
@@ -29,6 +32,17 @@ CANDIDATE_SLOT = {
     "logistic + features": 2,
     "logistic": 3,
 }
+# Slots 2 and 3, green and yellow, have little contrast on a light page and get a second encoding.
+LINESTYLE: tuple[str | tuple[float, tuple[float, float]], ...] = ("-", "-", "--", (0, (1, 1.6)))
+# Names of the inputs in figures, with their units; the code names stay in tables and the API.
+FEATURE_LABELS = {
+    "type": "Product type",
+    "air_temp_k": "Air temperature (K)",
+    "process_temp_k": "Process temperature (K)",
+    "rotational_speed_rpm": "Rotational speed (rpm)",
+    "torque_nm": "Torque (Nm)",
+    "tool_wear_min": "Tool wear (min)",
+}
 WIDTH = figkit.WEB_WIDTH
 
 Draw = Callable[[Evaluation, Theme], Figure]
@@ -39,10 +53,31 @@ def _font(key: str) -> float:
     return size
 
 
+def feature_label(name: str) -> str:
+    """Readable name of an input with its unit, or the name itself if it has none."""
+    return FEATURE_LABELS.get(name, name)
+
+
+def wilson(detected: int, total: int, z: float = 1.96) -> tuple[float, float]:
+    """Wilson score interval of a share; it stays inside 0..1 and holds up for few cases.
+
+    Raises:
+        ValueError: If there is no case to take a share of.
+    """
+    if total <= 0:
+        msg = "a share needs at least one case"
+        raise ValueError(msg)
+    share = detected / total
+    scale = 1 + z**2 / total
+    centre = (share + z**2 / (2 * total)) / scale
+    half = z * math.sqrt(share * (1 - share) / total + z**2 / (4 * total**2)) / scale
+    return max(0.0, centre - half), min(1.0, centre + half)
+
+
 def _arrow(ax: Axes, start: tuple[float, float], end: tuple[float, float], theme: Theme) -> None:
     ax.add_patch(
         FancyArrowPatch(
-            start, end, arrowstyle="-|>", mutation_scale=10, color=theme.muted, linewidth=1.2
+            start, end, arrowstyle="-|>", mutation_scale=14, color=theme.muted, linewidth=1.4
         )
     )
 
@@ -50,11 +85,12 @@ def _arrow(ax: Axes, start: tuple[float, float], end: tuple[float, float], theme
 def pipeline(_: Evaluation, theme: Theme) -> Figure:
     """The path of the model, from the pinned dataset to the monitored API."""
     figure, ax = plt.subplots(figsize=(WIDTH, 3.3))
+    figure.subplots_adjust(left=0.01, right=0.99, bottom=0.02)
     figkit.title(
         ax,
         "From pinned data to a monitored API",
         theme,
-        subtitle="Training writes to MLflow; serving reads only the exported bundle.",
+        subtitle="Training writes to MLflow, serving reads only the exported bundle.",
     )
     ax.set_xlim(0, 100)
     ax.set_ylim(0, 50)
@@ -65,10 +101,10 @@ def pipeline(_: Evaluation, theme: Theme) -> Figure:
             37,
             theme.series[0],
             (
-                ("Pinned data", "AI4I 2020\nSHA-256 checked"),
-                ("4 candidates", "MLflow runs\nselected on PR-AUC"),
+                ("Pinned data", "AI4I 2020,\nSHA-256 checked"),
+                ("4 candidates", "MLflow runs,\nbest PR-AUC wins"),
                 ("Registry", "champion alias\nonly if not worse"),
-                ("Export", "skops bundle\nno pickle"),
+                ("Export", "skops bundle,\nno pickle"),
             ),
         ),
         (
@@ -77,12 +113,13 @@ def pipeline(_: Evaluation, theme: Theme) -> Figure:
             theme.series[2],
             (
                 ("Bundle", "model, threshold,\ndrift reference"),
-                ("FastAPI", "/predict, /drift\nnon-root Docker"),
+                ("FastAPI", "/predict, /drift,\nnon-root Docker"),
                 ("Monitoring", "/metrics, PSI,\nJSON request logs"),
             ),
         ),
     )
-    width, height, gap, start = 20, 20, 3.6, 6
+    # A tile is a light tint of its lane, without an edge or a coloured stripe.
+    width, height, gap, start = 21.5, 20, 3, 5
     for lane, y, colour, steps in lanes:
         ax.text(
             0,
@@ -103,18 +140,13 @@ def pipeline(_: Evaluation, theme: Theme) -> Figure:
                     height,
                     boxstyle="round,pad=0,rounding_size=1.2",
                     facecolor=colour,
-                    alpha=0.14,
+                    alpha=0.12,
                     edgecolor="none",
                 )
             )
-            ax.add_patch(
-                Rectangle(
-                    (x, y - height / 2 + 2), 0.7, height - 4, facecolor=colour, edgecolor="none"
-                )
-            )
-            ax.text(x + 2.4, y + 4.6, step, fontweight="semibold", va="center")
+            ax.text(x + 2, y + 4.6, step, fontweight="semibold", va="center")
             ax.text(
-                x + 2.4,
+                x + 2,
                 y - 3,
                 detail,
                 fontsize=_font("annotation"),
@@ -123,7 +155,7 @@ def pipeline(_: Evaluation, theme: Theme) -> Figure:
                 linespacing=1.4,
             )
             if i:
-                _arrow(ax, (x - gap + 0.4, y), (x - 0.4, y), theme)
+                _arrow(ax, (x - gap + 0.3, y), (x - 0.3, y), theme)
     # The exported bundle is what serving receives: an elbow from Export down to Bundle.
     top, bottom = lanes[0][1] - height / 2, lanes[1][1] + height / 2
     export_x = start + 3 * (width + gap) + width / 2
@@ -133,7 +165,7 @@ def pipeline(_: Evaluation, theme: Theme) -> Figure:
         [export_x, export_x, bundle_x],
         [top - 0.5, middle, middle],
         color=theme.muted,
-        linewidth=1.2,
+        linewidth=1.4,
         solid_joinstyle="round",
     )
     _arrow(ax, (bundle_x, middle), (bundle_x, bottom + 0.5), theme)
@@ -145,7 +177,7 @@ def test_metrics(ev: Evaluation, theme: Theme) -> Figure:
     figure, ax = plt.subplots(figsize=(WIDTH, 2.9))
     figkit.title(
         ax,
-        "Test metrics with 95 % bootstrap intervals",
+        "Test metrics with 95% bootstrap intervals",
         theme,
         subtitle=f"{ev.test_rows:,} unseen rows with only {ev.test_failures} failures, "
         "so the intervals are wide.",
@@ -177,23 +209,26 @@ def test_metrics(ev: Evaluation, theme: Theme) -> Figure:
 
 def pr_curves(ev: Evaluation, theme: Theme) -> Figure:
     """Validation precision-recall curves of the four candidates."""
-    figure, ax = plt.subplots(figsize=(WIDTH, 3.6))
+    figure, ax = plt.subplots(figsize=(WIDTH, 4.0))
     figkit.title(
         ax,
         "Boosted trees with physics features win on validation",
         theme,
-        subtitle="Interpolated precision per candidate; the highest PR-AUC is registered.",
+        subtitle="Interpolated precision per candidate, the highest PR-AUC is registered.",
     )
     for curve in sorted(ev.candidates, key=lambda c: CANDIDATE_SLOT[c.name], reverse=True):
+        slot = CANDIDATE_SLOT[curve.name]
         # Interpolated precision: the best precision at this recall or more, the usual PR view.
         precision = np.maximum.accumulate(curve.precision)
         ax.plot(
             curve.recall,
             precision,
-            color=theme.series[CANDIDATE_SLOT[curve.name]],
+            color=theme.series[slot],
             drawstyle="steps-post",
-            label=f"{curve.name}\nPR-AUC {curve.pr_auc:.3f}",
-            zorder=3 if CANDIDATE_SLOT[curve.name] == 0 else 2,
+            linestyle=LINESTYLE[slot],
+            linewidth=2.4 if slot == 0 else 1.8,
+            label=f"{curve.name}   PR-AUC {curve.pr_auc:.3f}",
+            zorder=4 - slot,
         )
     figkit.reference_line(
         ax,
@@ -211,15 +246,16 @@ def pr_curves(ev: Evaluation, theme: Theme) -> Figure:
     figkit.percent(ax, "y")
     figkit.grid(ax, "y")
     handles, labels = ax.get_legend_handles_labels()
-    order = sorted(range(len(labels)), key=lambda i: CANDIDATE_SLOT[labels[i].split("\n")[0]])
-    # The curves fill the plot, so the legend stands beside it.
-    figure.subplots_adjust(right=0.72)
+    order = sorted(range(len(labels)), key=lambda i: CANDIDATE_SLOT[labels[i].split("   ")[0]])
+    # The curves cross the whole plot, so the legend sits below it, in two columns.
     ax.legend(
         [handles[i] for i in order],
         [labels[i] for i in order],
-        loc="center left",
-        bbox_to_anchor=(1.03, 0.5),
-        labelspacing=1.1,
+        loc="upper left",
+        bbox_to_anchor=(-0.02, -0.2),
+        ncols=2,
+        handlelength=2.2,
+        columnspacing=1.6,
     )
     return figure
 
@@ -230,13 +266,14 @@ def confusion(ev: Evaluation, theme: Theme) -> Figure:
     found = c["true_positive"]
     failures = found + c["false_negative"]
     figure, ax = plt.subplots(figsize=(WIDTH, 3.4))
+    figure.subplots_adjust(left=0.01, right=0.99, bottom=0.02)
     figkit.title(
         ax,
         f"{found} of {failures} failures found, {c['false_positive']} false alarms",
         theme,
         subtitle=f"Test split at threshold {ev.threshold:.3f}, chosen on validation data.",
     )
-    ax.set_xlim(-0.62, 2)
+    ax.set_xlim(-0.42, 2)
     ax.set_ylim(0, 2.14)
     ax.axis("off")
     right, wrong = theme.series[0], theme.series[1]
@@ -249,31 +286,31 @@ def confusion(ev: Evaluation, theme: Theme) -> Figure:
     for col, row, count, text, colour in cells:
         ax.add_patch(
             FancyBboxPatch(
-                (col + 0.015, row + 0.025),
-                0.97,
+                (col + 0.012, row + 0.025),
+                0.976,
                 0.95,
                 boxstyle="round,pad=0,rounding_size=0.04",
                 facecolor=colour,
-                alpha=0.16,
+                alpha=0.14,
                 edgecolor="none",
             )
         )
-        figkit.value(
-            ax,
+        # Large numbers in the text face: mono gives the comma a full cell and splits 1,447.
+        ax.text(
             col + 0.5,
             row + 0.58,
             f"{count:,}",
-            theme,
             ha="center",
             va="center",
             fontsize=20,
             fontweight="semibold",
+            color=theme.ink,
         )
         ax.text(col + 0.5, row + 0.3, text, ha="center", va="center", color=theme.secondary)
     for x, label in ((0.5, "predicted: normal"), (1.5, "predicted: failure")):
         ax.text(x, 2.03, label, ha="center", va="bottom", color=theme.secondary)
     for y, label in ((1.5, "actual:\nnormal"), (0.5, "actual:\nfailure")):
-        ax.text(-0.05, y, label, ha="right", va="center", color=theme.secondary)
+        ax.text(-0.04, y, label, ha="right", va="center", color=theme.secondary)
     return figure
 
 
@@ -284,57 +321,84 @@ def threshold_sweep(ev: Evaluation, theme: Theme) -> Figure:
         ax,
         "The threshold trades missed failures against false alarms",
         theme,
-        subtitle="Validation split; serving uses the threshold with the highest F1.",
+        subtitle="Validation split, serving uses the threshold with the highest F1.",
     )
     sweep = ev.sweep
-    for slot, key in enumerate(("precision", "recall", "f1")):
+    names = {"precision": LABELS["precision"], "recall": LABELS["recall"], "f1": "F1"}
+    at = {key: float(np.interp(ev.threshold, sweep["threshold"], sweep[key])) for key in names}
+    # At a threshold of 1 nothing is flagged and the curves fall to zero; the labels sit at the
+    # right edge with the values just before that fall.
+    last = 0.95
+    ends = []
+    for slot, (key, name) in enumerate(names.items()):
+        ax.plot(sweep["threshold"], sweep[key], color=theme.series[slot], label=name)
         ax.plot(
-            sweep["threshold"],
-            sweep[key],
+            ev.threshold,
+            at[key],
+            "o",
+            markersize=7,
             color=theme.series[slot],
-            label=LABELS[key] if key != "f1" else "F1",
+            markeredgecolor=theme.surface,
+            markeredgewidth=1.5,
+            zorder=4,
         )
+        ends.append((1.0, float(np.interp(last, sweep["threshold"], sweep[key])), name))
     figkit.reference_line(
-        ax, ev.threshold, f"served threshold {ev.threshold:.3f}", theme, where=0.12, side="left"
+        ax,
+        ev.threshold,
+        f"served threshold {ev.threshold:.3f}\n"
+        f"precision {at['precision']:.2f}, recall {at['recall']:.2f}, F1 {at['f1']:.2f}",
+        theme,
+        where=0.36,
+        side="left",
     )
     ax.set_xlabel("Decision threshold on the failure probability")
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1.04)
     figkit.percent(ax)
     figkit.grid(ax, "y")
-    ax.legend(loc="lower center", ncols=3, bbox_to_anchor=(0.4, 0.2))
+    figkit.line_labels(ax, ends, theme)
+    ax.legend(loc="lower left", ncols=3)
     return figure
 
 
 def failure_modes(ev: Evaluation, theme: Theme) -> Figure:
-    """Recall per failure mode on the test split."""
-    modes = [m for m in ev.modes if m.total]
-    absent = [m.mode for m in ev.modes if not m.total]
-    note = f" No {', '.join(absent)} failure in the test split." if absent else ""
-    figure, ax = plt.subplots(figsize=(WIDTH, 2.7))
+    """Recall per failure mode on the test split, with Wilson intervals."""
+    figure, ax = plt.subplots(figsize=(WIDTH, 2.8))
     figkit.title(
         ax,
         "Rule-based failures are found, tool wear mostly is not",
         theme,
-        subtitle=f"Share of test failures flagged, by recorded failure mode.{note}",
+        subtitle="Share of test failures flagged per mode, with 95% Wilson interval.",
     )
-    items = list(reversed(modes))
-    shares = [m.detected / m.total for m in items]
-    bars = ax.barh(range(len(items)), shares, height=0.56, color=theme.series[0])
-    figkit.bar_labels(
-        ax,
-        bars,
-        theme,
-        labels=[
-            f"{share:.0%}  ({m.detected} of {m.total})"
-            for m, share in zip(items, shares, strict=True)
-        ],
-    )
+    items = list(reversed(ev.modes))
+    colour = theme.series[0]
+    for y, m in enumerate(items):
+        if not m.total:
+            # A mode without a case keeps its row, so the figure lists every recorded mode.
+            ax.text(
+                0.01,
+                y,
+                "no case in the test split",
+                va="center",
+                fontsize=_font("annotation"),
+                color=theme.secondary,
+            )
+            continue
+        low, high = wilson(m.detected, m.total)
+        share = m.detected / m.total
+        ax.plot([low, high], [y, y], color=colour, linewidth=3, alpha=0.35)
+        ax.plot(share, y, "o", markersize=7, color=colour)
+        figkit.value(ax, 1.1, y, f"{share:.0%}", theme, va="center", ha="right")
+        figkit.value(
+            ax, 1.12, y, f"{m.detected} of {m.total}", theme, va="center", color=theme.secondary
+        )
     labels = [f"{m.name} ({m.mode})" if m.mode != "none" else m.name for m in items]
     ax.set_yticks(range(len(items)), labels)
     ax.set_xlim(0, 1.25)
     ax.set_xticks([0, 0.25, 0.5, 0.75, 1.0])
     ax.spines["bottom"].set_bounds(0, 1.0)
+    ax.set_ylim(-0.6, len(items) - 0.4)
     figkit.percent(ax, "x")
     figkit.category_axis(ax, "y")
     figkit.grid(ax, "x")
@@ -352,64 +416,100 @@ def importance(ev: Evaluation, theme: Theme) -> Figure:
     )
     items = list(reversed(ev.importance))
     ax.barh(range(len(items)), [i.mean for i in items], height=0.56, color=theme.series[0])
+    # The spread in ink, so that it reads on the bar and beyond its end.
     ax.errorbar(
         [i.mean for i in items],
         range(len(items)),
         xerr=[i.std for i in items],
         fmt="none",
-        ecolor=theme.secondary,
+        ecolor=theme.ink,
         elinewidth=1,
         capsize=3,
     )
+    reach = max(i.mean + i.std for i in items)
     for y, item in enumerate(items):
-        figkit.value(ax, item.mean + item.std + 0.015, y, f"{item.mean:.2f}", theme, va="center")
-    ax.set_yticks(range(len(items)), [i.feature for i in items])
-    figkit.mono_ticks(ax, "y")
-    ax.set_xlim(0, max(i.mean + i.std for i in items) * 1.15)
+        x = item.mean + item.std + reach * 0.03
+        figkit.value(ax, x, y, f"{item.mean:.2f}", theme, va="center")
+    ax.set_yticks(range(len(items)), [feature_label(i.feature) for i in items])
+    ax.set_xlim(0, reach * 1.15)
     figkit.category_axis(ax, "y")
     figkit.grid(ax, "x")
     return figure
 
 
 def drift(ev: Evaluation, theme: Theme) -> Figure:
-    """PSI per feature for the unchanged test split and for shifted torque."""
+    """PSI per feature for the unchanged test split and for shifted torque, on a log scale."""
     shifted = next(name for name in ev.drift if name != "test split")
     worst = max(ev.drift[shifted].items(), key=lambda kv: kv[1])
-    figure, ax = plt.subplots(figsize=(WIDTH, 3.3))
+    figure, ax = plt.subplots(figsize=(WIDTH, 3.1))
     figkit.title(
         ax,
         "A miscalibrated torque sensor raises a drift alert",
         theme,
-        subtitle=f"Population stability index per input against the training data; "
-        f"{shifted} gives PSI {worst[1]:.2f}.",
+        subtitle="Population stability index per input against the training data, log scale.",
     )
-    features = list(ev.drift["test split"])
-    features.sort(key=lambda f: ev.drift[shifted][f])
-    height = 0.36
-    for slot, (name, offset) in enumerate((("test split", height / 2), (shifted, -height / 2))):
-        ax.barh(
-            [y + offset for y in range(len(features))],
-            [ev.drift[name][f] for f in features],
-            height=height - 0.04,
-            color=theme.series[slot],
-            label=name,
+    features = sorted(ev.drift["test split"], key=lambda f: ev.drift[shifted][f])
+    smallest = min(v for scores in ev.drift.values() for v in scores.values() if v > 0)
+    low, high = min(0.002, smallest / 1.5), 1.0
+    # Status zones instead of two thin lines; their labels stay in the text colour.
+    ax.axvspan(WARN, ALERT, color=theme.status["warning"], alpha=0.14, linewidth=0, zorder=0)
+    ax.axvspan(ALERT, high, color=theme.status["critical"], alpha=0.10, linewidth=0, zorder=0)
+    for start, label in ((WARN, f"warn ≥ {WARN:g}"), (ALERT, f"alert ≥ {ALERT:g}")):
+        ax.text(
+            start * 1.08,
+            0.99,
+            label,
+            transform=ax.get_xaxis_transform(),
+            va="top",
+            fontsize=_font("annotation"),
+            color=theme.secondary,
+        )
+    for y, feature in enumerate(features):
+        # A PSI of 0 has no place on a log axis; it is drawn at the left edge.
+        test = max(ev.drift["test split"][feature], low)
+        moved = max(ev.drift[shifted][feature], low)
+        if moved > test * 1.05:
+            ax.plot([test, moved], [y, y], color=theme.muted, linewidth=1, linestyle=(0, (2, 2)))
+        ax.plot(
+            test,
+            y,
+            "o",
+            markersize=11,
+            markerfacecolor="none",
+            markeredgecolor=theme.series[0],
+            markeredgewidth=2,
             zorder=3,
+            label="test split" if y == 0 else None,
         )
-    for limit, status, label in ((WARN, "warning", "warn"), (ALERT, "critical", "alert")):
-        figkit.reference_line(
-            ax, limit, f"{label} {limit:g}", theme, colour=theme.status[status], where=1.0
+        ax.plot(
+            moved,
+            y,
+            "o",
+            markersize=6,
+            color=theme.status["critical"] if moved >= ALERT else theme.ink,
+            zorder=4,
+            label=shifted if y == 0 else None,
         )
-    y_worst = features.index(worst[0]) - height / 2
     figkit.value(
-        ax, worst[1] + 0.01, y_worst, f"{worst[1]:.2f}", theme, va="center", fontweight="semibold"
+        ax,
+        worst[1] * 1.15,
+        features.index(worst[0]),
+        f"{worst[1]:.2f}",
+        theme,
+        va="center",
+        ha="left",
+        fontweight="semibold",
     )
-    ax.set_yticks(range(len(features)), features)
-    figkit.mono_ticks(ax, "y")
-    ax.set_xlim(0, max(0.35, worst[1] * 1.15))
-    ax.set_ylim(-0.6, len(features) - 0.1)
+    ax.set_xscale("log")
+    ax.set_xlim(low, high)
+    ax.xaxis.set_major_locator(FixedLocator([0.003, 0.01, 0.03, WARN, ALERT, 1.0]))
+    ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:g}"))
+    ax.xaxis.set_minor_locator(NullLocator())
+    ax.set_yticks(range(len(features)), [feature_label(f) for f in features])
+    ax.set_ylim(-0.6, len(features) - 0.2)
     figkit.category_axis(ax, "y")
     figkit.grid(ax, "x")
-    ax.legend(loc="lower right")
+    ax.legend(loc="lower right", handletextpad=0.4)
     return figure
 
 
@@ -435,12 +535,15 @@ def card(ev: Evaluation, theme: Theme) -> Figure:
     normal = c["true_negative"] + c["false_positive"]
     shifted = max(v for k, d in ev.drift.items() if k != "test split" for v in d.values())
     tiles = (
-        ("Test PR-AUC", f"{pr_auc.value:.2f}", f"95 % CI {pr_auc.low:.2f} to {pr_auc.high:.2f}"),
+        ("Test PR-AUC", f"{pr_auc.value:.2f}", f"95% CI {pr_auc.low:.2f} to {pr_auc.high:.2f}"),
         ("Failures found", f"{c['true_positive']}/{failures}", f"on {ev.test_rows:,} operations"),
         ("False alarms", f"{c['false_positive']}", f"among {normal:,} normal runs"),
         ("Drift alert", f"PSI {shifted:.2f}", "torque sensor +8 Nm"),
     )
     width, gap, x0 = 25.5, 2.4, 6
+    # The card surface is the lighter page colour, so the tiles take the other one: a quiet
+    # tile without an edge, the numbers are the accent.
+    tile = theme.pages[0] if theme.surface != theme.pages[0] else theme.grid
     for i, (label, number, note) in enumerate(tiles):
         x = x0 + i * (width + gap)
         ax.add_patch(
@@ -449,12 +552,12 @@ def card(ev: Evaluation, theme: Theme) -> Figure:
                 width,
                 23,
                 boxstyle="round,pad=0,rounding_size=2",
-                facecolor=theme.ramp[1],
+                facecolor=tile,
                 edgecolor="none",
             )
         )
         ax.text(x + 2, 31.5, label, fontsize=11, color=theme.secondary, va="center")
-        ax.text(x + 2, 24, number, fontsize=21, fontfamily=figkit.mono(), va="center")
+        ax.text(x + 2, 24, number, fontsize=22, fontweight="semibold", va="center")
         ax.text(x + 2, 17, note, fontsize=9, color=theme.secondary, va="center")
     ax.text(
         6,

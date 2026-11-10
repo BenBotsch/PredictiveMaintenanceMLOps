@@ -131,3 +131,17 @@ def test_figures_are_written_in_both_themes_as_transparent_svg_and_png(
         assert chart.convert("RGBA").getpixel((0, 0))[3] == 0  # type: ignore[index]
     # Pairs, transparency and file sizes, as `figkit check` tests them in CI.
     assert check(tmp_path / "figures") == []
+
+
+def test_wilson_interval_stays_inside_zero_and_one_for_few_cases() -> None:
+    assert figures.wilson(1, 4) == pytest.approx((0.0456, 0.6994), abs=1e-4)
+    low, high = figures.wilson(0, 2)
+    assert low == 0
+    assert 0 < high < 1
+    assert figures.wilson(13, 13)[1] == 1
+    with pytest.raises(ValueError, match="at least one case"):
+        figures.wilson(0, 0)
+
+
+def test_every_input_has_a_readable_figure_label() -> None:
+    assert set(figures.FEATURE_LABELS) == {*NUMERIC, "type"}

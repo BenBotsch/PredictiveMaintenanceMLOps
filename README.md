@@ -8,7 +8,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/figures/card-dark.png">
-  <img alt="Test PR-AUC 0.88 (95 % interval 0.80 to 0.95), 37 of 51 failures found with 2 false alarms on 1,500 unseen operations, drift alert at PSI 0.59 for a torque sensor shifted by 8 Nm." src="docs/figures/card.png">
+  <img alt="Test PR-AUC 0.88 (95% interval 0.80 to 0.95), 37 of 51 failures found with 2 false alarms on 1,500 unseen operations, drift alert at PSI 0.59 for a torque sensor shifted by 8 Nm." src="docs/figures/card.png">
 </picture>
 
 Predicts machine failures in milling operations on the AI4I 2020 dataset and carries the model
@@ -62,7 +62,7 @@ are stored in [results/report.json](results/report.json) and
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/figures/pr-curves-dark.svg">
-  <img alt="Precision-recall curves of four candidates on the validation split. Gradient boosting with features stays highest across recall, logistic regression with and without features stays far below." src="docs/figures/pr-curves.svg">
+  <img alt="Precision-recall curves of four candidates on the validation split. Gradient boosting with features stays highest across recall with PR-AUC 0.859, logistic regression with and without features, drawn dashed and dotted, stays far below." src="docs/figures/pr-curves.svg">
 </picture>
 
 | Candidate | Val PR-AUC | Val F1 |
@@ -81,7 +81,7 @@ cannot express.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/figures/test-metrics-dark.svg">
-  <img alt="Dot and whisker chart of the five test metrics with 95 % bootstrap intervals: PR-AUC 0.882, ROC-AUC 0.973, precision 0.949, recall 0.725, F1 0.822." src="docs/figures/test-metrics.svg">
+  <img alt="Dot and whisker chart of the five test metrics with 95% bootstrap intervals: PR-AUC 0.882, ROC-AUC 0.973, precision 0.949, recall 0.725, F1 0.822." src="docs/figures/test-metrics.svg">
 </picture>
 
 | Metric | Test | 95 % interval |
@@ -111,7 +111,7 @@ one otherwise.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/figures/threshold-dark.svg">
-  <img alt="Precision, recall and F1 over the decision threshold on the validation split. F1 is flat between about 0.1 and 0.95; the served threshold 0.781 is marked." src="docs/figures/threshold.svg">
+  <img alt="Precision, recall and F1 over the decision threshold on the validation split. F1 is flat between about 0.1 and 0.95; the served threshold 0.781 is marked with precision 0.97, recall 0.73 and F1 0.83." src="docs/figures/threshold.svg">
 </picture>
 
 F1 is nearly flat between 0.1 and 0.95, so the choice of threshold is a business decision rather
@@ -123,7 +123,7 @@ would not need a new model.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/figures/failure-modes-dark.svg">
-  <img alt="Share of test failures flagged by failure mode: heat dissipation 13 of 13, overstrain 16 of 18, power 11 of 18, tool wear 1 of 4, no recorded mode 0 of 2." src="docs/figures/failure-modes.svg">
+  <img alt="Share of test failures flagged by failure mode, with 95% Wilson intervals: heat dissipation 13 of 13, overstrain 16 of 18, power 11 of 18, tool wear 1 of 4, no recorded mode 0 of 2. The test split has no random failure." src="docs/figures/failure-modes.svg">
 </picture>
 
 | Failure mode | Detected | Recall |
@@ -187,7 +187,7 @@ The [model card](docs/model_card.md) sums up purpose, data, metrics and limits i
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/figures/drift-dark.svg">
-  <img alt="Population stability index per input against the training data. On the test split all inputs stay below 0.01. With torque shifted by 8 Nm, torque reaches 0.59, above the alert line at 0.25, while the other inputs are unchanged." src="docs/figures/drift.svg">
+  <img alt="Population stability index per input against the training data, on a log scale with warn and alert zones. On the test split all inputs stay below 0.01. With torque shifted by 8 Nm, torque reaches 0.59, inside the alert zone from 0.25, while the other inputs are unchanged." src="docs/figures/drift.svg">
 </picture>
 
 The bundle keeps the decile edges of every numeric feature in the training data. `/drift` and

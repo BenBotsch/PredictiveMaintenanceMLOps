@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="481.964828pt" height="219.468pt" viewBox="0 0 481.964828 219.468" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="460.8pt" height="225.012pt" viewBox="0 0 460.8 225.012" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -15,30 +15,30 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M -0 219.468 
-L 481.964828 219.468 
-L 481.964828 0 
-L -0 0 
-L -0 219.468 
+   <path d="M 0 225.012 
+L 460.8 225.012 
+L 460.8 0 
+L 0 0 
+L 0 225.012 
 z
 " style="fill: none"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 105.668828 191.968 
-L 462.788828 191.968 
-L 462.788828 42.28 
-L 105.668828 42.28 
-L 105.668828 191.968 
+    <path d="M 107.17125 197.512 
+L 445.132367 197.512 
+L 445.132367 42.28 
+L 107.17125 42.28 
+L 107.17125 197.512 
 z
 " style="fill: none"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
-      <path d="M 105.668828 191.968 
-L 105.668828 42.28 
-" clip-path="url(#p203caa830a)" style="fill: none; stroke: #ebe6dc; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 107.17125 197.512 
+L 107.17125 42.28 
+" clip-path="url(#p0ee766d532)" style="fill: none; stroke: #ebe6dc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_2">
       <defs>
@@ -47,12 +47,12 @@ L 0 3
 " style="stroke: #c9c3b6; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#md0834c3cf6" x="105.668828" y="191.968" style="fill: #c9c3b6; stroke: #c9c3b6; stroke-width: 0.8"/>
+       <use xlink:href="#md0834c3cf6" x="107.17125" y="197.512" style="fill: #c9c3b6; stroke: #c9c3b6; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
       <!-- 0% -->
-      <g style="fill: #5e6270" transform="translate(98.936563 206.373) scale(0.085 -0.085)">
+      <g style="fill: #5e6270" transform="translate(100.438984 211.917) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-14a" d="M 2093 -90 
 Q 1709 -90 1395 64 
@@ -160,18 +160,18 @@ z
     </g>
     <g id="xtick_2">
      <g id="line2d_3">
-      <path d="M 177.092828 191.968 
-L 177.092828 42.28 
-" clip-path="url(#p203caa830a)" style="fill: none; stroke: #ebe6dc; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 174.763473 197.512 
+L 174.763473 42.28 
+" clip-path="url(#p0ee766d532)" style="fill: none; stroke: #ebe6dc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_4">
       <g>
-       <use xlink:href="#md0834c3cf6" x="177.092828" y="191.968" style="fill: #c9c3b6; stroke: #c9c3b6; stroke-width: 0.8"/>
+       <use xlink:href="#md0834c3cf6" x="174.763473" y="197.512" style="fill: #c9c3b6; stroke: #c9c3b6; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
       <!-- 25% -->
-      <g style="fill: #5e6270" transform="translate(168.201695 206.373) scale(0.085 -0.085)">
+      <g style="fill: #5e6270" transform="translate(165.872341 211.917) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-14c" d="M 314 0 
 L 314 685 
@@ -248,18 +248,18 @@ z
     </g>
     <g id="xtick_3">
      <g id="line2d_5">
-      <path d="M 248.516828 191.968 
-L 248.516828 42.28 
-" clip-path="url(#p203caa830a)" style="fill: none; stroke: #ebe6dc; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 242.355697 197.512 
+L 242.355697 42.28 
+" clip-path="url(#p0ee766d532)" style="fill: none; stroke: #ebe6dc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_6">
       <g>
-       <use xlink:href="#md0834c3cf6" x="248.516828" y="191.968" style="fill: #c9c3b6; stroke: #c9c3b6; stroke-width: 0.8"/>
+       <use xlink:href="#md0834c3cf6" x="242.355697" y="197.512" style="fill: #c9c3b6; stroke: #c9c3b6; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
       <!-- 50% -->
-      <g style="fill: #5e6270" transform="translate(239.264445 206.373) scale(0.085 -0.085)">
+      <g style="fill: #5e6270" transform="translate(233.103314 211.917) scale(0.085 -0.085)">
        <use xlink:href="#BricolageGrotesque-Regular-14f"/>
        <use xlink:href="#BricolageGrotesque-Regular-14a" transform="translate(59.296875 0)"/>
        <use xlink:href="#BricolageGrotesque-Regular-223" transform="translate(124.5 0)"/>
@@ -268,18 +268,18 @@ L 248.516828 42.28
     </g>
     <g id="xtick_4">
      <g id="line2d_7">
-      <path d="M 319.940828 191.968 
-L 319.940828 42.28 
-" clip-path="url(#p203caa830a)" style="fill: none; stroke: #ebe6dc; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 309.94792 197.512 
+L 309.94792 42.28 
+" clip-path="url(#p0ee766d532)" style="fill: none; stroke: #ebe6dc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_8">
       <g>
-       <use xlink:href="#md0834c3cf6" x="319.940828" y="191.968" style="fill: #c9c3b6; stroke: #c9c3b6; stroke-width: 0.8"/>
+       <use xlink:href="#md0834c3cf6" x="309.94792" y="197.512" style="fill: #c9c3b6; stroke: #c9c3b6; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
       <!-- 75% -->
-      <g style="fill: #5e6270" transform="translate(311.424227 206.373) scale(0.085 -0.085)">
+      <g style="fill: #5e6270" transform="translate(301.431319 211.917) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-151" d="M 896 0 
 Q 896 461 979 957 
@@ -307,18 +307,18 @@ z
     </g>
     <g id="xtick_5">
      <g id="line2d_9">
-      <path d="M 391.364828 191.968 
-L 391.364828 42.28 
-" clip-path="url(#p203caa830a)" style="fill: none; stroke: #ebe6dc; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 377.540143 197.512 
+L 377.540143 42.28 
+" clip-path="url(#p0ee766d532)" style="fill: none; stroke: #ebe6dc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_10">
       <g>
-       <use xlink:href="#md0834c3cf6" x="391.364828" y="191.968" style="fill: #c9c3b6; stroke: #c9c3b6; stroke-width: 0.8"/>
+       <use xlink:href="#md0834c3cf6" x="377.540143" y="197.512" style="fill: #c9c3b6; stroke: #c9c3b6; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
       <!-- 100% -->
-      <g style="fill: #5e6270" transform="translate(380.535961 206.373) scale(0.085 -0.085)">
+      <g style="fill: #5e6270" transform="translate(366.711276 211.917) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-14b" d="M 826 0 
 L 826 3232 
@@ -345,7 +345,7 @@ z
      <g id="line2d_11"/>
      <g id="text_6">
       <!-- No mode recorded -->
-      <g style="fill: #5e6270" transform="translate(24.840938 180.760711) scale(0.085 -0.085)">
+      <g style="fill: #5e6270" transform="translate(26.343359 186.442048) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-50" d="M 557 0 
 L 557 4224 
@@ -590,8 +590,197 @@ z
     <g id="ytick_2">
      <g id="line2d_12"/>
      <g id="text_7">
+      <!-- Random (RNF) -->
+      <g style="fill: #5e6270" transform="translate(43.921094 161.404629) scale(0.085 -0.085)">
+       <defs>
+        <path id="BricolageGrotesque-Regular-70" d="M 557 0 
+L 557 4224 
+L 2022 4224 
+Q 2349 4224 2614 4173 
+Q 2880 4122 3088 4019 
+Q 3296 3917 3440 3769 
+Q 3584 3622 3657 3427 
+Q 3731 3232 3731 2995 
+Q 3731 2771 3664 2585 
+Q 3597 2400 3462 2259 
+Q 3328 2118 3129 2032 
+Q 2931 1946 2675 1914 
+L 2675 1830 
+Q 2899 1805 3068 1712 
+Q 3238 1619 3363 1436 
+Q 3488 1254 3578 947 
+L 3846 0 
+L 3213 0 
+L 2995 870 
+Q 2931 1126 2793 1286 
+Q 2656 1446 2451 1523 
+Q 2246 1600 1978 1600 
+L 1139 1600 
+L 1139 0 
+L 557 0 
+z
+M 1139 2080 
+L 1978 2080 
+Q 2547 2080 2838 2285 
+Q 3130 2490 3130 2912 
+Q 3130 3334 2851 3536 
+Q 2573 3738 1990 3738 
+L 1139 3738 
+L 1139 2080 
+z
+" transform="scale(0.015625)"/>
+        <path id="BricolageGrotesque-Regular-a3" d="M 1274 -83 
+Q 998 -83 780 22 
+Q 563 128 438 336 
+Q 314 544 314 864 
+Q 314 1101 397 1280 
+Q 480 1459 662 1587 
+Q 845 1715 1136 1801 
+Q 1427 1888 1843 1939 
+Q 2080 1971 2227 2003 
+Q 2374 2035 2444 2108 
+Q 2515 2182 2515 2336 
+Q 2515 2573 2352 2739 
+Q 2189 2906 1830 2906 
+Q 1638 2906 1446 2842 
+Q 1254 2778 1113 2627 
+Q 973 2477 928 2208 
+L 397 2394 
+Q 448 2624 566 2806 
+Q 685 2989 867 3120 
+Q 1050 3251 1296 3321 
+Q 1542 3392 1843 3392 
+Q 2266 3392 2544 3251 
+Q 2822 3110 2960 2819 
+Q 3098 2528 3098 2074 
+L 3098 1338 
+Q 3098 1139 3107 905 
+Q 3117 672 3133 438 
+Q 3149 205 3174 0 
+L 2637 0 
+Q 2611 205 2598 406 
+Q 2586 608 2573 813 
+L 2490 813 
+Q 2394 576 2234 371 
+Q 2074 166 1837 41 
+Q 1600 -83 1274 -83 
+z
+M 1446 390 
+Q 1581 390 1725 435 
+Q 1869 480 2013 579 
+Q 2157 678 2288 838 
+Q 2419 998 2528 1222 
+L 2522 1869 
+L 2694 1837 
+Q 2592 1734 2419 1683 
+Q 2246 1632 2044 1600 
+Q 1843 1568 1635 1533 
+Q 1427 1498 1257 1430 
+Q 1088 1363 985 1241 
+Q 883 1120 883 909 
+Q 883 653 1040 521 
+Q 1197 390 1446 390 
+z
+" transform="scale(0.015625)"/>
+        <path id="BricolageGrotesque-Regular-f4" d="M 512 0 
+L 512 2067 
+L 512 3309 
+L 1037 3309 
+L 979 2272 
+L 1088 2272 
+Q 1178 2656 1328 2902 
+Q 1478 3149 1708 3270 
+Q 1939 3392 2246 3392 
+Q 2797 3392 3081 2998 
+Q 3366 2605 3366 1830 
+L 3366 0 
+L 2778 0 
+L 2778 1779 
+Q 2778 2336 2602 2605 
+Q 2426 2874 2086 2874 
+Q 1779 2874 1564 2682 
+Q 1350 2490 1228 2179 
+Q 1107 1869 1094 1510 
+L 1094 0 
+L 512 0 
+z
+" transform="scale(0.015625)"/>
+        <path id="BricolageGrotesque-Regular-1ce" d="M 1722 4403 
+Q 1536 4058 1408 3718 
+Q 1280 3379 1200 3046 
+Q 1120 2714 1081 2394 
+Q 1043 2074 1043 1766 
+Q 1043 1280 1126 835 
+Q 1210 390 1363 -10 
+Q 1517 -410 1728 -774 
+L 1075 -774 
+Q 838 -346 697 80 
+Q 557 506 496 941 
+Q 435 1376 435 1805 
+Q 435 2234 496 2669 
+Q 557 3104 694 3539 
+Q 832 3974 1069 4403 
+L 1722 4403 
+z
+" transform="scale(0.015625)"/>
+        <path id="BricolageGrotesque-Regular-34" d="M 557 0 
+L 557 4224 
+L 1139 4224 
+L 1139 0 
+L 557 0 
+z
+M 787 1811 
+L 787 2317 
+L 3213 2317 
+L 3213 1811 
+L 787 1811 
+z
+M 787 3706 
+L 787 4224 
+L 3494 4224 
+L 3494 3706 
+L 787 3706 
+z
+" transform="scale(0.015625)"/>
+        <path id="BricolageGrotesque-Regular-1cf" d="M 51 4403 
+L 704 4403 
+Q 941 3974 1078 3539 
+Q 1216 3104 1277 2669 
+Q 1338 2234 1338 1805 
+Q 1338 1376 1277 941 
+Q 1216 506 1075 80 
+Q 934 -346 698 -774 
+L 45 -774 
+Q 262 -410 412 -10 
+Q 563 390 646 835 
+Q 730 1280 730 1766 
+Q 730 2074 691 2394 
+Q 653 2714 573 3046 
+Q 493 3379 365 3718 
+Q 237 4058 51 4403 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#BricolageGrotesque-Regular-70"/>
+       <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(65.109375 0)"/>
+       <use xlink:href="#BricolageGrotesque-Regular-f4" transform="translate(121.015625 0)"/>
+       <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(181.015625 0)"/>
+       <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(241.8125 0)"/>
+       <use xlink:href="#BricolageGrotesque-Regular-f3" transform="translate(302.015625 0)"/>
+       <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(391.71875 0)"/>
+       <use xlink:href="#BricolageGrotesque-Regular-1ce" transform="translate(417.125 0)"/>
+       <use xlink:href="#BricolageGrotesque-Regular-70" transform="translate(446.921875 0)"/>
+       <use xlink:href="#BricolageGrotesque-Regular-50" transform="translate(512.125 0)"/>
+       <use xlink:href="#BricolageGrotesque-Regular-34" transform="translate(585.53125 0)"/>
+       <use xlink:href="#BricolageGrotesque-Regular-1cf" transform="translate(645.828125 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_13"/>
+     <g id="text_8">
       <!-- Overstrain (OSF) -->
-      <g style="fill: #5e6270" transform="translate(34.556172 150.918605) scale(0.085 -0.085)">
+      <g style="fill: #5e6270" transform="translate(36.058594 136.36721) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-56" d="M 2285 -83 
 Q 1824 -83 1475 70 
@@ -704,59 +893,6 @@ Q 1984 -13 1824 -38
 Q 1664 -64 1536 -64 
 z
 " transform="scale(0.015625)"/>
-        <path id="BricolageGrotesque-Regular-a3" d="M 1274 -83 
-Q 998 -83 780 22 
-Q 563 128 438 336 
-Q 314 544 314 864 
-Q 314 1101 397 1280 
-Q 480 1459 662 1587 
-Q 845 1715 1136 1801 
-Q 1427 1888 1843 1939 
-Q 2080 1971 2227 2003 
-Q 2374 2035 2444 2108 
-Q 2515 2182 2515 2336 
-Q 2515 2573 2352 2739 
-Q 2189 2906 1830 2906 
-Q 1638 2906 1446 2842 
-Q 1254 2778 1113 2627 
-Q 973 2477 928 2208 
-L 397 2394 
-Q 448 2624 566 2806 
-Q 685 2989 867 3120 
-Q 1050 3251 1296 3321 
-Q 1542 3392 1843 3392 
-Q 2266 3392 2544 3251 
-Q 2822 3110 2960 2819 
-Q 3098 2528 3098 2074 
-L 3098 1338 
-Q 3098 1139 3107 905 
-Q 3117 672 3133 438 
-Q 3149 205 3174 0 
-L 2637 0 
-Q 2611 205 2598 406 
-Q 2586 608 2573 813 
-L 2490 813 
-Q 2394 576 2234 371 
-Q 2074 166 1837 41 
-Q 1600 -83 1274 -83 
-z
-M 1446 390 
-Q 1581 390 1725 435 
-Q 1869 480 2013 579 
-Q 2157 678 2288 838 
-Q 2419 998 2528 1222 
-L 2522 1869 
-L 2694 1837 
-Q 2592 1734 2419 1683 
-Q 2246 1632 2044 1600 
-Q 1843 1568 1635 1533 
-Q 1427 1498 1257 1430 
-Q 1088 1363 985 1241 
-Q 883 1120 883 909 
-Q 883 653 1040 521 
-Q 1197 390 1446 390 
-z
-" transform="scale(0.015625)"/>
         <path id="BricolageGrotesque-Regular-dd" d="M 518 0 
 L 518 3309 
 L 1100 3309 
@@ -772,47 +908,6 @@ Q 1005 4557 1110 4473
 Q 1216 4390 1216 4224 
 Q 1216 4058 1110 3974 
 Q 1005 3891 807 3891 
-z
-" transform="scale(0.015625)"/>
-        <path id="BricolageGrotesque-Regular-f4" d="M 512 0 
-L 512 2067 
-L 512 3309 
-L 1037 3309 
-L 979 2272 
-L 1088 2272 
-Q 1178 2656 1328 2902 
-Q 1478 3149 1708 3270 
-Q 1939 3392 2246 3392 
-Q 2797 3392 3081 2998 
-Q 3366 2605 3366 1830 
-L 3366 0 
-L 2778 0 
-L 2778 1779 
-Q 2778 2336 2602 2605 
-Q 2426 2874 2086 2874 
-Q 1779 2874 1564 2682 
-Q 1350 2490 1228 2179 
-Q 1107 1869 1094 1510 
-L 1094 0 
-L 512 0 
-z
-" transform="scale(0.015625)"/>
-        <path id="BricolageGrotesque-Regular-1ce" d="M 1722 4403 
-Q 1536 4058 1408 3718 
-Q 1280 3379 1200 3046 
-Q 1120 2714 1081 2394 
-Q 1043 2074 1043 1766 
-Q 1043 1280 1126 835 
-Q 1210 390 1363 -10 
-Q 1517 -410 1728 -774 
-L 1075 -774 
-Q 838 -346 697 80 
-Q 557 506 496 941 
-Q 435 1376 435 1805 
-Q 435 2234 496 2669 
-Q 557 3104 694 3539 
-Q 832 3974 1069 4403 
-L 1722 4403 
 z
 " transform="scale(0.015625)"/>
         <path id="BricolageGrotesque-Regular-74" d="M 2029 -83 
@@ -860,43 +955,6 @@ Q 3354 218 2976 67
 Q 2598 -83 2029 -83 
 z
 " transform="scale(0.015625)"/>
-        <path id="BricolageGrotesque-Regular-34" d="M 557 0 
-L 557 4224 
-L 1139 4224 
-L 1139 0 
-L 557 0 
-z
-M 787 1811 
-L 787 2317 
-L 3213 2317 
-L 3213 1811 
-L 787 1811 
-z
-M 787 3706 
-L 787 4224 
-L 3494 4224 
-L 3494 3706 
-L 787 3706 
-z
-" transform="scale(0.015625)"/>
-        <path id="BricolageGrotesque-Regular-1cf" d="M 51 4403 
-L 704 4403 
-Q 941 3974 1078 3539 
-Q 1216 3104 1277 2669 
-Q 1338 2234 1338 1805 
-Q 1338 1376 1277 941 
-Q 1216 506 1075 80 
-Q 934 -346 698 -774 
-L 45 -774 
-Q 262 -410 412 -10 
-Q 563 390 646 835 
-Q 730 1280 730 1766 
-Q 730 2074 691 2394 
-Q 653 2714 573 3046 
-Q 493 3379 365 3718 
-Q 237 4058 51 4403 
-z
-" transform="scale(0.015625)"/>
        </defs>
        <use xlink:href="#BricolageGrotesque-Regular-56"/>
        <use xlink:href="#BricolageGrotesque-Regular-134" transform="translate(71.40625 0)"/>
@@ -917,11 +975,11 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_3">
-     <g id="line2d_13"/>
-     <g id="text_8">
+    <g id="ytick_4">
+     <g id="line2d_14"/>
+     <g id="text_9">
       <!-- Power (PWF) -->
-      <g style="fill: #5e6270" transform="translate(48.71 121.0765) scale(0.085 -0.085)">
+      <g style="fill: #5e6270" transform="translate(50.212422 111.32979) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-6d" d="M 864 1293 
 L 864 1792 
@@ -1002,11 +1060,11 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_4">
-     <g id="line2d_14"/>
-     <g id="text_9">
+    <g id="ytick_5">
+     <g id="line2d_15"/>
+     <g id="text_10">
       <!-- Heat dissipation (HDF) -->
-      <g style="fill: #5e6270" transform="translate(10.8 91.234395) scale(0.085 -0.085)">
+      <g style="fill: #5e6270" transform="translate(12.302422 86.292371) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-39" d="M 3360 0 
 L 3360 4224 
@@ -1127,11 +1185,11 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_5">
-     <g id="line2d_15"/>
-     <g id="text_10">
+    <g id="ytick_6">
+     <g id="line2d_16"/>
+     <g id="text_11">
       <!-- Tool wear (TWF) -->
-      <g style="fill: #5e6270" transform="translate(36.119375 61.392289) scale(0.085 -0.085)">
+      <g style="fill: #5e6270" transform="translate(37.621797 61.254952) scale(0.085 -0.085)">
        <defs>
         <path id="BricolageGrotesque-Regular-7a" d="M 1446 0 
 L 1446 4224 
@@ -1173,54 +1231,77 @@ z
      </g>
     </g>
    </g>
+   <g id="line2d_17">
+    <path d="M 107.17125 182.489548 
+L 284.973417 182.489548 
+" clip-path="url(#p0ee766d532)" style="fill: none; stroke: #2f5bd3; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_18">
+    <defs>
+     <path id="m89e4385047" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: #2f5bd3"/>
+    </defs>
+    <g clip-path="url(#p0ee766d532)">
+     <use xlink:href="#m89e4385047" x="107.17125" y="182.489548" style="fill: #2f5bd3; stroke: #2f5bd3"/>
+    </g>
+   </g>
+   <g id="line2d_19">
+    <path d="M 288.858484 132.41471 
+L 369.153606 132.41471 
+" clip-path="url(#p0ee766d532)" style="fill: none; stroke: #2f5bd3; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_20">
+    <g clip-path="url(#p0ee766d532)">
+     <use xlink:href="#m89e4385047" x="347.499155" y="132.41471" style="fill: #2f5bd3; stroke: #2f5bd3"/>
+    </g>
+   </g>
+   <g id="line2d_21">
+    <path d="M 211.584117 107.37729 
+L 322.641761 107.37729 
+" clip-path="url(#p0ee766d532)" style="fill: none; stroke: #2f5bd3; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_22">
+    <g clip-path="url(#p0ee766d532)">
+     <use xlink:href="#m89e4385047" x="272.396685" y="107.37729" style="fill: #2f5bd3; stroke: #2f5bd3"/>
+    </g>
+   </g>
+   <g id="line2d_23">
+    <path d="M 315.868501 82.339871 
+L 377.540143 82.339871 
+" clip-path="url(#p0ee766d532)" style="fill: none; stroke: #2f5bd3; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_24">
+    <g clip-path="url(#p0ee766d532)">
+     <use xlink:href="#m89e4385047" x="377.540143" y="82.339871" style="fill: #2f5bd3; stroke: #2f5bd3"/>
+    </g>
+   </g>
+   <g id="line2d_25">
+    <path d="M 119.496303 57.302452 
+L 296.257507 57.302452 
+" clip-path="url(#p0ee766d532)" style="fill: none; stroke: #2f5bd3; stroke-opacity: 0.35; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_26">
+    <g clip-path="url(#p0ee766d532)">
+     <use xlink:href="#m89e4385047" x="174.763473" y="57.302452" style="fill: #2f5bd3; stroke: #2f5bd3"/>
+    </g>
+   </g>
    <g id="patch_3">
-    <path d="M 105.668828 185.164 
-L 105.668828 185.164 
-L 105.668828 168.452421 
-L 105.668828 168.452421 
-z
-" clip-path="url(#p203caa830a)" style="fill: #2f5bd3"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 105.668828 155.321895 
-L 359.620828 155.321895 
-L 359.620828 138.610316 
-L 105.668828 138.610316 
-z
-" clip-path="url(#p203caa830a)" style="fill: #2f5bd3"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 105.668828 125.479789 
-L 280.260828 125.479789 
-L 280.260828 108.768211 
-L 105.668828 108.768211 
-z
-" clip-path="url(#p203caa830a)" style="fill: #2f5bd3"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 105.668828 95.637684 
-L 391.364828 95.637684 
-L 391.364828 78.926105 
-L 105.668828 78.926105 
-z
-" clip-path="url(#p203caa830a)" style="fill: #2f5bd3"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 105.668828 65.795579 
-L 177.092828 65.795579 
-L 177.092828 49.084 
-L 105.668828 49.084 
-z
-" clip-path="url(#p203caa830a)" style="fill: #2f5bd3"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 105.668828 191.968 
-L 391.364828 191.968 
+    <path d="M 107.17125 197.512 
+L 377.540143 197.512 
 " style="fill: none; stroke: #c9c3b6; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="text_11">
-    <!-- Share of test failures flagged, by recorded failure mode. No RNF failure in the test split. -->
-    <g style="fill: #5e6270" transform="translate(105.668828 33.85) scale(0.09 -0.09)">
+   <g id="text_12">
+    <!-- Share of test failures flagged per mode, with 95% Wilson interval. -->
+    <g style="fill: #5e6270" transform="translate(107.17125 33.85) scale(0.09 -0.09)">
      <defs>
       <path id="BricolageGrotesque-Regular-db" d="M 512 0 
 L 512 2022 
@@ -1382,85 +1463,56 @@ Q 570 -730 493 -877
 L 13 -877 
 z
 " transform="scale(0.015625)"/>
-      <path id="BricolageGrotesque-Regular-bb" d="M 2227 -83 
-Q 1907 -83 1680 45 
-Q 1453 173 1315 393 
-Q 1178 614 1107 890 
-L 1005 890 
-L 1030 0 
-L 512 0 
-L 512 1632 
-L 512 4486 
-L 1094 4486 
-L 1094 3443 
-Q 1094 3277 1078 3094 
-Q 1062 2912 1036 2723 
-Q 1011 2534 979 2355 
-L 1094 2355 
-Q 1165 2624 1299 2857 
-Q 1434 3091 1661 3238 
-Q 1888 3386 2227 3386 
-Q 2650 3386 2947 3165 
-Q 3245 2944 3405 2553 
-Q 3565 2163 3565 1645 
-Q 3565 1146 3408 758 
-Q 3251 371 2956 144 
-Q 2662 -83 2227 -83 
+      <path id="BricolageGrotesque-Regular-153" d="M 1926 -96 
+Q 1613 -96 1360 -25 
+Q 1107 45 915 185 
+Q 723 326 598 534 
+Q 474 742 422 1018 
+L 973 1165 
+Q 1024 947 1123 803 
+Q 1222 659 1353 579 
+Q 1485 499 1635 464 
+Q 1786 429 1933 429 
+Q 2259 429 2483 557 
+Q 2707 685 2844 912 
+Q 2982 1139 3040 1436 
+Q 3098 1734 3098 2067 
+Q 3098 2259 3082 2435 
+Q 3066 2611 3037 2777 
+Q 3008 2944 2976 3098 
+L 2899 3098 
+Q 2938 2720 2848 2441 
+Q 2758 2163 2576 1987 
+Q 2394 1811 2157 1724 
+Q 1920 1638 1670 1638 
+Q 1331 1638 1040 1792 
+Q 749 1946 569 2237 
+Q 390 2528 390 2944 
+Q 390 3213 476 3459 
+Q 563 3706 745 3901 
+Q 928 4096 1206 4205 
+Q 1485 4314 1862 4314 
+Q 2432 4314 2832 4054 
+Q 3232 3795 3449 3286 
+Q 3667 2778 3667 2035 
+Q 3667 1382 3481 902 
+Q 3296 422 2909 163 
+Q 2522 -96 1926 -96 
 z
-M 2086 429 
-Q 2362 429 2554 576 
-Q 2746 723 2851 998 
-Q 2957 1274 2957 1638 
-Q 2957 1997 2854 2275 
-Q 2752 2554 2560 2717 
-Q 2368 2880 2086 2880 
-Q 1882 2880 1722 2800 
-Q 1562 2720 1443 2585 
-Q 1325 2451 1248 2291 
-Q 1171 2131 1132 1971 
-Q 1094 1811 1094 1677 
-L 1094 1600 
-Q 1094 1408 1161 1203 
-Q 1229 998 1357 822 
-Q 1485 646 1670 537 
-Q 1856 429 2086 429 
-z
-" transform="scale(0.015625)"/>
-      <path id="BricolageGrotesque-Regular-13b" d="M 1702 -1114 
-Q 1440 -1114 1187 -1056 
-Q 934 -998 723 -876 
-Q 512 -755 378 -563 
-L 672 -141 
-Q 819 -352 1088 -470 
-Q 1357 -589 1677 -589 
-Q 2035 -589 2275 -429 
-Q 2515 -269 2636 57 
-Q 2758 384 2765 883 
-L 2835 1542 
-L 2714 1542 
-Q 2643 1082 2489 803 
-Q 2336 525 2118 403 
-Q 1901 282 1613 282 
-Q 1254 282 1008 461 
-Q 762 640 634 998 
-Q 506 1357 506 1869 
-L 506 3309 
-L 1088 3309 
-L 1088 1997 
-Q 1088 1376 1264 1085 
-Q 1440 794 1792 794 
-Q 1984 794 2137 886 
-Q 2291 979 2403 1168 
-Q 2515 1357 2582 1638 
-Q 2650 1920 2669 2304 
-L 2669 3309 
-L 3251 3309 
-L 3251 851 
-Q 3251 454 3190 140 
-Q 3130 -173 3005 -409 
-Q 2880 -646 2694 -803 
-Q 2509 -960 2262 -1037 
-Q 2016 -1114 1702 -1114 
+M 1830 2086 
+Q 2093 2086 2294 2208 
+Q 2496 2330 2611 2550 
+Q 2726 2771 2726 3066 
+Q 2726 3366 2604 3529 
+Q 2483 3693 2300 3757 
+Q 2118 3821 1920 3821 
+Q 1664 3821 1481 3744 
+Q 1299 3667 1190 3542 
+Q 1082 3418 1030 3261 
+Q 979 3104 979 2944 
+Q 979 2662 1097 2470 
+Q 1216 2278 1411 2182 
+Q 1606 2086 1830 2086 
 z
 " transform="scale(0.015625)"/>
       <path id="BricolageGrotesque-Regular-1b5" d="M 563 -77 
@@ -1471,42 +1523,6 @@ Q 365 672 563 672
 Q 774 672 880 582 
 Q 986 493 986 294 
 Q 986 -77 563 -77 
-z
-" transform="scale(0.015625)"/>
-      <path id="BricolageGrotesque-Regular-70" d="M 557 0 
-L 557 4224 
-L 2022 4224 
-Q 2349 4224 2614 4173 
-Q 2880 4122 3088 4019 
-Q 3296 3917 3440 3769 
-Q 3584 3622 3657 3427 
-Q 3731 3232 3731 2995 
-Q 3731 2771 3664 2585 
-Q 3597 2400 3462 2259 
-Q 3328 2118 3129 2032 
-Q 2931 1946 2675 1914 
-L 2675 1830 
-Q 2899 1805 3068 1712 
-Q 3238 1619 3363 1436 
-Q 3488 1254 3578 947 
-L 3846 0 
-L 3213 0 
-L 2995 870 
-Q 2931 1126 2793 1286 
-Q 2656 1446 2451 1523 
-Q 2246 1600 1978 1600 
-L 1139 1600 
-L 1139 0 
-L 557 0 
-z
-M 1139 2080 
-L 1978 2080 
-Q 2547 2080 2838 2285 
-Q 3130 2490 3130 2912 
-Q 3130 3334 2851 3536 
-Q 2573 3738 1990 3738 
-L 1139 3738 
-L 1139 2080 
 z
 " transform="scale(0.015625)"/>
      </defs>
@@ -1540,72 +1556,47 @@ z
      <use xlink:href="#BricolageGrotesque-Regular-d7" transform="translate(1186.21875 0)"/>
      <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(1243.921875 0)"/>
      <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(1300.828125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1b6" transform="translate(1361.53125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(1376.4375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-bb" transform="translate(1401.84375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-13b" transform="translate(1462.046875 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(1520.75 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(1546.15625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(1585.25 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-bc" transform="translate(1641.953125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(1696.953125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(1757.15625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(1796.359375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(1857.15625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(1914.0625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(1974.859375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-d6" transform="translate(2000.265625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(2037.359375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(2093.265625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(2118.46875 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-121" transform="translate(2143.46875 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(2202.375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(2241.46875 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(2297.96875 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-f3" transform="translate(2323.375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(2413.078125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(2473.28125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(2534.078125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1b5" transform="translate(2590.875 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(2608.671875 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-50" transform="translate(2634.078125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(2707.484375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(2767.6875 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-70" transform="translate(2793.09375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-50" transform="translate(2858.296875 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-34" transform="translate(2931.703125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(2988.90625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-d6" transform="translate(3014.3125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(3051.40625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(3107.3125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(3132.515625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-121" transform="translate(3157.515625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(3216.421875 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(3255.515625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(3312.015625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(3337.421875 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-f4" transform="translate(3362.625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(3422.421875 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(3447.828125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-db" transform="translate(3485.03125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(3544.828125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(3601.328125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(3626.734375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(3663.34375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(3720.640625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(3773.734375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(3810.9375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(3836.34375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-111" transform="translate(3889.53125 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(3950.4375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(3975.4375 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(4000.640625 0)"/>
-     <use xlink:href="#BricolageGrotesque-Regular-1b5" transform="translate(4041.546875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(1361.625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-111" transform="translate(1387.03125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(1448.03125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(1504.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(1544.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f3" transform="translate(1569.9375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(1659.640625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(1719.84375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(1780.640625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1b6" transform="translate(1836.734375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(1851.640625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-135" transform="translate(1877.046875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(1958.046875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(1983.25 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-db" transform="translate(2020.453125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(2080.25 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-153" transform="translate(2105.65625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-14f" transform="translate(2169.34375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-223" transform="translate(2227.9375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(2321.140625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-91" transform="translate(2346.546875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(2440.953125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(2466.15625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(2491.15625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(2544.546875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f4" transform="translate(2604.75 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(2664.546875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(2689.953125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f4" transform="translate(2715.15625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(2774.859375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(2811.46875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(2867.96875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-134" transform="translate(2911.265625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(2963.875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(3019.78125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1b5" transform="translate(3044.6875 0)"/>
     </g>
    </g>
-   <g id="text_12">
-    <!-- 0%  (0 of 2) -->
-    <g style="fill: #5e6270" transform="translate(108.668828 179.688211) scale(0.08 -0.08)">
+   <g id="text_13">
+    <!-- 0% -->
+    <g style="fill: #1d1e22" transform="translate(394.977033 185.369548) scale(0.08 -0.08)">
      <defs>
       <path id="JetBrainsMono-Regular-218" d="M 1920 -64 
 Q 1491 -64 1174 105 
@@ -1695,25 +1686,16 @@ Q 576 3206 681 3100
 Q 787 2995 992 2995 
 z
 " transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#JetBrainsMono-Regular-218"/>
+     <use xlink:href="#JetBrainsMono-Regular-2dc" transform="translate(60 0)"/>
+    </g>
+   </g>
+   <g id="text_14">
+    <!-- 0 of 2 -->
+    <g style="fill: #5e6270" transform="translate(409.984411 185.369548) scale(0.08 -0.08)">
+     <defs>
       <path id="JetBrainsMono-Regular-2a8" transform="scale(0.015625)"/>
-      <path id="JetBrainsMono-Regular-24d" d="M 3104 -768 
-Q 2195 -544 1689 115 
-Q 1184 774 1184 1728 
-L 1184 2880 
-Q 1184 3507 1417 4016 
-Q 1651 4525 2083 4877 
-Q 2515 5229 3104 5376 
-L 3104 4832 
-Q 2694 4736 2393 4464 
-Q 2093 4192 1926 3789 
-Q 1760 3386 1760 2880 
-L 1760 1728 
-Q 1760 1235 1923 832 
-Q 2086 429 2390 163 
-Q 2694 -102 3104 -198 
-L 3104 -768 
-z
-" transform="scale(0.015625)"/>
       <path id="JetBrainsMono-Regular-117" d="M 1920 -51 
 Q 1498 -51 1190 109 
 Q 883 269 713 573 
@@ -1788,42 +1770,48 @@ L 3366 0
 L 589 0 
 z
 " transform="scale(0.015625)"/>
-      <path id="JetBrainsMono-Regular-24e" d="M 736 -768 
-L 736 -198 
-Q 1152 -102 1453 163 
-Q 1754 429 1917 832 
-Q 2080 1235 2080 1728 
-L 2080 2880 
-Q 2080 3386 1913 3789 
-Q 1747 4192 1446 4464 
-Q 1146 4736 736 4832 
-L 736 5376 
-Q 1331 5229 1760 4877 
-Q 2189 4525 2422 4016 
-Q 2656 3507 2656 2880 
-L 2656 1728 
-Q 2656 774 2150 115 
-Q 1645 -544 736 -768 
-z
-" transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#JetBrainsMono-Regular-218"/>
-     <use xlink:href="#JetBrainsMono-Regular-2dc" transform="translate(60 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(120 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(180 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-24d" transform="translate(240 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-218" transform="translate(300 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(360 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-117" transform="translate(420 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-eb" transform="translate(480 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(540 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-21a" transform="translate(600 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-24e" transform="translate(660 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(60 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-117" transform="translate(120 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-eb" transform="translate(180 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(240 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-21a" transform="translate(300 0)"/>
     </g>
    </g>
-   <g id="text_13">
-    <!-- 89%  (16 of 18) -->
-    <g style="fill: #5e6270" transform="translate(362.620828 149.846105) scale(0.08 -0.08)">
+   <g id="text_15">
+    <!-- no case in the test split -->
+    <g style="fill: #5e6270" transform="translate(109.874939 160.092129) scale(0.08 -0.08)">
+     <use xlink:href="#BricolageGrotesque-Regular-f4"/>
+     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(59.796875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(120 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-bc" transform="translate(145.40625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(201.609375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(257.421875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(310.71875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(367.21875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(392.625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f4" transform="translate(417.828125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(477.625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(503.03125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-db" transform="translate(540.234375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(600.03125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(656.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(681.9375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(718.546875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(775.84375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(828.9375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(866.140625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(891.546875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-111" transform="translate(944.734375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(1005.640625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(1030.640625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(1055.84375 0)"/>
+    </g>
+   </g>
+   <g id="text_16">
+    <!-- 89% -->
+    <g style="fill: #1d1e22" transform="translate(390.177033 135.29471) scale(0.08 -0.08)">
      <defs>
       <path id="JetBrainsMono-Regular-220" d="M 1920 -64 
 Q 1491 -64 1174 86 
@@ -1899,6 +1887,16 @@ Q 1011 2784 1260 2512
 Q 1510 2240 1920 2240 
 z
 " transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#JetBrainsMono-Regular-220"/>
+     <use xlink:href="#JetBrainsMono-Regular-221" transform="translate(60 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-2dc" transform="translate(120 0)"/>
+    </g>
+   </g>
+   <g id="text_17">
+    <!-- 16 of 18 -->
+    <g style="fill: #5e6270" transform="translate(409.984411 135.29471) scale(0.08 -0.08)">
+     <defs>
       <path id="JetBrainsMono-Regular-219" d="M 576 0 
 L 576 525 
 L 1843 525 
@@ -1944,46 +1942,49 @@ Q 1510 448 1920 448
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#JetBrainsMono-Regular-220"/>
-     <use xlink:href="#JetBrainsMono-Regular-221" transform="translate(60 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2dc" transform="translate(120 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(180 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(240 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-24d" transform="translate(300 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-219"/>
+     <use xlink:href="#JetBrainsMono-Regular-21e" transform="translate(60 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(120 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-117" transform="translate(180 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-eb" transform="translate(240 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(300 0)"/>
      <use xlink:href="#JetBrainsMono-Regular-219" transform="translate(360 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-21e" transform="translate(420 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(480 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-117" transform="translate(540 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-eb" transform="translate(600 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(660 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-219" transform="translate(720 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-220" transform="translate(780 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-24e" transform="translate(840 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-220" transform="translate(420 0)"/>
     </g>
    </g>
-   <g id="text_14">
-    <!-- 61%  (11 of 18) -->
-    <g style="fill: #5e6270" transform="translate(283.260828 120.004) scale(0.08 -0.08)">
+   <g id="text_18">
+    <!-- 61% -->
+    <g style="fill: #1d1e22" transform="translate(390.177033 110.25729) scale(0.08 -0.08)">
      <use xlink:href="#JetBrainsMono-Regular-21e"/>
      <use xlink:href="#JetBrainsMono-Regular-219" transform="translate(60 0)"/>
      <use xlink:href="#JetBrainsMono-Regular-2dc" transform="translate(120 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(180 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(240 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-24d" transform="translate(300 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-219" transform="translate(360 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-219" transform="translate(420 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(480 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-117" transform="translate(540 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-eb" transform="translate(600 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(660 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-219" transform="translate(720 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-220" transform="translate(780 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-24e" transform="translate(840 0)"/>
     </g>
    </g>
-   <g id="text_15">
-    <!-- 100%  (13 of 13) -->
-    <g style="fill: #5e6270" transform="translate(394.364828 90.161895) scale(0.08 -0.08)">
+   <g id="text_19">
+    <!-- 11 of 18 -->
+    <g style="fill: #5e6270" transform="translate(409.984411 110.25729) scale(0.08 -0.08)">
+     <use xlink:href="#JetBrainsMono-Regular-219"/>
+     <use xlink:href="#JetBrainsMono-Regular-219" transform="translate(60 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(120 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-117" transform="translate(180 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-eb" transform="translate(240 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(300 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-219" transform="translate(360 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-220" transform="translate(420 0)"/>
+    </g>
+   </g>
+   <g id="text_20">
+    <!-- 100% -->
+    <g style="fill: #1d1e22" transform="translate(385.377033 85.219871) scale(0.08 -0.08)">
+     <use xlink:href="#JetBrainsMono-Regular-219"/>
+     <use xlink:href="#JetBrainsMono-Regular-218" transform="translate(60 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-218" transform="translate(120 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-2dc" transform="translate(180 0)"/>
+    </g>
+   </g>
+   <g id="text_21">
+    <!-- 13 of 13 -->
+    <g style="fill: #5e6270" transform="translate(409.984411 85.219871) scale(0.08 -0.08)">
      <defs>
       <path id="JetBrainsMono-Regular-21b" d="M 1850 -64 
 Q 1427 -64 1110 105 
@@ -2016,26 +2017,18 @@ z
 " transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#JetBrainsMono-Regular-219"/>
-     <use xlink:href="#JetBrainsMono-Regular-218" transform="translate(60 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-218" transform="translate(120 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2dc" transform="translate(180 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(240 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-21b" transform="translate(60 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(120 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-117" transform="translate(180 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-eb" transform="translate(240 0)"/>
      <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(300 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-24d" transform="translate(360 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-219" transform="translate(420 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-21b" transform="translate(480 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(540 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-117" transform="translate(600 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-eb" transform="translate(660 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(720 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-219" transform="translate(780 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-21b" transform="translate(840 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-24e" transform="translate(900 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-219" transform="translate(360 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-21b" transform="translate(420 0)"/>
     </g>
    </g>
-   <g id="text_16">
-    <!-- 25%  (1 of 4) -->
-    <g style="fill: #5e6270" transform="translate(180.092828 60.319789) scale(0.08 -0.08)">
+   <g id="text_22">
+    <!-- 25% -->
+    <g style="fill: #1d1e22" transform="translate(390.177033 60.182452) scale(0.08 -0.08)">
      <defs>
       <path id="JetBrainsMono-Regular-21d" d="M 1907 -64 
 Q 1338 -64 973 230 
@@ -2067,6 +2060,16 @@ Q 3296 659 2931 297
 Q 2566 -64 1907 -64 
 z
 " transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#JetBrainsMono-Regular-21a"/>
+     <use xlink:href="#JetBrainsMono-Regular-21d" transform="translate(60 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-2dc" transform="translate(120 0)"/>
+    </g>
+   </g>
+   <g id="text_23">
+    <!-- 1 of 4 -->
+    <g style="fill: #5e6270" transform="translate(409.984411 60.182452) scale(0.08 -0.08)">
+     <defs>
       <path id="JetBrainsMono-Regular-21c" d="M 2624 0 
 L 2624 1024 
 L 512 1024 
@@ -2083,24 +2086,17 @@ L 2624 0
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#JetBrainsMono-Regular-21a"/>
-     <use xlink:href="#JetBrainsMono-Regular-21d" transform="translate(60 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2dc" transform="translate(120 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(180 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-219"/>
+     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(60 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-117" transform="translate(120 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-eb" transform="translate(180 0)"/>
      <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(240 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-24d" transform="translate(300 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-219" transform="translate(360 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(420 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-117" transform="translate(480 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-eb" transform="translate(540 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-2a8" transform="translate(600 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-21c" transform="translate(660 0)"/>
-     <use xlink:href="#JetBrainsMono-Regular-24e" transform="translate(720 0)"/>
+     <use xlink:href="#JetBrainsMono-Regular-21c" transform="translate(300 0)"/>
     </g>
    </g>
-   <g id="text_17">
+   <g id="text_24">
     <!-- Rule-based failures are found, tool wear mostly is not -->
-    <g style="fill: #1d1e22" transform="translate(105.668828 21.03) scale(0.11 -0.11)">
+    <g style="fill: #1d1e22" transform="translate(107.17125 21.03) scale(0.11 -0.11)">
      <defs>
       <path id="BricolageGrotesque-SemiBold-70" d="M 499 0 
 L 499 4224 
@@ -2708,8 +2704,8 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p203caa830a">
-   <rect x="105.668828" y="42.28" width="357.12" height="149.688"/>
+  <clipPath id="p0ee766d532">
+   <rect x="107.17125" y="42.28" width="337.961117" height="155.232"/>
   </clipPath>
  </defs>
 </svg>
