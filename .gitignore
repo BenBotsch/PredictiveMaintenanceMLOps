@@ -8,3 +8,4 @@ data/
 bundle/
 mlruns/
 mlflow.db
+.coverage
