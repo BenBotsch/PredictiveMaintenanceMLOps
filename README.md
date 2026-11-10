@@ -62,7 +62,7 @@ are stored in [results/report.json](results/report.json) and
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/figures/pr-curves-dark.svg">
-  <img alt="Precision-recall curves of four candidates on the validation split. Gradient boosting with features stays highest across recall with PR-AUC 0.859, logistic regression with and without features, drawn dashed and dotted, stays far below." src="docs/figures/pr-curves.svg">
+  <img alt="Precision-recall curves of four candidates on the validation split. Gradient boosting with features, PR-AUC 0.859, stays highest up to about 93 % recall, logistic regression with and without features, drawn dashed and dotted, stays far below." src="docs/figures/pr-curves.svg">
 </picture>
 
 | Candidate | Val PR-AUC | Val F1 |
@@ -225,8 +225,8 @@ Measured in-process with `TestClient` on the development machine (50 repeats):
 
 | Batch | Median | p95 |
 | ---: | ---: | ---: |
-| 1 | 11.6 ms | 13.0 ms |
-| 1,000 | 21.5 ms | 26.5 ms |
+| 1 | 12.2 ms | 14.8 ms |
+| 1,000 | 22.6 ms | 32.2 ms |
 
 Scoring 1,000 readings takes only about twice as long as scoring one, so the fixed cost per
 request dominates; clients should send batches.
