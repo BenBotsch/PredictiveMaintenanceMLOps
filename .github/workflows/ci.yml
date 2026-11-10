@@ -30,7 +30,7 @@ jobs:
       - run: uv run pmm export
       - run: uv run pmm report
       - name: Upload figures and tables
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: report
           path: |
