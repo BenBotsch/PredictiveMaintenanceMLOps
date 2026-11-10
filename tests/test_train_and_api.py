@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-from pmm import bundle, train
+from pmm import bundle, drift, train
 from pmm.api import create_app
 from pmm.data import TARGET, Splits
 from pmm.model import CANDIDATES
@@ -94,10 +94,10 @@ def test_predict_rejects_empty_and_oversized_batches(served: bundle.Bundle, coun
 
 def test_drift_needs_a_batch_and_reports_a_shift(served: bundle.Bundle) -> None:
     client = TestClient(create_app(served))
-    shifted = readings(300, seed=5)
+    shifted = readings(drift.MIN_BATCH, seed=5)
     shifted["air_temp_k"] += 8
 
-    too_small = client.post("/drift", json={"readings": [READING]})
+    too_small = client.post("/drift", json={"readings": [READING] * (drift.MIN_BATCH - 1)})
     response = client.post(
         "/drift", json={"readings": shifted.drop(columns=[TARGET]).to_dict("records")}
     )
@@ -149,7 +149,7 @@ def test_unknown_paths_share_one_metric_label(served: bundle.Bundle) -> None:
 
 def test_drift_sets_the_psi_gauge(served: bundle.Bundle) -> None:
     client = TestClient(create_app(served))
-    batch = readings(200, seed=3).drop(columns=[TARGET]).to_dict("records")
+    batch = readings(drift.MIN_BATCH, seed=3).drop(columns=[TARGET]).to_dict("records")
     client.post("/drift", json={"readings": batch})
 
     assert 'pmm_drift_psi{feature="torque_nm"}' in client.get("/metrics").text

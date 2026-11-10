@@ -95,5 +95,7 @@ def main(argv: list[str] | None = None) -> None:
         from pmm import bundle, drift
 
         frame = pd.read_csv(args.csv)
+        if len(frame) < drift.MIN_BATCH:
+            raise SystemExit(f"drift needs at least {drift.MIN_BATCH} readings, got {len(frame)}")
         for item in drift.report(bundle.load(args.bundle).metadata.reference, frame):
             print(f"{item.feature:<22} PSI {item.psi:.4f}  {item.level}")

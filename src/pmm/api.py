@@ -64,9 +64,9 @@ class PredictOut(BaseModel):
 
 
 class DriftIn(BaseModel):
-    """A batch of recent readings. Fewer than 100 make the PSI too noisy to read."""
+    """A batch of recent readings, at least ``drift.MIN_BATCH``, so noise alone does not warn."""
 
-    readings: list[Reading] = Field(min_length=100, max_length=100_000)
+    readings: list[Reading] = Field(min_length=drift.MIN_BATCH, max_length=100_000)
 
 
 class FeatureDriftOut(BaseModel):

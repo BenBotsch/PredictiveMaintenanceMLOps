@@ -13,6 +13,13 @@ WARN = 0.1
 ALERT = 0.25
 _EPSILON = 1e-4
 
+# Fewest readings a batch needs. Without any drift a batch of n readings already has an expected PSI
+# of about (bins - 1) * (1/n + 1/N) against N training rows, from sampling noise alone: 0.091 for
+# n = 100 and N = 7,000, which is almost the warning threshold, and 0.019 for n = 500. On AI4I,
+# random batches of 100 readings without drift warned for at least one of the five features in 91%
+# of 1,000 trials, batches of 500 in none.
+MIN_BATCH = 500
+
 
 @dataclass(frozen=True, slots=True)
 class FeatureDrift:

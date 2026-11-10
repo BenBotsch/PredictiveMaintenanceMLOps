@@ -191,10 +191,21 @@ The [model card](docs/model_card.md) sums up purpose, data, metrics and limits i
 </picture>
 
 The bundle keeps the decile edges of every numeric feature in the training data. `/drift` and
-`pmm drift <csv>` compare a batch of at least 100 readings against them with the population
+`pmm drift <csv>` compare a batch of at least 500 readings against them with the population
 stability index: below 0.1 is ok, from 0.1 a warning, from 0.25 an alert. On the test split every
 feature stays below 0.01; adding 8 Nm to every torque reading, as a miscalibrated sensor would,
 gives a PSI of 0.59 for torque and an alert, while the other features stay unchanged.
+
+The minimum batch size comes from sampling noise. Without any drift, a batch of n readings has an
+expected PSI of about 9 · (1/n + 1/N) against the ten bins of N training rows. For 100 readings
+that is 0.091, almost the warning threshold, and random batches of 100 unseen rows warned for at
+least one feature in 91% of 1,000 trials; batches of 500 never did.
+
+The reference is a random sample of the training rows, so it fits batches that are random samples
+too. Readings in time order are different: in AI4I, air and process temperature follow a random
+walk, and five blocks of 1,000 consecutive rows in file order, one every 2,000 rows, each raised an
+alert for them, although all their values lie inside the training range. Such inputs need longer
+windows or a range check instead.
 
 The check only sees the inputs. Whether the model still predicts well needs labels, i.e. failures
 that actually happened, and a scheduled comparison against them; that is not part of this project.

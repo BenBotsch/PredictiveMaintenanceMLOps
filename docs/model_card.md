@@ -70,9 +70,14 @@ At the threshold: 37 failures found, 14 missed, 2 false alarms, 1,447 correct ne
 
 ## Monitoring
 
-- `/drift` compares a batch of at least 100 readings with the training distribution per feature
+- `/drift` compares a batch of at least 500 readings with the training distribution per feature
   (population stability index; warning from 0.1, alert from 0.25). On the test split every feature
-  stays below 0.01; a torque offset of 8 Nm raises an alert at 0.59.
+  stays below 0.01; a torque offset of 8 Nm raises an alert at 0.59. Smaller batches are rejected,
+  because at 100 readings sampling noise alone made at least one feature warn in 91% of batches
+  without drift.
+- The drift reference is a random sample of the training rows. Batches of consecutive readings
+  differ from it when an input changes slowly: five blocks of 1,000 rows in file order each raised
+  an alert for air and process temperature, which follow a random walk in AI4I.
 - `/metrics` exposes request counts and latency, the number of scored readings and predicted
   failures, and the PSI of the last drift batch, for alerting in Prometheus.
 - Drift covers only the inputs. Detecting a drop in accuracy needs labelled outcomes and a
