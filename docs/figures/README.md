@@ -15,8 +15,26 @@ card-dark.png     the same on a dark background
 ```
 
 Text is stored as paths in the SVGs, so a page needs none of the fonts. CI runs
-`uv run figkit check docs/figures`, which fails on a missing light/dark pair, an opaque chart, a
-chart off the canvas width or a file above its size budget.
+`uv run figkit check docs/figures docs/figures/page`, which fails on a missing light/dark pair, an
+opaque chart, a chart off the canvas width, text below 8 pt, a file above its size budget, and in
+`page/` on a missing language or a manifest entry without title, alt text or file.
+
+## Page files for a website
+
+`page/` holds every chart except the card without its title, because the page sets the title as
+text. Each chart exists in English and German, for a light and a dark page, as SVG:
+
+```text
+page/<name>.en.svg        English, light page
+page/<name>.en-dark.svg   English, dark page
+page/<name>.de.svg        German, light page
+page/<name>.de-dark.svg   German, dark page
+page/figures.json         title, subtitle, alt text and files per language, size in pt
+```
+
+German figures write numbers as `0,95`, `1.447` and `95 %`. The texts in `figures.json` take the
+same numbers as the drawn figures, so a page reads its title, caption and alt text from there and
+not from a copy.
 
 ## Files and alt texts
 

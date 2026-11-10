@@ -133,6 +133,50 @@ def test_figures_are_written_in_both_themes_as_transparent_svg_and_png(
     assert check(tmp_path / "figures") == []
 
 
+def test_page_figures_come_per_language_with_their_texts_in_a_manifest(
+    evaluation: report.Evaluation, tmp_path: Path
+) -> None:
+    figures.render(evaluation, tmp_path)
+    page = tmp_path / "figures" / "page"
+
+    manifest = json.loads((page / "figures.json").read_text(encoding="utf-8"))
+    assert set(manifest["languages"]) == set(figures.LANGUAGES)
+    entries = {entry["name"]: entry for entry in manifest["figures"]}
+    assert set(entries) == set(figures.PAGE)
+    for entry in entries.values():
+        for code in figures.LANGUAGES:
+            assert entry["title"][code]
+            assert entry["alt"][code]
+            files = entry["files"][code]
+            assert (page / files["light"]).is_file()
+            assert (page / files["dark"]).is_file()
+    assert entries["confusion"]["files"]["de"]["dark"] == "confusion.de-dark.svg"
+    # The page shows the title, so the drawn figure leaves it out.
+    assert "Ausfällen erkannt" not in (page / "confusion.de.svg").read_text(encoding="utf-8")
+    # Languages, titles, alt texts and listed files, as `figkit check` tests them in CI.
+    assert check(page) == []
+
+
+def test_captions_write_numbers_as_in_their_language(evaluation: report.Evaluation) -> None:
+    captions = figures.captions("confusion", evaluation)
+
+    c = evaluation.confusion
+    found = c["true_positive"]
+    assert captions["en"].title.startswith(f"{found} of ")
+    assert captions["de"].title.startswith(f"{found} von ")
+    assert f"{c['true_negative']:,}".replace(",", ".") in captions["de"].alt
+    assert "." in figures.captions("threshold", evaluation)["en"].alt
+    assert "0," in figures.captions("threshold", evaluation)["de"].alt
+
+
+def test_every_text_exists_in_each_language() -> None:
+    english = set(figures.TEXT["en"])
+    for code in figures.LANGUAGES:
+        assert set(figures.TEXT[code]) == english
+        for labels in (figures.CANDIDATE_LABELS, figures.MODE_LABELS, figures.SCENARIO_LABELS):
+            assert set(labels[code]) == set(labels["en"])
+
+
 def test_wilson_interval_stays_inside_zero_and_one_for_few_cases() -> None:
     assert figures.wilson(1, 4) == pytest.approx((0.0456, 0.6994), abs=1e-4)
     low, high = figures.wilson(0, 2)
@@ -144,4 +188,5 @@ def test_wilson_interval_stays_inside_zero_and_one_for_few_cases() -> None:
 
 
 def test_every_input_has_a_readable_figure_label() -> None:
-    assert set(figures.FEATURE_LABELS) == {*NUMERIC, "type"}
+    for code in figures.LANGUAGES:
+        assert set(figures.FEATURE_LABELS[code]) == {*NUMERIC, "type"}

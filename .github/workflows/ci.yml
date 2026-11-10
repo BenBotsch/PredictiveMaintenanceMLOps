@@ -16,7 +16,7 @@ jobs:
       - run: uv run ruff format --check .
       - run: uv run mypy
       - run: uv run pytest --cov --cov-report=term
-      - run: uv run figkit check docs/figures
+      - run: uv run figkit check docs/figures docs/figures/page
 
   pipeline:
     # The whole path on the real data: download, train, export, report, container, requests.

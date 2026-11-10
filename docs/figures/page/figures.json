@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "figures": [
+    {
+      "name": "pipeline",
+      "title": {
+        "en": "From pinned data to a monitored API",
+        "de": "Von festgeschriebenen Daten zur überwachten API"
+      },
+      "subtitle": {
+        "en": "Training writes to MLflow, serving reads only the exported bundle.",
+        "de": "Das Training schreibt nach MLflow, der Betrieb liest nur das exportierte Bundle."
+      },
+      "alt": {
+        "en": "Training lane from pinned data through MLflow runs and registry to an exported bundle, serving lane where a FastAPI container loads only the bundle.",
+        "de": "Trainingsstrecke von festgeschriebenen Daten über MLflow-Runs und Registry zum exportierten Bundle, Betriebsstrecke, in der ein FastAPI-Container nur das Bundle lädt."
+      },
+      "files": {
+        "en": {
+          "light": "pipeline.en.svg",
+          "dark": "pipeline.en-dark.svg",
+          "width": 460.8,
+          "height": 225.9
+        },
+        "de": {
+          "light": "pipeline.de.svg",
+          "dark": "pipeline.de-dark.svg",
+          "width": 460.8,
+          "height": 225.9
+        }
+      }
+    },
+    {
+      "name": "test-metrics",
+      "title": {
+        "en": "Test metrics with 95% bootstrap intervals",
+        "de": "Testmetriken mit 95-%-Bootstrap-Intervallen"
+      },
+      "subtitle": {
+        "en": "1,500 unseen rows with only 51 failures, so the intervals are wide.",
+        "de": "1.500 ungesehene Zeilen mit nur 51 Ausfällen, daher sind die Intervalle breit."
+      },
+      "alt": {
+        "en": "Five test metrics with 95% bootstrap intervals: PR-AUC 0.882, ROC-AUC 0.973, Precision 0.949, Recall 0.725, F1 0.822.",
+        "de": "Fünf Testmetriken mit 95-%-Bootstrap-Intervallen: PR-AUC 0,882, ROC-AUC 0,973, Precision 0,949, Recall 0,725, F1 0,822."
+      },
+      "files": {
+        "en": {
+          "light": "test-metrics.en.svg",
+          "dark": "test-metrics.en-dark.svg",
+          "width": 460.8,
+          "height": 199.1
+        },
+        "de": {
+          "light": "test-metrics.de.svg",
+          "dark": "test-metrics.de-dark.svg",
+          "width": 460.8,
+          "height": 199.1
+        }
+      }
+    },
+    {
+      "name": "pr-curves",
+      "title": {
+        "en": "Boosted trees with physics features win on validation",
+        "de": "Boosting mit physikalischen Merkmalen gewinnt in der Validierung"
+      },
+      "subtitle": {
+        "en": "Interpolated precision per candidate, the highest PR-AUC is registered.",
+        "de": "Interpolierte Precision je Kandidat, registriert wird die höchste PR-AUC."
+      },
+      "alt": {
+        "en": "Precision-recall curves of four candidates on validation data. Boosting + features is highest with PR-AUC 0.859, the logistic models are dashed and dotted.",
+        "de": "Precision-Recall-Kurven von vier Kandidaten auf den Validierungsdaten. Boosting + Merkmale liegt mit PR-AUC 0,859 am höchsten, die logistischen Modelle sind gestrichelt und gepunktet."
+      },
+      "files": {
+        "en": {
+          "light": "pr-curves.en.svg",
+          "dark": "pr-curves.en-dark.svg",
+          "width": 460.8,
+          "height": 325.5
+        },
+        "de": {
+          "light": "pr-curves.de.svg",
+          "dark": "pr-curves.de-dark.svg",
+          "width": 460.8,
+          "height": 325.5
+        }
+      }
+    },
+    {
+      "name": "confusion",
+      "title": {
+        "en": "37 of 51 failures found, 2 false alarms",
+        "de": "37 von 51 Ausfällen erkannt, 2 Fehlalarme"
+      },
+      "subtitle": {
+        "en": "Test split at threshold 0.781, chosen on validation data.",
+        "de": "Testdaten bei Schwelle 0,781, gewählt auf den Validierungsdaten."
+      },
+      "alt": {
+        "en": "Confusion matrix on 1,500 test operations: 37 failures found, 14 missed, 2 false alarms, 1,447 correct negatives.",
+        "de": "Konfusionsmatrix auf 1.500 Testvorgängen: 37 Ausfälle erkannt, 14 übersehen, 2 Fehlalarme, 1.447 Vorgänge korrekt als normal eingestuft."
+      },
+      "files": {
+        "en": {
+          "light": "confusion.en.svg",
+          "dark": "confusion.en-dark.svg",
+          "width": 460.8,
+          "height": 232.1
+        },
+        "de": {
+          "light": "confusion.de.svg",
+          "dark": "confusion.de-dark.svg",
+          "width": 460.8,
+          "height": 232.1
+        }
+      }
+    },
+    {
+      "name": "threshold",
+      "title": {
+        "en": "The threshold trades missed failures against false alarms",
+        "de": "Die Schwelle wägt übersehene Ausfälle gegen Fehlalarme ab"
+      },
+      "subtitle": {
+        "en": "Validation split, serving uses the threshold with the highest F1.",
+        "de": "Validierungsdaten, im Betrieb gilt die Schwelle mit dem höchsten F1."
+      },
+      "alt": {
+        "en": "Precision, recall and F1 over the decision threshold. F1 is flat over a wide range, the served threshold 0.781 is marked with precision 0.97, recall 0.73 and F1 0.83.",
+        "de": "Precision, Recall und F1 über der Entscheidungsschwelle. F1 verläuft über einen weiten Bereich flach, markiert ist die Schwelle im Betrieb 0,781 mit Precision 0,97, Recall 0,73 und F1 0,83."
+      },
+      "files": {
+        "en": {
+          "light": "threshold.en.svg",
+          "dark": "threshold.en-dark.svg",
+          "width": 460.8,
+          "height": 254.7
+        },
+        "de": {
+          "light": "threshold.de.svg",
+          "dark": "threshold.de-dark.svg",
+          "width": 460.8,
+          "height": 254.7
+        }
+      }
+    },
+    {
+      "name": "failure-modes",
+      "title": {
+        "en": "Rule-based failures are found, tool wear mostly is not",
+        "de": "Regelbasierte Ausfälle werden erkannt, Werkzeugverschleiß meist nicht"
+      },
+      "subtitle": {
+        "en": "Share of test failures flagged per mode, with 95% Wilson interval.",
+        "de": "Anteil erkannter Testausfälle je Ausfallart, mit 95-%-Wilson-Intervall."
+      },
+      "alt": {
+        "en": "Recall by failure mode with 95% Wilson intervals: tool wear 1 of 4, heat dissipation 13 of 13, power 11 of 18, overstrain 16 of 18, no random failure in the test split, no mode recorded 0 of 2.",
+        "de": "Recall je Ausfallart mit 95-%-Wilson-Intervallen: Werkzeugverschleiß 1 von 4, Wärmeabfuhr 13 von 13, Leistung 11 von 18, Überlastung 16 von 18, Zufall ohne Fall in den Testdaten, Keine Ausfallart erfasst 0 von 2."
+      },
+      "files": {
+        "en": {
+          "light": "failure-modes.en.svg",
+          "dark": "failure-modes.en-dark.svg",
+          "width": 460.8,
+          "height": 193.5
+        },
+        "de": {
+          "light": "failure-modes.de.svg",
+          "dark": "failure-modes.de-dark.svg",
+          "width": 460.8,
+          "height": 193.5
+        }
+      }
+    },
+    {
+      "name": "importance",
+      "title": {
+        "en": "Torque carries the most signal",
+        "de": "Das Drehmoment trägt das meiste Signal"
+      },
+      "subtitle": {
+        "en": "Drop in test PR-AUC when one input is shuffled (mean ± sd over 10 repeats).",
+        "de": "Rückgang der Test-PR-AUC, wenn ein Eingang permutiert wird (Mittel ± SD über 10 Wiederholungen)."
+      },
+      "alt": {
+        "en": "Permutation importance: torque matters most, product type hardly at all.",
+        "de": "Permutationswichtigkeit: Drehmoment ist am wichtigsten, Produkttyp spielt kaum eine Rolle."
+      },
+      "files": {
+        "en": {
+          "light": "importance.en.svg",
+          "dark": "importance.en-dark.svg",
+          "width": 460.8,
+          "height": 199.1
+        },
+        "de": {
+          "light": "importance.de.svg",
+          "dark": "importance.de-dark.svg",
+          "width": 460.8,
+          "height": 199.1
+        }
+      }
+    },
+    {
+      "name": "drift",
+      "title": {
+        "en": "A miscalibrated torque sensor raises a drift alert",
+        "de": "Ein falsch kalibrierter Drehmomentsensor löst Drift-Alarm aus"
+      },
+      "subtitle": {
+        "en": "Population stability index per input against the training data, log scale.",
+        "de": "Population Stability Index je Eingang gegenüber den Trainingsdaten, logarithmische Skala."
+      },
+      "alt": {
+        "en": "Population stability index per input on a log scale with warn and alert zones: at most 0.008 on test data, 0.59 for torque after a 8 Nm sensor offset, inside the alert zone.",
+        "de": "Population Stability Index je Eingang auf logarithmischer Skala mit Warn- und Alarmzone: höchstens 0,008 auf den Testdaten, 0,59 für das Drehmoment nach einem Sensorversatz von 8 Nm, in der Alarmzone."
+      },
+      "files": {
+        "en": {
+          "light": "drift.en.svg",
+          "dark": "drift.en-dark.svg",
+          "width": 460.8,
+          "height": 210.2
+        },
+        "de": {
+          "light": "drift.de.svg",
+          "dark": "drift.de-dark.svg",
+          "width": 460.8,
+          "height": 210.2
+        }
+      }
+    }
+  ]
+}
