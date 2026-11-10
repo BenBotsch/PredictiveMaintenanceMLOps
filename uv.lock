@@ -454,10 +454,11 @@ wheels = [
 
 [[package]]
 name = "figkit"
-version = "0.1.0"
-source = { git = "https://github.com/BenBotsch/FigureKit?rev=v0.1.0#684fe175f27f5084436646203baedceaad19d7b3" }
+version = "0.1.1"
+source = { git = "https://github.com/BenBotsch/FigureKit?rev=v0.1.1#999dec5f9195caaf84f2a76da95cafbc6975aaf1" }
 dependencies = [
     { name = "matplotlib" },
+    { name = "numpy" },
     { name = "pillow" },
 ]
 
@@ -1244,7 +1245,7 @@ dev = [
     { name = "pytest-cov", specifier = ">=7.1" },
     { name = "ruff", specifier = ">=0.11" },
 ]
-report = [{ name = "figkit", git = "https://github.com/BenBotsch/FigureKit?rev=v0.1.0" }]
+report = [{ name = "figkit", git = "https://github.com/BenBotsch/FigureKit?rev=v0.1.1" }]
 train = [{ name = "mlflow", specifier = ">=3.1" }]
 
 [[package]]
