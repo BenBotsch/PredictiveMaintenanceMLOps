@@ -1,0 +1,149 @@
+{
+  "model_version": "1",
+  "threshold": 0.7809,
+  "test_rows": 1500,
+  "test_failures": 51,
+  "candidates": {
+    "logistic": 0.4212,
+    "logistic + features": 0.394,
+    "boosting": 0.7754,
+    "boosting + features": 0.8589
+  },
+  "prevalence": 0.034,
+  "confusion": {
+    "true_negative": 1447,
+    "false_positive": 2,
+    "false_negative": 14,
+    "true_positive": 37
+  },
+  "intervals": [
+    {
+      "metric": "pr_auc",
+      "value": 0.882096,
+      "low": 0.802723,
+      "high": 0.951665
+    },
+    {
+      "metric": "roc_auc",
+      "value": 0.972963,
+      "low": 0.94261,
+      "high": 0.994283
+    },
+    {
+      "metric": "precision",
+      "value": 0.948718,
+      "low": 0.868377,
+      "high": 1.0
+    },
+    {
+      "metric": "recall",
+      "value": 0.72549,
+      "low": 0.607843,
+      "high": 0.843137
+    },
+    {
+      "metric": "f1",
+      "value": 0.822222,
+      "low": 0.735534,
+      "high": 0.895833
+    }
+  ],
+  "modes": [
+    {
+      "mode": "TWF",
+      "name": "Tool wear",
+      "detected": 1,
+      "total": 4
+    },
+    {
+      "mode": "HDF",
+      "name": "Heat dissipation",
+      "detected": 13,
+      "total": 13
+    },
+    {
+      "mode": "PWF",
+      "name": "Power",
+      "detected": 11,
+      "total": 18
+    },
+    {
+      "mode": "OSF",
+      "name": "Overstrain",
+      "detected": 16,
+      "total": 18
+    },
+    {
+      "mode": "RNF",
+      "name": "Random",
+      "detected": 0,
+      "total": 0
+    },
+    {
+      "mode": "none",
+      "name": "No mode recorded",
+      "detected": 0,
+      "total": 2
+    }
+  ],
+  "importance": [
+    {
+      "feature": "torque_nm",
+      "mean": 0.7677,
+      "std": 0.0142
+    },
+    {
+      "feature": "rotational_speed_rpm",
+      "mean": 0.4948,
+      "std": 0.0367
+    },
+    {
+      "feature": "air_temp_k",
+      "mean": 0.4794,
+      "std": 0.0442
+    },
+    {
+      "feature": "process_temp_k",
+      "mean": 0.3471,
+      "std": 0.0303
+    },
+    {
+      "feature": "tool_wear_min",
+      "mean": 0.3379,
+      "std": 0.0495
+    },
+    {
+      "feature": "type",
+      "mean": 0.0403,
+      "std": 0.0165
+    }
+  ],
+  "drift": {
+    "test split": {
+      "process_temp_k": 0.0082,
+      "tool_wear_min": 0.0079,
+      "air_temp_k": 0.0062,
+      "torque_nm": 0.0053,
+      "rotational_speed_rpm": 0.0047
+    },
+    "torque +8 Nm": {
+      "torque_nm": 0.5936,
+      "process_temp_k": 0.0082,
+      "tool_wear_min": 0.0079,
+      "air_temp_k": 0.0062,
+      "rotational_speed_rpm": 0.0047
+    }
+  },
+  "latency": [
+    {
+      "batch": 1,
+      "median_ms": 12.18,
+      "p95_ms": 14.79
+    },
+    {
+      "batch": 1000,
+      "median_ms": 22.61,
+      "p95_ms": 32.25
+    }
+  ]
+}
