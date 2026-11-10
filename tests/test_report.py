@@ -4,6 +4,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import pytest
+from figkit.check import check
 from PIL import Image
 
 from pmm import bundle, drift, figures, report
@@ -114,20 +115,19 @@ def test_latency_measures_both_batch_sizes(served: bundle.Bundle) -> None:
     assert all(0 < t.median_ms <= t.p95_ms for t in timings)
 
 
-def test_figures_are_written_in_both_themes_and_all_sizes(
+def test_figures_are_written_in_both_themes_as_transparent_svg_and_png(
     evaluation: report.Evaluation, tmp_path: Path
 ) -> None:
     written = figures.render(evaluation, tmp_path)
 
     names = {p.relative_to(tmp_path).as_posix() for p in written}
-    for name in figures.FIGURES:
-        for theme in ("light", "dark"):
-            assert f"figures/{name}-{theme}.png" in names
-            for width in figures.WEB_WIDTHS:
-                path = tmp_path / "web" / f"{name}-{theme}-{width}.webp"
-                with Image.open(path) as image:
-                    assert image.width == width
-    with Image.open(tmp_path / "web" / "card-light.png") as card:
-        assert card.size == figures.CARD_SIZE
-    with Image.open(tmp_path / "figures" / "pr-curves-dark.png") as readme:
-        assert readme.width == figures.README_WIDTH
+    for name in set(figures.FIGURES) - {"card"}:
+        for suffix in ("", "-dark"):
+            assert {f"figures/{name}{suffix}.svg", f"figures/{name}{suffix}.png"} <= names
+    assert {"figures/card.png", "figures/card-dark.png"} <= names
+    with Image.open(tmp_path / "figures" / "card.png") as card:
+        assert card.size == (1200, 630)
+    with Image.open(tmp_path / "figures" / "pr-curves-dark.png") as chart:
+        assert chart.convert("RGBA").getpixel((0, 0))[3] == 0  # type: ignore[index]
+    # Pairs, transparency and file sizes, as `figkit check` tests them in CI.
+    assert check(tmp_path / "figures") == []

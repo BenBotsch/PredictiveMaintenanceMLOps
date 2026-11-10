@@ -8,7 +8,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/figures/card-dark.png">
-  <img alt="Test PR-AUC 0.88 (95 % interval 0.80 to 0.95), 37 of 51 failures found with 2 false alarms on 1,500 unseen operations, drift alert at PSI 0.59 for a torque sensor shifted by 8 Nm." src="docs/figures/card-light.png">
+  <img alt="Test PR-AUC 0.88 (95 % interval 0.80 to 0.95), 37 of 51 failures found with 2 false alarms on 1,500 unseen operations, drift alert at PSI 0.59 for a torque sensor shifted by 8 Nm." src="docs/figures/card.png">
 </picture>
 
 Predicts machine failures in milling operations on the AI4I 2020 dataset and carries the model
@@ -30,8 +30,8 @@ docker build   serving image without MLflow, matplotlib and training data
 ## Architecture
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/pipeline-dark.png">
-  <img alt="Two lanes. Training: download with checksum, train four candidates as MLflow runs, register and promote the champion, export the bundle. Serving: the bundle with model, threshold and drift reference, FastAPI with /predict and /drift in a non-root container, monitoring with /metrics, PSI and JSON request logs." src="docs/figures/pipeline-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/pipeline-dark.svg">
+  <img alt="Two lanes. Training: download with checksum, train four candidates as MLflow runs, register and promote the champion, export the bundle. Serving: the bundle with model, threshold and drift reference, FastAPI with /predict and /drift in a non-root container, monitoring with /metrics, PSI and JSON request logs." src="docs/figures/pipeline.svg">
 </picture>
 
 The two halves share exactly one artefact, the bundle. Training needs MLflow and the data; serving
@@ -61,8 +61,8 @@ are stored in [results/report.json](results/report.json) and
 ### Model selection
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/pr-curves-dark.png">
-  <img alt="Precision-recall curves of four candidates on the validation split. Gradient boosting with features stays highest across recall, logistic regression with and without features stays far below." src="docs/figures/pr-curves-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/pr-curves-dark.svg">
+  <img alt="Precision-recall curves of four candidates on the validation split. Gradient boosting with features stays highest across recall, logistic regression with and without features stays far below." src="docs/figures/pr-curves.svg">
 </picture>
 
 | Candidate | Val PR-AUC | Val F1 |
@@ -80,8 +80,8 @@ cannot express.
 ### Test metrics with uncertainty
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/test-metrics-dark.png">
-  <img alt="Dot and whisker chart of the five test metrics with 95 % bootstrap intervals: PR-AUC 0.882, ROC-AUC 0.973, precision 0.949, recall 0.725, F1 0.822." src="docs/figures/test-metrics-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/test-metrics-dark.svg">
+  <img alt="Dot and whisker chart of the five test metrics with 95 % bootstrap intervals: PR-AUC 0.882, ROC-AUC 0.973, precision 0.949, recall 0.725, F1 0.822." src="docs/figures/test-metrics.svg">
 </picture>
 
 | Metric | Test | 95 % interval |
@@ -100,8 +100,8 @@ compatible with this test split.
 ### Errors at the served threshold
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/confusion-dark.png">
-  <img alt="Confusion matrix at threshold 0.781: 1,447 true negatives, 2 false alarms, 14 missed failures, 37 failures found." src="docs/figures/confusion-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/confusion-dark.svg">
+  <img alt="Confusion matrix at threshold 0.781: 1,447 true negatives, 2 false alarms, 14 missed failures, 37 failures found." src="docs/figures/confusion.svg">
 </picture>
 
 At threshold 0.781 the model finds 37 of 51 failures and raises 2 false alarms among 1,449 normal
@@ -110,8 +110,8 @@ direction to tune if a missed failure is cheap and an unnecessary stop is expens
 one otherwise.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/threshold-dark.png">
-  <img alt="Precision, recall and F1 over the decision threshold on the validation split. F1 is flat between about 0.1 and 0.95; the served threshold 0.781 is marked." src="docs/figures/threshold-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/threshold-dark.svg">
+  <img alt="Precision, recall and F1 over the decision threshold on the validation split. F1 is flat between about 0.1 and 0.95; the served threshold 0.781 is marked." src="docs/figures/threshold.svg">
 </picture>
 
 F1 is nearly flat between 0.1 and 0.95, so the choice of threshold is a business decision rather
@@ -122,8 +122,8 @@ would not need a new model.
 ### Which failures are found
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/failure-modes-dark.png">
-  <img alt="Share of test failures flagged by failure mode: heat dissipation 13 of 13, overstrain 16 of 18, power 11 of 18, tool wear 1 of 4, no recorded mode 0 of 2." src="docs/figures/failure-modes-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/failure-modes-dark.svg">
+  <img alt="Share of test failures flagged by failure mode: heat dissipation 13 of 13, overstrain 16 of 18, power 11 of 18, tool wear 1 of 4, no recorded mode 0 of 2." src="docs/figures/failure-modes.svg">
 </picture>
 
 | Failure mode | Detected | Recall |
@@ -146,8 +146,8 @@ the inputs.
 ### What the model uses
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/importance-dark.png">
-  <img alt="Drop in test PR-AUC when one input is shuffled: torque 0.77, rotational speed 0.49, air temperature 0.48, process temperature 0.35, tool wear 0.34, product type 0.04." src="docs/figures/importance-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/importance-dark.svg">
+  <img alt="Drop in test PR-AUC when one input is shuffled: torque 0.77, rotational speed 0.49, air temperature 0.48, process temperature 0.35, tool wear 0.34, product type 0.04." src="docs/figures/importance.svg">
 </picture>
 
 | Input | PR-AUC drop when shuffled |
@@ -186,8 +186,8 @@ The [model card](docs/model_card.md) sums up purpose, data, metrics and limits i
 ## Drift
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/drift-dark.png">
-  <img alt="Population stability index per input against the training data. On the test split all inputs stay below 0.01. With torque shifted by 8 Nm, torque reaches 0.59, above the alert line at 0.25, while the other inputs are unchanged." src="docs/figures/drift-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/drift-dark.svg">
+  <img alt="Population stability index per input against the training data. On the test split all inputs stay below 0.01. With torque shifted by 8 Nm, torque reaches 0.59, above the alert line at 0.25, while the other inputs are unchanged." src="docs/figures/drift.svg">
 </picture>
 
 The bundle keeps the decile edges of every numeric feature in the training data. `/drift` and
@@ -240,7 +240,7 @@ uv sync
 uv run pmm download
 uv run pmm train          # MLflow tracking and registry in mlflow.db
 uv run pmm export         # writes bundle/
-uv run pmm report         # writes results/ and docs/figures/, docs/web/
+uv run pmm report         # writes results/ and docs/figures/
 uv run pmm serve          # http://127.0.0.1:8000/docs
 uv run pytest --cov       # runs on invented data, no download needed
 ```
@@ -268,7 +268,7 @@ every commit.
 
 ## Design decisions
 
-- **Serving without MLflow.** MLflow is in the `train` dependency group, matplotlib in `report`.
+- **Serving without MLflow.** MLflow is in the `train` dependency group, the figure tools in `report`.
   The image installs only the main dependencies and reads the bundle: model, threshold, test
   metrics and drift reference.
 - **skops instead of pickle.** Loading a bundle runs no code beyond an explicit list of trusted
@@ -279,9 +279,10 @@ every commit.
   are rejected with 422.
 - **Report from the bundle.** `pmm report` evaluates exactly what is served, not the training run,
   and reproduces the test metrics in the bundle to the last digit.
-- **Figures as code.** Every image is rendered from the report data in a light and a dark theme,
-  with a colour palette checked for colour-vision deficiencies; a new training run updates them
-  with one command.
+- **Figures as code.** Every image is rendered from the report data with
+  [FigureKit](https://github.com/BenBotsch/FigureKit), the figure style of all my projects: a light
+  and a dark theme as transparent SVG and PNG, with colours checked for colour-vision deficiencies.
+  A new training run updates them with one command, and CI checks them with `figkit check`.
 
 ## Layout
 
@@ -289,7 +290,7 @@ every commit.
 src/pmm/       data, model, train (MLflow), bundle, drift, api, report, figures, cli
 tests/         unit tests and an end-to-end test on invented data
 results/       training run, report summary and Markdown tables
-docs/          model card, README figures, web images (see docs/web/README.md)
+docs/          model card, figures for the README and the web (see docs/figures/README.md)
 Dockerfile     serving image, non-root
 .github/       CI: lint, types, tests with coverage; then the full pipeline on the real data up
                to the report and requests against the running container; Dependabot

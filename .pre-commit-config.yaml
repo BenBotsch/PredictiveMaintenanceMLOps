@@ -3,8 +3,11 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
+      # Generated figures stay as matplotlib writes them: its SVG path lines end with a space.
       - id: end-of-file-fixer
+        exclude: ^docs/figures/.*\.svg$
       - id: trailing-whitespace
+        exclude: ^docs/figures/.*\.svg$
       - id: check-yaml
       - id: check-toml
       - id: check-added-large-files

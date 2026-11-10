@@ -23,8 +23,8 @@ pmm = "pmm.cli:main"
 [dependency-groups]
 # Only training needs MLflow; the serving image installs without this group.
 train = ["mlflow>=3.1"]
-# Figures and tables of `pmm report`; not needed for serving either.
-report = ["matplotlib>=3.9"]
+# Figures of `pmm report` in the shared figure style (brings matplotlib); not needed for serving.
+report = ["figkit @ git+https://github.com/BenBotsch/FigureKit@v0.1.0"]
 dev = [
     "mypy>=1.15",
     "pandas-stubs>=2.2",

@@ -16,6 +16,7 @@ jobs:
       - run: uv run ruff format --check .
       - run: uv run mypy
       - run: uv run pytest --cov --cov-report=term
+      - run: uv run figkit check docs/figures
 
   pipeline:
     # The whole path on the real data: download, train, export, report, container, requests.
@@ -35,7 +36,6 @@ jobs:
           path: |
             results/
             docs/figures/
-            docs/web/
       - run: docker build -t pmm .
       - run: docker run -d --name pmm -p 8000:8000 pmm
       - name: Wait for the API

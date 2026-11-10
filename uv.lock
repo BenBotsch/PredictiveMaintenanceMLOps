@@ -453,6 +453,15 @@ wheels = [
 ]
 
 [[package]]
+name = "figkit"
+version = "0.1.0"
+source = { git = "https://github.com/BenBotsch/FigureKit?rev=v0.1.0#684fe175f27f5084436646203baedceaad19d7b3" }
+dependencies = [
+    { name = "matplotlib" },
+    { name = "pillow" },
+]
+
+[[package]]
 name = "filelock"
 version = "4.2.10"
 source = { registry = "https://pypi.org/simple" }
@@ -1207,7 +1216,7 @@ dev = [
     { name = "ruff" },
 ]
 report = [
-    { name = "matplotlib" },
+    { name = "figkit" },
 ]
 train = [
     { name = "mlflow" },
@@ -1235,7 +1244,7 @@ dev = [
     { name = "pytest-cov", specifier = ">=7.1" },
     { name = "ruff", specifier = ">=0.11" },
 ]
-report = [{ name = "matplotlib", specifier = ">=3.9" }]
+report = [{ name = "figkit", git = "https://github.com/BenBotsch/FigureKit?rev=v0.1.0" }]
 train = [{ name = "mlflow", specifier = ">=3.1" }]
 
 [[package]]

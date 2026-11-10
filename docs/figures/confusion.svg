@@ -1,0 +1,1699 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="378.72pt" height="241.576pt" viewBox="0 0 378.72 241.576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 241.576 
+L 378.72 241.576 
+L 378.72 0 
+L 0 0 
+L 0 241.576 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 102.806107 140.491701 
+L 224.117863 140.491701 
+Q 229.570076 140.491701 229.570076 136.968411 
+L 229.570076 60.33686 
+Q 229.570076 56.81357 224.117863 56.81357 
+L 102.806107 56.81357 
+Q 97.353893 56.81357 97.353893 60.33686 
+L 97.353893 136.968411 
+Q 97.353893 140.491701 102.806107 140.491701 
+z
+" clip-path="url(#p3c8c817b96)" style="fill: #2f5bd3; opacity: 0.16"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 239.11145 140.491701 
+L 360.423206 140.491701 
+Q 365.87542 140.491701 365.87542 136.968411 
+L 365.87542 60.33686 
+Q 365.87542 56.81357 360.423206 56.81357 
+L 239.11145 56.81357 
+Q 233.659237 56.81357 233.659237 60.33686 
+L 233.659237 136.968411 
+Q 233.659237 140.491701 239.11145 140.491701 
+z
+" clip-path="url(#p3c8c817b96)" style="fill: #eb6834; opacity: 0.16"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 102.806107 228.573944 
+L 224.117863 228.573944 
+Q 229.570076 228.573944 229.570076 225.050654 
+L 229.570076 148.419103 
+Q 229.570076 144.895813 224.117863 144.895813 
+L 102.806107 144.895813 
+Q 97.353893 144.895813 97.353893 148.419103 
+L 97.353893 225.050654 
+Q 97.353893 228.573944 102.806107 228.573944 
+z
+" clip-path="url(#p3c8c817b96)" style="fill: #eb6834; opacity: 0.16"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 239.11145 228.573944 
+L 360.423206 228.573944 
+Q 365.87542 228.573944 365.87542 225.050654 
+L 365.87542 148.419103 
+Q 365.87542 144.895813 360.423206 144.895813 
+L 239.11145 144.895813 
+Q 233.659237 144.895813 233.659237 148.419103 
+L 233.659237 225.050654 
+Q 233.659237 228.573944 239.11145 228.573944 
+z
+" clip-path="url(#p3c8c817b96)" style="fill: #2f5bd3; opacity: 0.16"/>
+   </g>
+   <g id="text_1">
+    <!-- Test split at threshold 0.781, chosen on validation data. -->
+    <g style="fill: #5e6270" transform="translate(10.8 33.85) scale(0.09 -0.09)">
+     <defs>
+      <path id="BricolageGrotesque-Regular-7a" d="M 1446 0 
+L 1446 4224 
+L 2035 4224 
+L 2035 0 
+L 1446 0 
+z
+M 160 3712 
+L 160 4224 
+L 3328 4224 
+L 3328 3712 
+L 160 3712 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-c5" d="M 1933 -83 
+Q 1542 -83 1241 35 
+Q 941 154 739 378 
+Q 538 602 432 909 
+Q 326 1216 326 1600 
+Q 326 1990 432 2316 
+Q 538 2643 736 2886 
+Q 934 3130 1222 3261 
+Q 1510 3392 1882 3392 
+Q 2208 3392 2473 3283 
+Q 2739 3174 2931 2947 
+Q 3123 2720 3219 2377 
+Q 3315 2035 3296 1568 
+L 698 1549 
+L 698 1946 
+L 2944 1965 
+L 2739 1696 
+Q 2771 2099 2665 2364 
+Q 2560 2630 2355 2764 
+Q 2150 2899 1882 2899 
+Q 1581 2899 1360 2745 
+Q 1139 2592 1017 2304 
+Q 896 2016 896 1606 
+Q 896 1018 1161 707 
+Q 1427 397 1939 397 
+Q 2144 397 2291 445 
+Q 2438 493 2544 576 
+Q 2650 659 2720 774 
+Q 2790 890 2829 1024 
+L 3341 902 
+Q 3277 672 3158 489 
+Q 3040 307 2864 179 
+Q 2688 51 2457 -16 
+Q 2227 -83 1933 -83 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-118" d="M 1734 -83 
+Q 1389 -83 1123 -9 
+Q 858 64 675 201 
+Q 493 339 397 528 
+Q 301 717 301 947 
+L 787 1082 
+Q 781 870 896 713 
+Q 1011 557 1235 473 
+Q 1459 390 1766 390 
+Q 2150 390 2358 518 
+Q 2566 646 2566 870 
+Q 2566 1050 2451 1149 
+Q 2336 1248 2131 1309 
+Q 1926 1370 1658 1421 
+Q 1421 1472 1193 1536 
+Q 966 1600 777 1705 
+Q 589 1811 473 1984 
+Q 358 2157 358 2413 
+Q 358 2714 515 2931 
+Q 672 3149 966 3270 
+Q 1261 3392 1670 3392 
+Q 2080 3392 2368 3267 
+Q 2656 3142 2822 2918 
+Q 2989 2694 3014 2400 
+L 2509 2266 
+Q 2502 2483 2393 2627 
+Q 2285 2771 2096 2844 
+Q 1907 2918 1651 2918 
+Q 1306 2918 1110 2790 
+Q 915 2662 915 2438 
+Q 915 2272 1033 2169 
+Q 1152 2067 1353 2009 
+Q 1555 1952 1811 1894 
+Q 2067 1843 2300 1779 
+Q 2534 1715 2716 1612 
+Q 2899 1510 3008 1340 
+Q 3117 1171 3117 909 
+Q 3117 582 2944 361 
+Q 2771 141 2460 29 
+Q 2150 -83 1734 -83 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-11e" d="M 1536 -64 
+Q 1075 -64 854 185 
+Q 634 435 634 947 
+L 634 2822 
+L 134 2822 
+L 141 3309 
+L 454 3309 
+Q 608 3309 681 3363 
+Q 755 3418 774 3552 
+L 838 4058 
+L 1197 4058 
+L 1197 3309 
+L 2144 3309 
+L 2144 2816 
+L 1197 2816 
+L 1197 960 
+Q 1197 704 1315 592 
+Q 1434 480 1658 480 
+Q 1779 480 1907 512 
+Q 2035 544 2170 640 
+L 2170 58 
+Q 1984 -13 1824 -38 
+Q 1664 -64 1536 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-1a4" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-111" d="M 512 -1043 
+L 512 1645 
+L 512 3309 
+L 1030 3309 
+L 1005 2464 
+L 1101 2464 
+Q 1178 2739 1315 2947 
+Q 1453 3155 1667 3273 
+Q 1882 3392 2195 3392 
+Q 2650 3392 2954 3165 
+Q 3258 2938 3411 2541 
+Q 3565 2144 3565 1651 
+Q 3565 1158 3411 764 
+Q 3258 371 2960 144 
+Q 2662 -83 2234 -83 
+Q 1882 -83 1658 61 
+Q 1434 205 1299 438 
+Q 1165 672 1088 928 
+L 979 928 
+Q 1018 755 1040 569 
+Q 1062 384 1078 205 
+Q 1094 26 1094 -141 
+L 1094 -1043 
+L 512 -1043 
+z
+M 2086 422 
+Q 2368 422 2560 585 
+Q 2752 749 2854 1030 
+Q 2957 1312 2957 1664 
+Q 2957 2042 2851 2310 
+Q 2746 2579 2554 2729 
+Q 2362 2880 2086 2880 
+Q 1850 2880 1667 2774 
+Q 1485 2669 1357 2493 
+Q 1229 2317 1161 2109 
+Q 1094 1901 1094 1696 
+L 1094 1619 
+Q 1094 1491 1132 1331 
+Q 1171 1171 1248 1014 
+Q 1325 858 1443 723 
+Q 1562 589 1722 505 
+Q 1882 422 2086 422 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-ee" d="M 512 0 
+L 512 4486 
+L 1088 4486 
+L 1088 0 
+L 512 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-dd" d="M 518 0 
+L 518 3309 
+L 1100 3309 
+L 1100 0 
+L 518 0 
+z
+M 807 3891 
+Q 602 3891 499 3974 
+Q 397 4058 397 4224 
+Q 397 4390 499 4473 
+Q 602 4557 800 4557 
+Q 1005 4557 1110 4473 
+Q 1216 4390 1216 4224 
+Q 1216 4058 1110 3974 
+Q 1005 3891 807 3891 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-a3" d="M 1274 -83 
+Q 998 -83 780 22 
+Q 563 128 438 336 
+Q 314 544 314 864 
+Q 314 1101 397 1280 
+Q 480 1459 662 1587 
+Q 845 1715 1136 1801 
+Q 1427 1888 1843 1939 
+Q 2080 1971 2227 2003 
+Q 2374 2035 2444 2108 
+Q 2515 2182 2515 2336 
+Q 2515 2573 2352 2739 
+Q 2189 2906 1830 2906 
+Q 1638 2906 1446 2842 
+Q 1254 2778 1113 2627 
+Q 973 2477 928 2208 
+L 397 2394 
+Q 448 2624 566 2806 
+Q 685 2989 867 3120 
+Q 1050 3251 1296 3321 
+Q 1542 3392 1843 3392 
+Q 2266 3392 2544 3251 
+Q 2822 3110 2960 2819 
+Q 3098 2528 3098 2074 
+L 3098 1338 
+Q 3098 1139 3107 905 
+Q 3117 672 3133 438 
+Q 3149 205 3174 0 
+L 2637 0 
+Q 2611 205 2598 406 
+Q 2586 608 2573 813 
+L 2490 813 
+Q 2394 576 2234 371 
+Q 2074 166 1837 41 
+Q 1600 -83 1274 -83 
+z
+M 1446 390 
+Q 1581 390 1725 435 
+Q 1869 480 2013 579 
+Q 2157 678 2288 838 
+Q 2419 998 2528 1222 
+L 2522 1869 
+L 2694 1837 
+Q 2592 1734 2419 1683 
+Q 2246 1632 2044 1600 
+Q 1843 1568 1635 1533 
+Q 1427 1498 1257 1430 
+Q 1088 1363 985 1241 
+Q 883 1120 883 909 
+Q 883 653 1040 521 
+Q 1197 390 1446 390 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-db" d="M 512 0 
+L 512 2022 
+L 512 4486 
+L 1107 4486 
+L 1107 3450 
+Q 1107 3309 1100 3165 
+Q 1094 3021 1078 2877 
+Q 1062 2733 1043 2585 
+Q 1024 2438 998 2291 
+L 1107 2291 
+Q 1203 2656 1350 2902 
+Q 1498 3149 1718 3270 
+Q 1939 3392 2246 3392 
+Q 2810 3392 3088 2998 
+Q 3366 2605 3366 1824 
+L 3366 0 
+L 2778 0 
+L 2778 1766 
+Q 2778 2342 2598 2608 
+Q 2419 2874 2074 2874 
+Q 1779 2874 1574 2701 
+Q 1370 2528 1251 2237 
+Q 1133 1946 1094 1574 
+L 1094 0 
+L 512 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-114" d="M 512 0 
+L 512 1798 
+L 512 3309 
+L 1037 3309 
+L 986 2170 
+L 1094 2170 
+Q 1152 2534 1273 2809 
+Q 1395 3085 1600 3238 
+Q 1805 3392 2099 3392 
+Q 2170 3392 2250 3382 
+Q 2330 3373 2438 3341 
+L 2406 2726 
+Q 2310 2765 2214 2781 
+Q 2118 2797 2035 2797 
+Q 1779 2797 1600 2637 
+Q 1421 2477 1296 2208 
+Q 1171 1939 1094 1606 
+L 1094 0 
+L 512 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-fa" d="M 1933 -83 
+Q 1459 -83 1097 125 
+Q 736 333 531 723 
+Q 326 1114 326 1670 
+Q 326 2246 540 2627 
+Q 755 3008 1116 3200 
+Q 1478 3392 1920 3392 
+Q 2381 3392 2742 3190 
+Q 3104 2989 3315 2601 
+Q 3526 2214 3526 1645 
+Q 3526 1075 3318 691 
+Q 3110 307 2748 112 
+Q 2387 -83 1933 -83 
+z
+M 1958 397 
+Q 2266 397 2483 547 
+Q 2701 698 2822 973 
+Q 2944 1248 2944 1626 
+Q 2944 2016 2819 2301 
+Q 2694 2586 2464 2742 
+Q 2234 2899 1907 2899 
+Q 1606 2899 1382 2758 
+Q 1158 2618 1036 2346 
+Q 915 2074 915 1683 
+Q 915 1082 1196 739 
+Q 1478 397 1958 397 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-c1" d="M 1677 -83 
+Q 1248 -83 947 141 
+Q 646 365 492 755 
+Q 339 1146 339 1651 
+Q 339 2150 489 2544 
+Q 640 2938 934 3162 
+Q 1229 3386 1658 3386 
+Q 2016 3386 2240 3238 
+Q 2464 3091 2598 2857 
+Q 2733 2624 2803 2355 
+L 2912 2355 
+Q 2886 2534 2857 2736 
+Q 2829 2938 2813 3133 
+Q 2797 3328 2797 3482 
+L 2797 4486 
+L 3386 4486 
+L 3386 1638 
+L 3386 0 
+L 2861 0 
+L 2893 890 
+L 2784 890 
+Q 2714 608 2573 387 
+Q 2432 166 2214 41 
+Q 1997 -83 1677 -83 
+z
+M 1811 429 
+Q 2042 429 2227 537 
+Q 2413 646 2541 822 
+Q 2669 998 2733 1203 
+Q 2797 1408 2797 1600 
+L 2797 1677 
+Q 2797 1811 2761 1971 
+Q 2726 2131 2649 2291 
+Q 2573 2451 2457 2585 
+Q 2342 2720 2182 2800 
+Q 2022 2880 1824 2880 
+Q 1536 2880 1341 2717 
+Q 1146 2554 1043 2272 
+Q 941 1990 941 1638 
+Q 941 1274 1046 1002 
+Q 1152 730 1344 579 
+Q 1536 429 1811 429 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-14a" d="M 2093 -90 
+Q 1709 -90 1395 64 
+Q 1082 218 861 506 
+Q 640 794 521 1194 
+Q 403 1594 403 2086 
+Q 403 2790 620 3286 
+Q 838 3782 1219 4044 
+Q 1600 4307 2099 4307 
+Q 2624 4307 2995 4028 
+Q 3366 3750 3571 3254 
+Q 3776 2758 3776 2093 
+Q 3776 1606 3657 1203 
+Q 3539 800 3318 512 
+Q 3098 224 2787 67 
+Q 2477 -90 2093 -90 
+z
+M 2093 416 
+Q 2323 416 2524 521 
+Q 2726 627 2873 838 
+Q 3021 1050 3107 1366 
+Q 3194 1683 3194 2112 
+Q 3194 2643 3056 3020 
+Q 2918 3398 2672 3603 
+Q 2426 3808 2093 3808 
+Q 1805 3808 1552 3632 
+Q 1299 3456 1142 3081 
+Q 986 2707 986 2112 
+Q 986 1696 1069 1379 
+Q 1152 1062 1299 848 
+Q 1446 634 1648 525 
+Q 1850 416 2093 416 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-1b5" d="M 563 -77 
+Q 358 -77 256 12 
+Q 154 102 154 301 
+Q 154 493 259 582 
+Q 365 672 563 672 
+Q 774 672 880 582 
+Q 986 493 986 294 
+Q 986 -77 563 -77 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-151" d="M 896 0 
+Q 896 461 979 957 
+Q 1062 1453 1241 1945 
+Q 1421 2438 1702 2886 
+Q 1984 3334 2368 3686 
+L 2368 3738 
+L 179 3718 
+L 179 4224 
+L 2918 4224 
+L 2918 3661 
+Q 2592 3341 2333 2937 
+Q 2074 2534 1894 2073 
+Q 1715 1613 1619 1091 
+Q 1523 570 1523 0 
+L 896 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-152" d="M 2048 -96 
+Q 1555 -96 1174 32 
+Q 794 160 586 419 
+Q 378 678 378 1050 
+Q 378 1363 512 1577 
+Q 646 1792 870 1926 
+Q 1094 2061 1370 2106 
+L 1370 2144 
+L 2048 2234 
+L 2726 2157 
+L 2726 2112 
+Q 2995 2080 3222 1952 
+Q 3450 1824 3590 1600 
+Q 3731 1376 3731 1050 
+Q 3731 678 3520 419 
+Q 3309 160 2931 32 
+Q 2554 -96 2048 -96 
+z
+M 2054 429 
+Q 2221 429 2406 461 
+Q 2592 493 2758 566 
+Q 2925 640 3030 771 
+Q 3136 902 3136 1101 
+Q 3136 1350 2976 1529 
+Q 2816 1709 2569 1801 
+Q 2323 1894 2048 1894 
+Q 1786 1894 1536 1801 
+Q 1286 1709 1129 1536 
+Q 973 1363 973 1114 
+Q 973 922 1075 787 
+Q 1178 653 1344 576 
+Q 1510 499 1696 464 
+Q 1882 429 2054 429 
+z
+M 2048 2381 
+Q 2272 2381 2483 2467 
+Q 2694 2554 2835 2720 
+Q 2976 2886 2976 3130 
+Q 2976 3315 2886 3440 
+Q 2797 3565 2656 3645 
+Q 2515 3725 2348 3760 
+Q 2182 3795 2022 3795 
+Q 1818 3795 1606 3731 
+Q 1395 3667 1254 3526 
+Q 1114 3386 1114 3142 
+Q 1114 2899 1248 2729 
+Q 1382 2560 1596 2470 
+Q 1811 2381 2048 2381 
+z
+M 2048 1984 
+L 1370 2086 
+L 1370 2189 
+Q 1126 2240 931 2361 
+Q 736 2483 624 2684 
+Q 512 2886 512 3168 
+Q 512 3546 710 3802 
+Q 909 4058 1254 4186 
+Q 1600 4314 2048 4314 
+Q 2522 4314 2864 4176 
+Q 3206 4038 3388 3782 
+Q 3571 3526 3571 3168 
+Q 3571 2771 3350 2524 
+Q 3130 2278 2726 2189 
+L 2726 2099 
+L 2048 1984 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-14b" d="M 826 0 
+L 826 3232 
+L 211 3232 
+L 211 3757 
+Q 499 3757 697 3846 
+Q 896 3936 954 4224 
+L 1414 4224 
+L 1414 0 
+L 826 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-1b6" d="M 13 -877 
+Q 128 -582 176 -342 
+Q 224 -102 233 106 
+Q 243 314 243 518 
+L 800 518 
+Q 800 186 755 -73 
+Q 710 -333 640 -531 
+Q 570 -730 493 -877 
+L 13 -877 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-bc" d="M 1926 -83 
+Q 1491 -83 1190 57 
+Q 890 198 701 438 
+Q 512 678 422 982 
+Q 333 1286 333 1619 
+Q 333 1984 429 2304 
+Q 525 2624 720 2870 
+Q 915 3117 1209 3254 
+Q 1504 3392 1894 3392 
+Q 2266 3392 2554 3261 
+Q 2842 3130 3024 2896 
+Q 3206 2662 3264 2336 
+L 2707 2176 
+Q 2694 2355 2601 2521 
+Q 2509 2688 2329 2793 
+Q 2150 2899 1882 2899 
+Q 1638 2899 1459 2803 
+Q 1280 2707 1161 2534 
+Q 1043 2362 982 2131 
+Q 922 1901 922 1632 
+Q 922 1267 1027 988 
+Q 1133 710 1357 556 
+Q 1581 403 1933 403 
+Q 2202 403 2387 496 
+Q 2573 589 2681 755 
+Q 2790 922 2822 1158 
+L 3354 1030 
+Q 3309 755 3187 547 
+Q 3066 339 2883 198 
+Q 2701 58 2461 -12 
+Q 2221 -83 1926 -83 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-f4" d="M 512 0 
+L 512 2067 
+L 512 3309 
+L 1037 3309 
+L 979 2272 
+L 1088 2272 
+Q 1178 2656 1328 2902 
+Q 1478 3149 1708 3270 
+Q 1939 3392 2246 3392 
+Q 2797 3392 3081 2998 
+Q 3366 2605 3366 1830 
+L 3366 0 
+L 2778 0 
+L 2778 1779 
+Q 2778 2336 2602 2605 
+Q 2426 2874 2086 2874 
+Q 1779 2874 1564 2682 
+Q 1350 2490 1228 2179 
+Q 1107 1869 1094 1510 
+L 1094 0 
+L 512 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-134" d="M 1306 0 
+L 122 3302 
+L 768 3302 
+L 1670 493 
+L 1760 493 
+L 2656 3302 
+L 3296 3302 
+L 2112 0 
+L 1306 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#BricolageGrotesque-Regular-7a"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(47.296875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(104.59375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(157.6875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(194.890625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(220.296875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-111" transform="translate(273.484375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(334.390625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(359.390625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(384.59375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(421.796875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(447.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(503.109375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(540.3125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(565.71875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-db" transform="translate(602.921875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(662.71875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(701.8125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(759.109375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-db" transform="translate(812.296875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(872.09375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(932.296875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(957.296875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(1018.09375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-14a" transform="translate(1043.5 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1b5" transform="translate(1107.09375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-151" transform="translate(1122.59375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-152" transform="translate(1170.78125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-14b" transform="translate(1234.671875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1b6" transform="translate(1265.46875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(1280.375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-bc" transform="translate(1305.78125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-db" transform="translate(1360.78125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(1420.578125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(1480.984375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(1534.28125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f4" transform="translate(1590.78125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(1650.578125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(1675.984375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f4" transform="translate(1736.1875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(1795.984375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-134" transform="translate(1821.390625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(1874 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(1929.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(1954.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(1980.109375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(2040.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(2096.8125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(2134.015625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(2159.21875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f4" transform="translate(2219.421875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(2279.21875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(2304.625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(2365.421875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(2421.328125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(2458.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1b5" transform="translate(2515.140625 0)"/>
+    </g>
+   </g>
+   <g id="text_2">
+    <!-- 1,447 -->
+    <g style="fill: #1d1e22" transform="translate(133.461985 98.806056) scale(0.2 -0.2)">
+     <defs>
+      <path id="JetBrainsMono-SemiBold-219" d="M 550 0 
+L 550 659 
+L 1773 659 
+L 1773 4019 
+L 544 3098 
+L 544 3891 
+L 1613 4672 
+L 2522 4672 
+L 2522 659 
+L 3514 659 
+L 3514 0 
+L 550 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="JetBrainsMono-SemiBold-23c" d="M 986 -1024 
+L 1498 966 
+L 2470 966 
+L 1638 -1024 
+L 986 -1024 
+z
+" transform="scale(0.015625)"/>
+      <path id="JetBrainsMono-SemiBold-21c" d="M 2528 0 
+L 2528 947 
+L 442 947 
+L 442 2048 
+L 2246 4672 
+L 3078 4672 
+L 1158 1856 
+L 1158 1613 
+L 2528 1613 
+L 2528 2688 
+L 3270 2688 
+L 3270 0 
+L 2528 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="JetBrainsMono-SemiBold-21f" d="M 1037 0 
+L 2720 3981 
+L 1158 3981 
+L 1158 3302 
+L 416 3302 
+L 416 4672 
+L 3469 4672 
+L 3469 3962 
+L 1837 0 
+L 1037 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#JetBrainsMono-SemiBold-219"/>
+     <use xlink:href="#JetBrainsMono-SemiBold-23c" transform="translate(60 0)"/>
+     <use xlink:href="#JetBrainsMono-SemiBold-21c" transform="translate(120 0)"/>
+     <use xlink:href="#JetBrainsMono-SemiBold-21c" transform="translate(180 0)"/>
+     <use xlink:href="#JetBrainsMono-SemiBold-21f" transform="translate(240 0)"/>
+    </g>
+   </g>
+   <g id="text_3">
+    <!-- normal runs passed -->
+    <g style="fill: #5e6270" transform="translate(121.363078 119.239084) scale(0.09 -0.09)">
+     <defs>
+      <path id="BricolageGrotesque-Regular-f3" d="M 512 0 
+L 512 2067 
+L 512 3309 
+L 1024 3309 
+L 973 2272 
+L 1082 2272 
+Q 1165 2650 1309 2896 
+Q 1453 3142 1657 3267 
+Q 1862 3392 2131 3392 
+Q 2451 3392 2652 3238 
+Q 2854 3085 2956 2835 
+Q 3059 2586 3059 2291 
+L 3162 2291 
+Q 3232 2650 3379 2893 
+Q 3526 3136 3747 3264 
+Q 3968 3392 4243 3392 
+Q 4499 3392 4691 3289 
+Q 4883 3187 5017 2985 
+Q 5152 2784 5216 2489 
+Q 5280 2195 5280 1811 
+L 5280 0 
+L 4698 0 
+L 4698 1734 
+Q 4698 2112 4627 2365 
+Q 4557 2618 4419 2742 
+Q 4282 2867 4070 2867 
+Q 3834 2867 3645 2704 
+Q 3456 2541 3337 2256 
+Q 3219 1971 3181 1600 
+L 3181 0 
+L 2611 0 
+L 2611 1677 
+Q 2611 2074 2540 2336 
+Q 2470 2598 2329 2732 
+Q 2189 2867 1978 2867 
+Q 1722 2867 1536 2694 
+Q 1350 2522 1238 2227 
+Q 1126 1933 1094 1574 
+L 1094 0 
+L 512 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-Regular-121" d="M 1574 -83 
+Q 1024 -83 742 297 
+Q 461 678 461 1446 
+L 461 3309 
+L 1050 3309 
+L 1050 1498 
+Q 1050 960 1216 697 
+Q 1382 435 1741 435 
+Q 1939 435 2096 531 
+Q 2253 627 2374 806 
+Q 2496 986 2569 1229 
+Q 2643 1472 2675 1760 
+L 2675 3309 
+L 3258 3309 
+L 3258 1376 
+L 3258 0 
+L 2739 0 
+L 2790 1056 
+L 2688 1056 
+Q 2611 659 2457 409 
+Q 2304 160 2083 38 
+Q 1862 -83 1574 -83 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#BricolageGrotesque-Regular-f4"/>
+     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(59.796875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(120 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f3" transform="translate(160 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(249.703125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(305.609375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(330.609375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(356.015625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-121" transform="translate(396.515625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f4" transform="translate(455.421875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(515.21875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(568.3125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-111" transform="translate(593.71875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(654.71875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(710.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(764.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(817.828125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(874.734375 0)"/>
+    </g>
+   </g>
+   <g id="text_4">
+    <!-- 2 -->
+    <g style="fill: #1d1e22" transform="translate(293.767328 98.806056) scale(0.2 -0.2)">
+     <defs>
+      <path id="JetBrainsMono-SemiBold-21a" d="M 525 0 
+L 525 730 
+L 1978 2208 
+Q 2298 2541 2448 2806 
+Q 2598 3072 2598 3341 
+Q 2598 3680 2412 3875 
+Q 2227 4070 1907 4070 
+Q 1549 4070 1347 3865 
+Q 1146 3661 1146 3302 
+L 397 3302 
+Q 403 3744 592 4064 
+Q 781 4384 1120 4560 
+Q 1459 4736 1914 4736 
+Q 2349 4736 2672 4569 
+Q 2995 4403 3171 4102 
+Q 3347 3802 3347 3392 
+Q 3347 2970 3129 2566 
+Q 2912 2163 2426 1683 
+L 1408 672 
+L 3411 672 
+L 3411 0 
+L 525 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#JetBrainsMono-SemiBold-21a"/>
+    </g>
+   </g>
+   <g id="text_5">
+    <!-- false alarms -->
+    <g style="fill: #5e6270" transform="translate(273.990766 119.239084) scale(0.09 -0.09)">
+     <defs>
+      <path id="BricolageGrotesque-Regular-d6" d="M 774 0 
+L 774 2336 
+L 179 2336 
+L 179 2803 
+L 1011 2752 
+L 1011 2867 
+Q 851 2931 745 3040 
+Q 640 3149 585 3296 
+Q 531 3443 531 3616 
+Q 531 3878 649 4076 
+Q 768 4275 992 4390 
+Q 1216 4506 1517 4506 
+Q 1760 4506 1955 4438 
+Q 2150 4371 2278 4269 
+L 2208 3725 
+Q 2086 3834 1913 3901 
+Q 1741 3968 1568 3968 
+Q 1357 3968 1222 3837 
+Q 1088 3706 1088 3418 
+Q 1088 3264 1133 3145 
+Q 1178 3027 1248 2947 
+Q 1318 2867 1395 2822 
+L 2221 2822 
+L 2214 2336 
+L 1344 2336 
+L 1344 0 
+L 774 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#BricolageGrotesque-Regular-d6"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(37.09375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(93 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(118 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(171.296875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(227.796875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(253.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(309.109375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(334.109375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(390.015625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f3" transform="translate(430.015625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(519.71875 0)"/>
+    </g>
+   </g>
+   <g id="text_6">
+    <!-- 14 -->
+    <g style="fill: #1d1e22" transform="translate(151.461985 186.888299) scale(0.2 -0.2)">
+     <use xlink:href="#JetBrainsMono-SemiBold-219"/>
+     <use xlink:href="#JetBrainsMono-SemiBold-21c" transform="translate(60 0)"/>
+    </g>
+   </g>
+   <g id="text_7">
+    <!-- failures missed -->
+    <g style="fill: #5e6270" transform="translate(131.201203 207.321327) scale(0.09 -0.09)">
+     <use xlink:href="#BricolageGrotesque-Regular-d6"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(37.09375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(93 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(118.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-121" transform="translate(143.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(202.109375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(241.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(298.5 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(351.59375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f3" transform="translate(377 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(466.703125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(491.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(545.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(599.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(656.109375 0)"/>
+    </g>
+   </g>
+   <g id="text_8">
+    <!-- 37 -->
+    <g style="fill: #1d1e22" transform="translate(287.767328 186.888299) scale(0.2 -0.2)">
+     <defs>
+      <path id="JetBrainsMono-SemiBold-21b" d="M 1869 -64 
+Q 1421 -64 1091 102 
+Q 762 269 579 573 
+Q 397 877 397 1280 
+L 1146 1280 
+Q 1146 947 1338 761 
+Q 1530 576 1875 576 
+Q 2227 576 2416 768 
+Q 2605 960 2605 1280 
+L 2605 1638 
+Q 2605 1971 2413 2156 
+Q 2221 2342 1875 2342 
+L 1363 2342 
+L 1363 3027 
+L 2426 4026 
+L 602 4026 
+L 602 4672 
+L 3181 4672 
+L 3181 3987 
+L 1882 2778 
+L 1882 2989 
+Q 2560 2989 2953 2624 
+Q 3347 2259 3347 1638 
+L 3347 1280 
+Q 3347 877 3168 573 
+Q 2989 269 2653 102 
+Q 2317 -64 1869 -64 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#JetBrainsMono-SemiBold-21b"/>
+     <use xlink:href="#JetBrainsMono-SemiBold-21f" transform="translate(60 0)"/>
+    </g>
+   </g>
+   <g id="text_9">
+    <!-- failures found -->
+    <g style="fill: #5e6270" transform="translate(270.337328 207.321327) scale(0.09 -0.09)">
+     <use xlink:href="#BricolageGrotesque-Regular-d6"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(37.09375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(93 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(118.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-121" transform="translate(143.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(202.109375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(241.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-118" transform="translate(298.5 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(351.59375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-d6" transform="translate(377 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(414.09375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-121" transform="translate(474.296875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f4" transform="translate(533.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(593.203125 0)"/>
+    </g>
+   </g>
+   <g id="text_10">
+    <!-- predicted: normal -->
+    <g style="fill: #5e6270" transform="translate(126.240657 49.539047) scale(0.09 -0.09)">
+     <defs>
+      <path id="BricolageGrotesque-Regular-1b7" d="M 601 173 
+Q 396 173 294 262 
+Q 192 352 192 551 
+Q 192 743 297 832 
+Q 403 922 601 922 
+Q 812 922 918 832 
+Q 1024 743 1024 544 
+Q 1024 173 601 173 
+z
+M 601 2253 
+Q 396 2253 294 2342 
+Q 192 2432 192 2631 
+Q 192 2823 297 2912 
+Q 403 3002 601 3002 
+Q 812 3002 918 2912 
+Q 1024 2823 1024 2624 
+Q 1024 2253 601 2253 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#BricolageGrotesque-Regular-111"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(60.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(100 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(156.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(217.703125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-bc" transform="translate(242.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(297.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(334.515625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(391.421875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1b7" transform="translate(452.21875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(471.125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f4" transform="translate(496.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(556.328125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(616.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f3" transform="translate(656.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(746.234375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(802.140625 0)"/>
+    </g>
+   </g>
+   <g id="text_11">
+    <!-- predicted: failure -->
+    <g style="fill: #5e6270" transform="translate(264.026781 49.539047) scale(0.09 -0.09)">
+     <use xlink:href="#BricolageGrotesque-Regular-111"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(60.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(100 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(156.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(217.703125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-bc" transform="translate(242.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(297.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(334.515625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c1" transform="translate(391.421875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1b7" transform="translate(452.21875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1a4" transform="translate(471.125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-d6" transform="translate(496.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(533.625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(589.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(614.734375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-121" transform="translate(639.734375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(698.640625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(737.734375 0)"/>
+    </g>
+   </g>
+   <g id="text_12">
+    <!-- actual: -->
+    <g style="fill: #5e6270" transform="translate(60.879515 96.222636) scale(0.09 -0.09)">
+     <use xlink:href="#BricolageGrotesque-Regular-a3"/>
+     <use xlink:href="#BricolageGrotesque-Regular-bc" transform="translate(55.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(110.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-121" transform="translate(148.109375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(207.015625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(262.921875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1b7" transform="translate(287.921875 0)"/>
+    </g>
+    <!-- normal -->
+    <g style="fill: #5e6270" transform="translate(58.739202 107.022636) scale(0.09 -0.09)">
+     <use xlink:href="#BricolageGrotesque-Regular-f4"/>
+     <use xlink:href="#BricolageGrotesque-Regular-fa" transform="translate(59.796875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(120 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-f3" transform="translate(160 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(249.703125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(305.609375 0)"/>
+    </g>
+   </g>
+   <g id="text_13">
+    <!-- actual: -->
+    <g style="fill: #5e6270" transform="translate(60.879515 184.304879) scale(0.09 -0.09)">
+     <use xlink:href="#BricolageGrotesque-Regular-a3"/>
+     <use xlink:href="#BricolageGrotesque-Regular-bc" transform="translate(55.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-11e" transform="translate(110.90625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-121" transform="translate(148.109375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(207.015625 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(262.921875 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-1b7" transform="translate(287.921875 0)"/>
+    </g>
+    <!-- failure -->
+    <g style="fill: #5e6270" transform="translate(61.700765 195.104879) scale(0.09 -0.09)">
+     <use xlink:href="#BricolageGrotesque-Regular-d6"/>
+     <use xlink:href="#BricolageGrotesque-Regular-a3" transform="translate(37.09375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-dd" transform="translate(93 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-ee" transform="translate(118.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-121" transform="translate(143.203125 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-114" transform="translate(202.109375 0)"/>
+     <use xlink:href="#BricolageGrotesque-Regular-c5" transform="translate(241.203125 0)"/>
+    </g>
+   </g>
+   <g id="text_14">
+    <!-- 37 of 51 failures found, 2 false alarms -->
+    <g style="fill: #1d1e22" transform="translate(10.8 21.03) scale(0.11 -0.11)">
+     <defs>
+      <path id="BricolageGrotesque-SemiBold-14d" d="M 1824 -90 
+Q 1414 -90 1113 -3 
+Q 813 83 614 240 
+Q 416 397 307 627 
+Q 198 858 173 1139 
+L 909 1370 
+Q 922 1146 998 992 
+Q 1075 838 1203 739 
+Q 1331 640 1494 595 
+Q 1658 550 1837 550 
+Q 2099 550 2304 624 
+Q 2509 698 2630 854 
+Q 2752 1011 2752 1261 
+Q 2752 1568 2550 1757 
+Q 2349 1946 1968 2019 
+Q 1587 2093 1030 2048 
+L 1030 2528 
+L 2477 3526 
+L 2477 3578 
+L 365 3565 
+L 365 4230 
+L 3290 4230 
+L 3290 3443 
+L 1946 2483 
+L 1946 2426 
+Q 2541 2451 2893 2291 
+Q 3245 2131 3401 1856 
+Q 3558 1581 3558 1242 
+Q 3558 838 3366 537 
+Q 3174 237 2790 73 
+Q 2406 -90 1824 -90 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-151" d="M 813 0 
+Q 813 435 902 902 
+Q 992 1370 1174 1837 
+Q 1357 2304 1645 2733 
+Q 1933 3162 2330 3526 
+L 2330 3584 
+L 154 3552 
+L 154 4230 
+L 3066 4230 
+L 3066 3526 
+Q 2765 3238 2515 2854 
+Q 2266 2470 2083 2012 
+Q 1901 1555 1801 1046 
+Q 1702 538 1702 0 
+L 813 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-1a4" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-fa" d="M 1946 -83 
+Q 1446 -83 1068 118 
+Q 691 320 480 713 
+Q 269 1107 269 1683 
+Q 269 2272 486 2659 
+Q 704 3046 1081 3238 
+Q 1459 3430 1939 3430 
+Q 2426 3430 2806 3232 
+Q 3187 3034 3404 2640 
+Q 3622 2246 3622 1664 
+Q 3622 1075 3401 684 
+Q 3181 294 2800 105 
+Q 2419 -83 1946 -83 
+z
+M 1971 531 
+Q 2240 531 2429 656 
+Q 2618 781 2714 1030 
+Q 2810 1280 2810 1626 
+Q 2810 1990 2707 2249 
+Q 2605 2509 2406 2649 
+Q 2208 2790 1920 2790 
+Q 1658 2790 1469 2665 
+Q 1280 2541 1181 2297 
+Q 1082 2054 1082 1696 
+Q 1082 1133 1318 832 
+Q 1555 531 1971 531 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-d6" d="M 710 0 
+L 710 2214 
+L 160 2214 
+L 160 2822 
+L 1030 2778 
+L 1030 2899 
+Q 832 2950 701 3065 
+Q 570 3181 509 3334 
+Q 448 3488 448 3661 
+Q 448 3936 582 4137 
+Q 717 4339 960 4451 
+Q 1203 4563 1536 4563 
+Q 1811 4563 2038 4492 
+Q 2266 4422 2406 4314 
+L 2342 3578 
+Q 2202 3686 2016 3756 
+Q 1830 3827 1658 3827 
+Q 1459 3827 1331 3712 
+Q 1203 3597 1203 3354 
+Q 1203 3187 1260 3088 
+Q 1318 2989 1411 2934 
+Q 1504 2880 1594 2854 
+L 2374 2854 
+L 2374 2214 
+L 1504 2214 
+L 1504 0 
+L 710 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-14f" d="M 1907 -90 
+Q 1434 -90 1078 51 
+Q 723 192 528 448 
+Q 333 704 333 1062 
+L 1094 1222 
+Q 1126 902 1337 736 
+Q 1549 570 1901 570 
+Q 2291 570 2505 781 
+Q 2720 992 2720 1434 
+Q 2720 1619 2678 1776 
+Q 2637 1933 2553 2048 
+Q 2470 2163 2329 2227 
+Q 2189 2291 1990 2291 
+Q 1850 2291 1731 2256 
+Q 1613 2221 1523 2153 
+Q 1434 2086 1366 1996 
+Q 1299 1907 1242 1792 
+L 410 1792 
+L 557 4224 
+L 3360 4224 
+L 3360 3546 
+L 1235 3546 
+L 1146 2240 
+L 1216 2240 
+Q 1357 2579 1651 2739 
+Q 1946 2899 2291 2899 
+Q 2714 2899 2992 2720 
+Q 3270 2541 3411 2214 
+Q 3552 1888 3552 1446 
+Q 3552 909 3341 569 
+Q 3130 230 2758 70 
+Q 2387 -90 1907 -90 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-14b" d="M 819 0 
+L 819 3008 
+L 205 3008 
+L 205 3718 
+Q 506 3718 698 3820 
+Q 890 3923 947 4224 
+L 1638 4224 
+L 1638 0 
+L 819 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-a3" d="M 1229 -83 
+Q 954 -83 736 22 
+Q 518 128 393 342 
+Q 269 557 269 864 
+Q 269 1126 368 1312 
+Q 467 1498 665 1616 
+Q 864 1734 1161 1814 
+Q 1459 1894 1856 1952 
+Q 2067 1984 2204 2016 
+Q 2342 2048 2409 2115 
+Q 2477 2182 2477 2317 
+Q 2477 2515 2336 2659 
+Q 2195 2803 1888 2803 
+Q 1709 2803 1539 2739 
+Q 1370 2675 1245 2537 
+Q 1120 2400 1075 2182 
+L 352 2406 
+Q 422 2656 556 2845 
+Q 691 3034 889 3168 
+Q 1088 3302 1347 3366 
+Q 1606 3430 1914 3430 
+Q 2381 3430 2678 3280 
+Q 2976 3130 3123 2813 
+Q 3270 2496 3270 1997 
+L 3270 1370 
+Q 3270 1152 3280 918 
+Q 3290 685 3309 451 
+Q 3328 218 3347 0 
+L 2624 0 
+Q 2605 173 2582 377 
+Q 2560 582 2554 794 
+L 2445 794 
+Q 2355 557 2188 355 
+Q 2022 154 1782 35 
+Q 1542 -83 1229 -83 
+z
+M 1549 512 
+Q 1677 512 1808 557 
+Q 1939 602 2067 688 
+Q 2195 774 2304 905 
+Q 2413 1037 2490 1216 
+L 2483 1798 
+L 2637 1766 
+Q 2522 1677 2365 1625 
+Q 2208 1574 2029 1548 
+Q 1850 1523 1677 1488 
+Q 1504 1453 1363 1398 
+Q 1222 1344 1139 1245 
+Q 1056 1146 1056 973 
+Q 1056 755 1193 633 
+Q 1331 512 1549 512 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-dd" d="M 454 0 
+L 454 3347 
+L 1261 3347 
+L 1261 0 
+L 454 0 
+z
+M 864 3878 
+Q 620 3878 489 3980 
+Q 358 4083 358 4288 
+Q 358 4486 489 4591 
+Q 620 4697 864 4697 
+Q 1120 4697 1248 4591 
+Q 1376 4486 1376 4288 
+Q 1376 4089 1248 3983 
+Q 1120 3878 864 3878 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-ee" d="M 454 0 
+L 454 4544 
+L 1254 4544 
+L 1254 0 
+L 454 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-121" d="M 1568 -83 
+Q 992 -83 697 310 
+Q 403 704 403 1498 
+L 403 3347 
+L 1216 3347 
+L 1216 1594 
+Q 1216 1088 1369 838 
+Q 1523 589 1850 589 
+Q 2035 589 2176 681 
+Q 2317 774 2419 940 
+Q 2522 1107 2582 1331 
+Q 2643 1555 2656 1818 
+L 2656 3347 
+L 3462 3347 
+L 3462 1370 
+L 3462 0 
+L 2797 0 
+L 2810 1043 
+L 2694 1043 
+Q 2605 653 2457 400 
+Q 2310 147 2089 32 
+Q 1869 -83 1568 -83 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-114" d="M 454 0 
+L 454 1677 
+L 454 3347 
+L 1139 3347 
+L 1120 2202 
+L 1242 2202 
+Q 1299 2611 1420 2880 
+Q 1542 3149 1760 3286 
+Q 1978 3424 2304 3424 
+Q 2362 3424 2435 3417 
+Q 2509 3411 2598 3386 
+L 2566 2534 
+Q 2470 2573 2361 2592 
+Q 2253 2611 2163 2611 
+Q 1914 2611 1731 2483 
+Q 1549 2355 1437 2121 
+Q 1325 1888 1267 1568 
+L 1267 0 
+L 454 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-c5" d="M 1971 -83 
+Q 1562 -83 1248 32 
+Q 934 147 713 364 
+Q 493 582 381 899 
+Q 269 1216 269 1613 
+Q 269 2010 377 2342 
+Q 486 2675 697 2918 
+Q 909 3162 1216 3296 
+Q 1523 3430 1907 3430 
+Q 2272 3430 2563 3308 
+Q 2854 3187 3049 2947 
+Q 3245 2707 3341 2352 
+Q 3437 1997 3411 1530 
+L 787 1510 
+L 787 1978 
+L 2944 1997 
+L 2662 1734 
+Q 2701 2099 2605 2332 
+Q 2509 2566 2326 2678 
+Q 2144 2790 1914 2790 
+Q 1658 2790 1459 2652 
+Q 1261 2515 1152 2256 
+Q 1043 1997 1043 1626 
+Q 1043 1069 1289 793 
+Q 1536 518 1971 518 
+Q 2157 518 2291 566 
+Q 2426 614 2515 694 
+Q 2605 774 2659 876 
+Q 2714 979 2746 1088 
+L 3450 928 
+Q 3392 691 3277 505 
+Q 3162 320 2979 189 
+Q 2797 58 2547 -12 
+Q 2298 -83 1971 -83 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-118" d="M 1760 -83 
+Q 1414 -83 1142 -16 
+Q 870 51 678 176 
+Q 486 301 374 477 
+Q 262 653 230 864 
+L 864 1101 
+Q 877 941 992 809 
+Q 1107 678 1312 601 
+Q 1517 525 1811 525 
+Q 2131 525 2307 624 
+Q 2483 723 2483 909 
+Q 2483 1043 2384 1123 
+Q 2285 1203 2102 1257 
+Q 1920 1312 1664 1363 
+Q 1434 1414 1194 1481 
+Q 954 1549 749 1661 
+Q 544 1773 419 1955 
+Q 294 2138 294 2419 
+Q 294 2726 457 2950 
+Q 621 3174 934 3302 
+Q 1248 3430 1690 3430 
+Q 2106 3430 2410 3315 
+Q 2714 3200 2902 2989 
+Q 3091 2778 3149 2483 
+L 2483 2272 
+Q 2464 2445 2361 2569 
+Q 2259 2694 2086 2758 
+Q 1914 2822 1683 2822 
+Q 1389 2822 1219 2720 
+Q 1050 2618 1050 2445 
+Q 1050 2304 1155 2221 
+Q 1261 2138 1449 2086 
+Q 1638 2035 1882 1984 
+Q 2138 1933 2378 1865 
+Q 2618 1798 2813 1689 
+Q 3008 1581 3120 1405 
+Q 3232 1229 3232 954 
+Q 3232 621 3056 387 
+Q 2880 154 2550 35 
+Q 2221 -83 1760 -83 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-f4" d="M 454 0 
+L 454 2048 
+L 454 3347 
+L 1133 3347 
+L 1114 2336 
+L 1229 2336 
+Q 1318 2707 1472 2950 
+Q 1626 3194 1859 3312 
+Q 2093 3430 2406 3430 
+Q 2976 3430 3273 3027 
+Q 3571 2624 3571 1773 
+L 3571 0 
+L 2758 0 
+L 2758 1690 
+Q 2758 2240 2595 2493 
+Q 2432 2746 2112 2746 
+Q 1843 2746 1654 2576 
+Q 1466 2406 1370 2131 
+Q 1274 1856 1261 1530 
+L 1261 0 
+L 454 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-c1" d="M 1658 -83 
+Q 1235 -83 924 134 
+Q 614 352 444 749 
+Q 275 1146 275 1677 
+Q 275 2182 428 2576 
+Q 582 2970 883 3197 
+Q 1184 3424 1626 3424 
+Q 1958 3424 2182 3293 
+Q 2406 3162 2547 2928 
+Q 2688 2694 2765 2387 
+L 2906 2387 
+Q 2867 2586 2835 2784 
+Q 2803 2982 2780 3164 
+Q 2758 3347 2758 3488 
+L 2758 4544 
+L 3571 4544 
+L 3571 1651 
+L 3571 0 
+L 2886 0 
+L 2899 941 
+L 2778 941 
+Q 2701 608 2557 381 
+Q 2413 154 2189 35 
+Q 1965 -83 1658 -83 
+z
+M 1907 582 
+Q 2125 582 2285 681 
+Q 2445 781 2550 934 
+Q 2656 1088 2710 1270 
+Q 2765 1453 2765 1613 
+L 2765 1722 
+Q 2765 1843 2729 1984 
+Q 2694 2125 2627 2262 
+Q 2560 2400 2454 2512 
+Q 2349 2624 2211 2691 
+Q 2074 2758 1901 2758 
+Q 1651 2758 1478 2617 
+Q 1306 2477 1216 2233 
+Q 1126 1990 1126 1664 
+Q 1126 1338 1219 1094 
+Q 1312 851 1491 716 
+Q 1670 582 1907 582 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-1b6" d="M 19 -851 
+Q 134 -557 182 -310 
+Q 230 -64 240 182 
+Q 250 429 250 698 
+L 998 698 
+Q 998 294 950 3 
+Q 902 -288 822 -496 
+Q 742 -704 659 -851 
+L 19 -851 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-14c" d="M 288 0 
+L 288 858 
+L 1888 1958 
+Q 2010 2042 2138 2150 
+Q 2266 2259 2374 2393 
+Q 2483 2528 2550 2681 
+Q 2618 2835 2618 3021 
+Q 2618 3213 2534 3347 
+Q 2451 3482 2288 3558 
+Q 2125 3635 1882 3635 
+Q 1677 3635 1523 3571 
+Q 1370 3507 1274 3382 
+Q 1178 3258 1133 3072 
+Q 1088 2886 1088 2643 
+L 307 2797 
+Q 301 3270 483 3609 
+Q 666 3949 1024 4137 
+Q 1382 4326 1901 4326 
+Q 2349 4326 2694 4179 
+Q 3040 4032 3232 3757 
+Q 3424 3482 3424 3078 
+Q 3424 2765 3318 2509 
+Q 3213 2253 3046 2051 
+Q 2880 1850 2681 1693 
+Q 2483 1536 2298 1414 
+L 1216 691 
+L 1216 640 
+L 3501 672 
+L 3501 0 
+L 288 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="BricolageGrotesque-SemiBold-f3" d="M 454 0 
+L 454 2125 
+L 454 3347 
+L 1120 3347 
+L 1101 2336 
+L 1216 2336 
+Q 1306 2701 1450 2944 
+Q 1594 3187 1805 3308 
+Q 2016 3430 2291 3430 
+Q 2592 3430 2793 3289 
+Q 2995 3149 3100 2905 
+Q 3206 2662 3232 2342 
+L 3334 2342 
+Q 3424 2707 3581 2950 
+Q 3738 3194 3962 3312 
+Q 4186 3430 4461 3430 
+Q 4730 3430 4934 3321 
+Q 5139 3213 5276 3005 
+Q 5414 2797 5484 2480 
+Q 5555 2163 5555 1754 
+L 5555 0 
+L 4742 0 
+L 4742 1658 
+Q 4742 2016 4681 2253 
+Q 4621 2490 4493 2608 
+Q 4365 2726 4166 2726 
+Q 3942 2726 3779 2579 
+Q 3616 2432 3517 2169 
+Q 3418 1907 3398 1574 
+L 3398 0 
+L 2605 0 
+L 2605 1613 
+Q 2605 1990 2541 2236 
+Q 2477 2483 2349 2604 
+Q 2221 2726 2022 2726 
+Q 1792 2726 1629 2572 
+Q 1466 2419 1373 2153 
+Q 1280 1888 1261 1562 
+L 1261 0 
+L 454 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#BricolageGrotesque-SemiBold-14d"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-151" transform="translate(60 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(110.09375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-fa" transform="translate(134 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-d6" transform="translate(194.703125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(233.703125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-14f" transform="translate(257.609375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-14b" transform="translate(317.609375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(351.015625 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-d6" transform="translate(374.921875 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-a3" transform="translate(413.921875 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-dd" transform="translate(471.625 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-ee" transform="translate(498.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-121" transform="translate(525.234375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-114" transform="translate(586.4375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-c5" transform="translate(628.4375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-118" transform="translate(686.734375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(740.734375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-d6" transform="translate(764.640625 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-fa" transform="translate(803.734375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-121" transform="translate(864.53125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-f4" transform="translate(925.734375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-c1" transform="translate(987.921875 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-1b6" transform="translate(1050.828125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(1068.921875 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-14c" transform="translate(1092.828125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(1152.328125 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-d6" transform="translate(1176.234375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-a3" transform="translate(1215.234375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-ee" transform="translate(1272.9375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-118" transform="translate(1299.640625 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-c5" transform="translate(1354.046875 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-1a4" transform="translate(1411.75 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-a3" transform="translate(1435.65625 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-ee" transform="translate(1493.359375 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-a3" transform="translate(1520.0625 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-114" transform="translate(1577.765625 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-f3" transform="translate(1620.171875 0)"/>
+     <use xlink:href="#BricolageGrotesque-SemiBold-118" transform="translate(1713.265625 0)"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3c8c817b96">
+   <rect x="10.8" y="42.28" width="357.12" height="188.496"/>
+  </clipPath>
+ </defs>
+</svg>
