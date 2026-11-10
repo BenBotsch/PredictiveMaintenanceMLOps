@@ -10,6 +10,7 @@ dependencies = [
     "httpx>=0.28",
     "numpy>=2.0",
     "pandas>=2.2",
+    "prometheus-client>=0.21",
     "pydantic>=2.10",
     "scikit-learn>=1.6",
     "skops>=0.11",
@@ -22,10 +23,19 @@ pmm = "pmm.cli:main"
 [dependency-groups]
 # Only training needs MLflow; the serving image installs without this group.
 train = ["mlflow>=3.1"]
-dev = ["mypy>=1.15", "pandas-stubs>=2.2", "pytest>=8.3", "ruff>=0.11"]
+# Figures and tables of `pmm report`; not needed for serving either.
+report = ["matplotlib>=3.9"]
+dev = [
+    "mypy>=1.15",
+    "pandas-stubs>=2.2",
+    "pre-commit>=4",
+    "pytest>=8.3",
+    "pytest-cov>=7.1",
+    "ruff>=0.11",
+]
 
 [tool.uv]
-default-groups = ["dev", "train"]
+default-groups = ["dev", "train", "report"]
 
 [build-system]
 requires = ["hatchling"]
@@ -55,8 +65,16 @@ strict = true
 files = ["src", "tests"]
 
 [[tool.mypy.overrides]]
-module = ["sklearn.*", "skops.*", "mlflow.*"]
+module = ["sklearn.*", "skops.*", "mlflow.*", "matplotlib.*"]
 ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["pmm"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 85

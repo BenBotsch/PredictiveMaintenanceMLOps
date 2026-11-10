@@ -1,3 +1,5 @@
+import json
+import logging
 from pathlib import Path
 
 import pytest
@@ -6,6 +8,7 @@ from fastapi.testclient import TestClient
 from pmm import bundle, train
 from pmm.api import create_app
 from pmm.data import TARGET, Splits
+from pmm.model import CANDIDATES
 from tests.conftest import readings
 
 
@@ -16,18 +19,12 @@ def tracking(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> str:
     return f"sqlite:///{(tmp_path / 'mlflow.db').as_posix()}"
 
 
-@pytest.fixture
-def served(splits: Splits, tracking: str, tmp_path: Path) -> bundle.Bundle:
-    train.run(splits, tracking, log=lambda _: None)
-    return bundle.load(train.export(tracking, splits.train, tmp_path / "bundle"))
-
-
 def test_training_registers_the_best_candidate_and_promotes_it(
     splits: Splits, tracking: str
 ) -> None:
     outcome = train.run(splits, tracking, log=lambda _: None)
 
-    assert len(outcome.candidates) == len(train.CANDIDATES)
+    assert len(outcome.candidates) == len(CANDIDATES)
     assert outcome.best.val.pr_auc == max(c.val.pr_auc for c in outcome.candidates)
     assert (outcome.version, outcome.promoted) == ("1", True)
 
@@ -115,3 +112,78 @@ def test_health_and_metadata(served: bundle.Bundle) -> None:
 
     assert client.get("/health").json() == {"status": "ok"}
     assert client.get("/metadata").json()["name"] == train.MODEL_NAME
+
+
+def test_metrics_count_requests_and_predictions(served: bundle.Bundle) -> None:
+    client = TestClient(create_app(served))
+    risky = READING | {"torque_nm": 70.0}
+    client.post("/predict", json={"readings": [READING, risky]})
+    client.post("/predict", json={"readings": []})
+
+    text = client.get("/metrics").text
+
+    assert 'pmm_requests_total{method="POST",route="/predict",status="200"} 1.0' in text
+    assert 'pmm_requests_total{method="POST",route="/predict",status="422"} 1.0' in text
+    assert "pmm_readings_scored_total 2.0" in text
+    assert "pmm_failures_predicted_total 1.0" in text
+    assert 'pmm_model_info{name="ai4i-machine-failure"' in text
+
+
+def test_metrics_of_two_apps_are_separate(served: bundle.Bundle) -> None:
+    first, second = TestClient(create_app(served)), TestClient(create_app(served))
+    first.post("/predict", json={"readings": [READING]})
+
+    assert "pmm_readings_scored_total 0.0" in second.get("/metrics").text
+
+
+def test_unknown_paths_share_one_metric_label(served: bundle.Bundle) -> None:
+    client = TestClient(create_app(served))
+    client.get("/nothing-here")
+    client.get("/also-nothing")
+
+    text = client.get("/metrics").text
+
+    assert 'route="unmatched",status="404"} 2.0' in text
+    assert "nothing-here" not in text
+
+
+def test_drift_sets_the_psi_gauge(served: bundle.Bundle) -> None:
+    client = TestClient(create_app(served))
+    batch = readings(200, seed=3).drop(columns=[TARGET]).to_dict("records")
+    client.post("/drift", json={"readings": batch})
+
+    assert 'pmm_drift_psi{feature="torque_nm"}' in client.get("/metrics").text
+
+
+@pytest.mark.parametrize(
+    ("sent", "echoed"),
+    [("abc-123", True), ("", False), ("x" * 65, False), ("bad id;rm", False)],
+)
+def test_request_id_is_echoed_only_when_plain(
+    served: bundle.Bundle, sent: str, echoed: bool
+) -> None:
+    response = TestClient(create_app(served)).get("/health", headers={"X-Request-ID": sent})
+
+    returned = response.headers["X-Request-ID"]
+    assert (returned == sent) is echoed
+    assert returned
+
+
+def test_each_request_is_logged_as_json_without_readings(
+    served: bundle.Bundle, caplog: pytest.LogCaptureFixture
+) -> None:
+    client = TestClient(create_app(served))
+
+    with caplog.at_level(logging.INFO, logger="pmm.api"):
+        client.post("/predict", json={"readings": [READING]}, headers={"X-Request-ID": "r1"})
+
+    entry = json.loads(caplog.records[-1].getMessage())
+    assert entry | {"duration_ms": 0} == {
+        "event": "request",
+        "request_id": "r1",
+        "method": "POST",
+        "route": "/predict",
+        "status": 200,
+        "duration_ms": 0,
+    }
+    assert "torque" not in caplog.text

@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
+from pmm import bundle, train
 from pmm.data import Splits, split
 
 
@@ -26,3 +27,16 @@ def readings(rows: int, seed: int = 0) -> pd.DataFrame:
 @pytest.fixture
 def splits() -> Splits:
     return split(readings(1500))
+
+
+@pytest.fixture(scope="session")
+def served(tmp_path_factory: pytest.TempPathFactory) -> bundle.Bundle:
+    """One trained and exported bundle, shared by all tests that only read it."""
+    root = tmp_path_factory.mktemp("served")
+    tracking = f"sqlite:///{(root / 'mlflow.db').as_posix()}"
+    parts = split(readings(1500))
+    # MLflow writes artifacts relative to the working directory.
+    with pytest.MonkeyPatch.context() as patch:
+        patch.chdir(root)
+        train.run(parts, tracking, log=lambda _: None)
+        return bundle.load(train.export(tracking, parts.train, root / "bundle"))

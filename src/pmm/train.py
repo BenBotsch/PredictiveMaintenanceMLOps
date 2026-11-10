@@ -18,16 +18,18 @@ from mlflow.tracking import MlflowClient
 
 from pmm import bundle
 from pmm.data import TARGET, ZIP_SHA256, Splits
-from pmm.model import TRUSTED_TYPES, Kind, Scores, best_threshold, build, score
+from pmm.model import (
+    CANDIDATES,
+    TRUSTED_TYPES,
+    Scores,
+    best_threshold,
+    build,
+    candidate_name,
+    score,
+)
 
 MODEL_NAME = "ai4i-machine-failure"
 ALIAS = "champion"
-CANDIDATES: tuple[tuple[Kind, bool], ...] = (
-    ("logistic", False),
-    ("logistic", True),
-    ("boosting", False),
-    ("boosting", True),
-)
 
 
 @dataclass(frozen=True, slots=True)
@@ -67,7 +69,7 @@ def run(
     features = splits.train.drop(columns=[TARGET])
     candidates = []
     for kind, engineered in CANDIDATES:
-        name = f"{kind}{' + features' if engineered else ''}"
+        name = candidate_name(kind, engineered=engineered)
         with mlflow.start_run(run_name=name) as active:
             model = build(kind, engineered=engineered, seed=seed).fit(
                 features, splits.train[TARGET]

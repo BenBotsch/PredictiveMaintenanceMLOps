@@ -21,6 +21,14 @@ from sklearn.preprocessing import FunctionTransformer, OneHotEncoder, StandardSc
 from pmm.data import NUMERIC, TYPES
 
 Kind = Literal["logistic", "boosting"]
+# The candidates of every training: a linear baseline and boosted trees, each without and with
+# the engineered features.
+CANDIDATES: tuple[tuple[Kind, bool], ...] = (
+    ("logistic", False),
+    ("logistic", True),
+    ("boosting", False),
+    ("boosting", True),
+)
 ENGINEERED = ("power_w", "temp_diff_k", "strain_nm_min")
 # Types skops does not trust by default: own code inside the pipeline, and the boosting trees,
 # whose raw node indices are safe here because only models trained by this project are loaded.
@@ -41,6 +49,11 @@ def add_features(frame: pd.DataFrame) -> pd.DataFrame:
     out["temp_diff_k"] = out["process_temp_k"] - out["air_temp_k"]
     out["strain_nm_min"] = out["torque_nm"] * out["tool_wear_min"]
     return out
+
+
+def candidate_name(kind: Kind, *, engineered: bool) -> str:
+    """The name of a candidate in MLflow and in the results, e.g. ``boosting + features``."""
+    return f"{kind}{' + features' if engineered else ''}"
 
 
 def build(kind: Kind, *, engineered: bool, seed: int = 0) -> Pipeline:

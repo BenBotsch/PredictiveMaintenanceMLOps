@@ -37,8 +37,9 @@ NUMERIC = (
     "tool_wear_min",
 )
 TARGET = "failure"
-# Identifiers and the failure modes TWF, HDF, PWF, OSF and RNF, which define the target.
-DROPPED = ("UDI", "Product ID", "TWF", "HDF", "PWF", "OSF", "RNF")
+# Tool wear, heat dissipation, power, overstrain and random failures. Their union is the target,
+# so they are dropped with the identifiers UDI and Product ID unless explicitly requested.
+MODES = ("TWF", "HDF", "PWF", "OSF", "RNF")
 
 
 class DatasetError(Exception):
@@ -83,8 +84,13 @@ def download(root: Path, client: httpx.Client | None = None) -> Path:
     return target
 
 
-def load(path: Path) -> pd.DataFrame:
+def load(path: Path, *, with_modes: bool = False) -> pd.DataFrame:
     """Read the CSV with short column names and without identifiers and failure modes.
+
+    Args:
+        path: The CSV written by :func:`download`.
+        with_modes: Keep the failure-mode columns (``MODES``) after the target. Only for
+            evaluation by mode; they define the target and must never reach a model.
 
     Raises:
         DatasetError: If the file is missing or a column is missing.
@@ -92,12 +98,14 @@ def load(path: Path) -> pd.DataFrame:
     if not path.is_file():
         raise DatasetError(f"{path} is missing; run `pmm download` first")
     frame = pd.read_csv(path, encoding="utf-8-sig")
-    missing = set(COLUMNS) - set(frame.columns)
+    required = {*COLUMNS, *(MODES if with_modes else ())}
+    missing = required - set(frame.columns)
     if missing:
         raise DatasetError(f"{path} lacks the columns {sorted(missing)}")
-    frame = frame.drop(columns=[c for c in DROPPED if c in frame.columns]).rename(columns=COLUMNS)
+    frame = frame.rename(columns=COLUMNS)
+    kept = [*COLUMNS.values(), *(MODES if with_modes else ())]
     # Floats throughout, so the model signature accepts any reading, not just whole numbers.
-    return frame[[*COLUMNS.values()]].astype(dict.fromkeys(NUMERIC, float))
+    return frame[kept].astype(dict.fromkeys(NUMERIC, float))
 
 
 def split(frame: pd.DataFrame, seed: int = 0) -> Splits:

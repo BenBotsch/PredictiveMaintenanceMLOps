@@ -3,3 +3,7 @@ data/
 mlruns/
 mlflow.db
 .git/
+docs/
+results/
+tests/
+.github/

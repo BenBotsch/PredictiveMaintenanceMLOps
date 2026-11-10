@@ -1,17 +1,18 @@
-"""Command line: ``pmm download | train | export | serve | drift``."""
+"""Command line: ``pmm download | train | export | report | serve | drift``."""
 
 import argparse
 import json
+import logging
 from pathlib import Path
 
 DATA = Path("data")
 BUNDLE = Path("bundle")
 TRACKING = "sqlite:///mlflow.db"
 RESULTS = Path("results")
+DOCS = Path("docs")
 
 
-def main(argv: list[str] | None = None) -> None:
-    """Run one command."""
+def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="pmm", description=__doc__)
     parser.add_argument("--data", type=Path, default=DATA, help="dataset directory")
     parser.add_argument("--tracking-uri", default=TRACKING, help="MLflow tracking and registry")
@@ -21,6 +22,10 @@ def main(argv: list[str] | None = None) -> None:
     train_cmd.add_argument("--seed", type=int, default=0)
     export_cmd = sub.add_parser("export", help="write the champion as a serving bundle")
     export_cmd.add_argument("--out", type=Path, default=BUNDLE)
+    report_cmd = sub.add_parser("report", help="evaluate the bundle, write tables and figures")
+    report_cmd.add_argument("--bundle", type=Path, default=BUNDLE)
+    report_cmd.add_argument("--out", type=Path, default=DOCS, help="directory of the figures")
+    report_cmd.add_argument("--no-figures", action="store_true", help="only tables and JSON")
     serve_cmd = sub.add_parser("serve", help="serve a bundle over HTTP")
     serve_cmd.add_argument("--bundle", type=Path, default=BUNDLE)
     serve_cmd.add_argument("--host", default="127.0.0.1")
@@ -28,7 +33,12 @@ def main(argv: list[str] | None = None) -> None:
     drift_cmd = sub.add_parser("drift", help="PSI of a CSV of readings against the training data")
     drift_cmd.add_argument("csv", type=Path)
     drift_cmd.add_argument("--bundle", type=Path, default=BUNDLE)
-    args = parser.parse_args(argv)
+    return parser
+
+
+def main(argv: list[str] | None = None) -> None:
+    """Run one command."""
+    args = _parser().parse_args(argv)
 
     # Imports per command, so serving needs neither MLflow nor the training code.
     if args.command == "download":
@@ -56,13 +66,29 @@ def main(argv: list[str] | None = None) -> None:
             print(f"test of {outcome.best.name}: {outcome.test.to_dict()}")
         else:
             print(train.export(args.tracking_uri, splits.train, args.out))
+    elif args.command == "report":
+        from pmm import bundle, report
+        from pmm.data import CSV_NAME, load
+
+        served = bundle.load(args.bundle)
+        evaluation = report.evaluate(load(args.data / CSV_NAME, with_modes=True), served)
+        evaluation.latency = report.latency(served, load(args.data / CSV_NAME))
+        for path in report.write(evaluation, RESULTS):
+            print(path)
+        if not args.no_figures:
+            from pmm import figures
+
+            print(f"{len(figures.render(evaluation, args.out))} figures in {args.out}")
     elif args.command == "serve":
         import uvicorn
 
         from pmm import bundle
         from pmm.api import create_app
 
-        uvicorn.run(create_app(bundle.load(args.bundle)), host=args.host, port=args.port)
+        # The API logs one JSON line per request; uvicorn's own access log would repeat it.
+        logging.basicConfig(level=logging.INFO, format="%(message)s")
+        app = create_app(bundle.load(args.bundle))
+        uvicorn.run(app, host=args.host, port=args.port, access_log=False)
     elif args.command == "drift":
         import pandas as pd
 

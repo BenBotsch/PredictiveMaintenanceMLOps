@@ -79,3 +79,24 @@ def test_split_is_stratified_and_disjoint() -> None:
     rate = frame[TARGET].mean()
     for part in (parts.train, parts.val, parts.test):
         assert part[TARGET].mean() == pytest.approx(rate, abs=0.01)
+
+
+def test_modes_are_kept_only_on_request(tmp_path: Path) -> None:
+    path = tmp_path / data.CSV_NAME
+    path.write_text(HEADER + "1,M1,M,298.1,308.6,1551,42.8,0,1,1,0,0,0,0\n", encoding="utf-8")
+
+    frame = load(path, with_modes=True)
+
+    assert list(frame.columns[-5:]) == list(data.MODES)
+    assert frame.iloc[0]["TWF"] == 1
+    assert not set(data.MODES) & set(load(path).columns)
+
+
+def test_mode_columns_do_not_change_the_split() -> None:
+    frame = readings(2000)
+    extended = frame.assign(**dict.fromkeys(data.MODES, 0))
+
+    plain, with_modes = split(frame), split(extended)
+
+    for a, b in ((plain.train, with_modes.train), (plain.test, with_modes.test)):
+        assert a.equals(b.drop(columns=list(data.MODES)))
